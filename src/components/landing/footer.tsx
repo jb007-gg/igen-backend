@@ -9,7 +9,7 @@ export function Footer() {
         <div className="flex flex-col items-start space-y-4">
             <Link href="#" className="flex items-center space-x-2" prefetch={false}>
                 <IGenLogo className="h-8 w-8 text-primary" />
-                <span className="text-2xl font-bold text-white">iGen Technology</span>
+                <span className="text-2xl font-bold text-primary">iGen Technology</span>
             </Link>
             <p className="text-sm">Kiến tạo Cỗ máy Marketing Hoàn chỉnh.</p>
         </div>
