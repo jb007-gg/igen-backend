@@ -3,21 +3,30 @@ import { Header } from '@/components/landing/header';
 import { Footer } from '@/components/landing/footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { PenTool } from 'lucide-react';
+import { CheckCircle, PenTool } from 'lucide-react';
 import Link from 'next/link';
 
 const contentCreationPoints = [
   {
     title: 'Công nghệ “Bản sao Số”: Lợi thế Cạnh tranh Không thể Sao chép',
-    description: 'Từ ảnh gốc, chúng tôi tạo ra một “Bản sao số” (Digital Twin) hoàn hảo, cho phép AI tái tạo sản phẩm trong mọi bối cảnh với độ chân thực đáng kinh ngạc. Tiết kiệm đến 90% chi phí sản xuất, giải phóng hoàn toàn gánh nặng chi phí thuê người mẫu, studio, ekip. Sản xuất hàng loạt ảnh, video quảng cáo chất lượng cao, tạo ra lợi thế cạnh tranh khác biệt và đẩy nhanh tốc độ ra mắt chiến dịch.',
+    points: [
+      'Từ ảnh gốc, chúng tôi tạo ra một “Bản sao số” (Digital Twin) hoàn hảo, cho phép AI tái tạo sản phẩm trong mọi bối cảnh với độ chân thực đáng kinh ngạc.',
+      'Tiết kiệm đến 90% chi phí sản xuất, giải phóng hoàn toàn gánh nặng chi phí thuê người mẫu, studio, ekip.',
+      'Sản xuất hàng loạt ảnh, video quảng cáo chất lượng cao, tạo ra lợi thế cạnh tranh khác biệt và đẩy nhanh tốc độ ra mắt chiến dịch.',
+    ],
   },
   {
     title: 'Dịch vụ Sáng tạo Kịch bản & Sản xuất Trọn gói',
-    description: 'Đội ngũ chuyên gia của chúng tôi sẽ lên ý tưởng chiến lược, sau đó sử dụng trí tuệ AI để kiến tạo các kịch bản quảng cáo được tối ưu hóa sâu sắc theo thuật toán của từng nền tảng, đảm bảo thông điệp của bạn không chỉ sáng tạo mà còn có khả năng lan tỏa mạnh mẽ nhất.',
+    points: [
+        'Đội ngũ chuyên gia của chúng tôi sẽ lên ý tưởng chiến lược, sau đó sử dụng trí tuệ AI để kiến tạo các kịch bản quảng cáo được tối ưu hóa sâu sắc theo thuật toán của từng nền tảng, đảm bảo thông điệp của bạn không chỉ sáng tạo mà còn có khả năng lan tỏa mạnh mẽ nhất.'
+    ],
   },
   {
     title: 'Chất lượng Đỉnh cao & Quy trình Vượt trội',
-    description: 'Mọi sản phẩm đều đạt chất lượng 4K chuyên nghiệp, khẳng định sự sắc nét và đẳng cấp thương hiệu. Một khi AI đã "học" về sản phẩm của bạn, việc tạo ra nội dung cho các chiến dịch sau này diễn ra với tốc độ đáng kinh ngạc.',
+    points: [
+        'Mọi sản phẩm đều đạt chất lượng 4K chuyên nghiệp, khẳng định sự sắc nét và đẳng cấp thương hiệu.',
+        'Một khi AI đã "học" về sản phẩm của bạn, việc tạo ra nội dung cho các chiến dịch sau này diễn ra với tốc độ đáng kinh ngạc.'
+    ],
   },
 ];
 
@@ -45,14 +54,19 @@ export default function ContentCreationPage() {
                     Mở khóa Kho vũ khí Nội dung Vô hạn
                 </h2>
             </div>
-            <div className="mx-auto grid gap-6 py-12 sm:grid-cols-1 md:grid-cols-3">
+            <div className="mx-auto mt-12 grid gap-8">
                 {contentCreationPoints.map((point, index) => (
-                    <Card key={index} className="flex flex-col">
+                    <Card key={index} className="bg-card">
                         <CardHeader>
-                            <CardTitle>{point.title}</CardTitle>
+                            <CardTitle className="text-xl font-bold">{point.title}</CardTitle>
                         </CardHeader>
-                        <CardContent className="flex-grow">
-                            <p className="text-muted-foreground">{point.description}</p>
+                        <CardContent className="space-y-4">
+                           {point.points.map((p, pIndex) => (
+                             <div key={pIndex} className="flex items-start gap-4">
+                               <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                               <p className="text-muted-foreground">{p}</p>
+                             </div>
+                           ))}
                         </CardContent>
                     </Card>
                 ))}

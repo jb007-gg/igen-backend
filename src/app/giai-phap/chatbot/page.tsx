@@ -3,29 +3,38 @@ import { Header } from '@/components/landing/header';
 import { Footer } from '@/components/landing/footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Bot } from 'lucide-react';
+import { Bot, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 
 const chatbotPoints = [
     {
         title: "Khai mở Doanh thu & Làm chủ Mọi Cơ hội",
-        description: "Kiến tạo Cỗ máy Bán hàng Tự vận hành 24/7: Một quy trình hoàn hảo từ tư vấn, chốt đơn đến tạo đơn hàng, được vận hành bởi trí tuệ AI. Phản hồi tức thì ngay trong giây lát, chấm dứt vĩnh viễn tình trạng 'bỏ lỡ khách hàng'."
+        points: [
+            "Kiến tạo Cỗ máy Bán hàng Tự vận hành 24/7: Một quy trình hoàn hảo từ tư vấn, chốt đơn đến tạo đơn hàng, được vận hành bởi trí tuệ AI.",
+            "Làm chủ Mọi Điểm chạm Khách hàng: Phản hồi tức thì ngay trong giây lát, chấm dứt vĩnh viễn tình trạng 'bỏ lỡ khách hàng'."
+        ]
     },
     {
         title: "Trợ lý AI với Trí tuệ của Chuyên gia",
-        description: "Tư vấn như một chuyên gia thực thụ, thấu hiểu sâu sắc nhu cầu khách hàng, giải đáp mọi thắc mắc và kiến tạo cơ hội Upsell thông minh."
+        points: [
+            "Tư vấn như một chuyên gia thực thụ: Công nghệ AI thấu hiểu sâu sắc nhu cầu khách hàng, kiến tạo những cuộc trò chuyện giá trị.",
+            "Phá vỡ Mọi Rào cản Mua hàng: AI được huấn luyện để trở thành chuyên gia về sản phẩm của bạn, giải đáp mọi thắc mắc.",
+            "Kiến tạo Cơ hội Upsell thông minh: AI phân tích hành vi để gợi ý các sản phẩm 'đo ni đóng giày', khéo léo đề xuất để gia tăng giá trị đơn hàng."
+        ]
     },
     {
         title: "Công nghệ AI Đáng tin cậy",
-        description: "Cam kết tuyệt đối không bịa thông tin. Chatbot chỉ trả lời dựa trên dữ liệu được cung cấp, bảo vệ 100% uy tín và hình ảnh thương hiệu. Tự động nhận diện tình huống phức tạp và chuyển giao cho chuyên viên."
+        points: [
+            "Cam kết tuyệt đối không bịa thông tin: Chatbot chỉ trả lời dựa trên dữ liệu được cung cấp, bảo vệ 100% uy tín thương hiệu.",
+            "Chuyển giao liền mạch: Tự động nhận diện tình huống phức tạp và chuyển giao cho chuyên viên."
+        ]
     },
     {
-        title: "Dấu ấn Thương hiệu",
-        description: "Tùy chỉnh giọng văn của chatbot – từ thân thiện, chuyên nghiệp đến hài hước – để mỗi cuộc trò chuyện đều là một tuyên ngôn nhất quán về cá tính và đẳng cấp thương hiệu."
-    },
-    {
-        title: "Vận hành Tinh gọn",
-        description: "Toàn bộ thông tin đơn hàng được tự động đồng bộ vào Google Sheet, loại bỏ hoàn toàn sai sót, lãng phí và các công việc thủ công nhàm chán."
+        title: "Dấu ấn Thương hiệu & Vận hành Tinh gọn",
+        points: [
+            "Tùy chỉnh giọng văn của chatbot – từ thân thiện, chuyên nghiệp đến hài hước – để mỗi cuộc trò chuyện đều là một tuyên ngôn nhất quán về cá tính thương hiệu.",
+            "Toàn bộ thông tin đơn hàng được tự động đồng bộ vào Google Sheet, loại bỏ hoàn toàn sai sót và công việc thủ công."
+        ]
     },
 ];
 
@@ -53,14 +62,19 @@ export default function ChatbotPage() {
                     Kiến tạo Cỗ máy Bán hàng Tự vận hành 24/7
                 </h2>
             </div>
-            <div className="mx-auto grid gap-6 py-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="mx-auto mt-12 grid gap-8">
                 {chatbotPoints.map((point, index) => (
-                    <Card key={index} className="flex flex-col">
+                    <Card key={index} className="bg-card">
                         <CardHeader>
-                            <CardTitle>{point.title}</CardTitle>
+                            <CardTitle className="text-xl font-bold">{point.title}</CardTitle>
                         </CardHeader>
-                        <CardContent className="flex-grow">
-                            <p className="text-muted-foreground">{point.description}</p>
+                        <CardContent className="space-y-4">
+                           {point.points.map((p, pIndex) => (
+                             <div key={pIndex} className="flex items-start gap-4">
+                               <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                               <p className="text-muted-foreground">{p}</p>
+                             </div>
+                           ))}
                         </CardContent>
                     </Card>
                 ))}

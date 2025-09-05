@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { PenTool, Globe, Megaphone, Bot } from 'lucide-react';
+import { PenTool, MonitorSmartphone, Megaphone, Bot } from 'lucide-react';
 import Link from 'next/link';
 
 const services = [
@@ -25,9 +25,9 @@ const services = [
         href: "/giai-phap/chatbot",
     },
     {
-        icon: <Globe className="h-8 w-8 text-primary" />,
-        title: 'Hệ thống Đăng bài Tự động',
-        description: 'Đưa thông điệp của bạn tiếp cận hàng triệu khách hàng một cách nhất quán và hiệu quả.',
+        icon: <MonitorSmartphone className="h-8 w-8 text-primary" />,
+        title: 'Thiết kế Website chuyên nghiệp ứng dụng AI',
+        description: 'Xây dựng nền tảng vững chắc để thu hút và chuyển đổi khách hàng tiềm năng từ Google.',
         href: "/giai-phap/dang-bai-tu-dong",
     },
 ];
