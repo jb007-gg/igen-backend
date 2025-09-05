@@ -54,7 +54,7 @@ export function ServicesSection() {
                 <CardDescription>{service.description}</CardDescription>
               </CardContent>
               <CardFooter>
-                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary/10 hover:text-primary">
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-white">
                     Xem thêm
                 </Button>
               </CardFooter>
