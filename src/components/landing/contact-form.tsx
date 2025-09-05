@@ -19,9 +19,7 @@ import { useToast } from '@/hooks/use-toast';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Họ và tên phải có ít nhất 2 ký tự.' }),
-  email: z.string().email({ message: 'Địa chỉ email không hợp lệ.' }),
   phone: z.string().optional(),
-  company: z.string().optional(),
   message: z.string().min(10, { message: 'Lời nhắn phải có ít nhất 10 ký tự.' }),
 });
 
@@ -31,9 +29,7 @@ export function ContactForm() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: '',
-      email: '',
       phone: '',
-      company: '',
       message: '',
     },
   });
@@ -65,38 +61,12 @@ export function ContactForm() {
         />
         <FormField
           control={form.control}
-          name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Email</FormLabel>
-              <FormControl>
-                <Input placeholder="Nhập địa chỉ email" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
           name="phone"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Số điện thoại</FormLabel>
               <FormControl>
                 <Input placeholder="Nhập số điện thoại (tùy chọn)" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="company"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Tên doanh nghiệp</FormLabel>
-              <FormControl>
-                <Input placeholder="Nhập tên doanh nghiệp (tùy chọn)" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
