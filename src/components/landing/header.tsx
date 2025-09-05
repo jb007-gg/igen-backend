@@ -11,6 +11,7 @@ import { Menu } from 'lucide-react';
 
 const navLinks = [
     { href: '/#about', label: 'Giới thiệu' },
+    { href: '/giai-phap', label: 'Giải pháp' },
     { href: '/#services', label: 'Dịch vụ' },
     { href: '/#courses', label: 'Khóa học' },
     { href: '/#testimonials', label: 'Nhận xét' },
@@ -81,8 +82,8 @@ export function Header() {
           variant="outline" 
           asChild 
           className={cn(
-            "border-primary hover:bg-primary hover:text-white bg-transparent", 
-            scrolled ? 'text-primary' : 'text-white border-cyan-400'
+            "border-[#00FFFF] hover:bg-[#00FFFF] hover:text-white bg-transparent",
+            scrolled ? 'text-primary' : 'text-white'
           )}
         >
             <Link href="/dang-nhap">Đăng nhập</Link>
