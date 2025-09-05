@@ -1,13 +1,6 @@
 'use client';
 
 import { Card, CardContent } from '@/components/ui/card';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const testimonials = [
@@ -38,40 +31,24 @@ export function TestimonialsSection() {
         <h2 className="text-3xl font-bold tracking-tighter text-center sm:text-5xl font-headline text-foreground">
           Khách hàng nói gì về iGen Technology?
         </h2>
-        <div className="mt-12">
-          <Carousel
-            opts={{
-              align: 'start',
-              loop: true,
-            }}
-            className="w-full max-w-4xl mx-auto"
-          >
-            <CarouselContent>
-              {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
-                  <div className="p-1">
-                    <Card className="h-full">
-                      <CardContent className="flex flex-col items-center justify-center p-6 text-center space-y-4">
-                        <p className="text-lg italic text-muted-foreground">"{testimonial.quote}"</p>
-                        <div className="flex items-center gap-4 pt-4">
-                            <Avatar>
-                                <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
-                                <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                            </Avatar>
-                            <div className="text-left">
-                                <p className="font-semibold">{testimonial.name}</p>
-                                <p className="text-sm text-muted-foreground">{testimonial.company}</p>
-                            </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {testimonials.map((testimonial, index) => (
+            <Card key={index} className="h-full">
+              <CardContent className="flex flex-col items-center justify-center p-6 text-center space-y-4">
+                <p className="text-lg italic text-muted-foreground">"{testimonial.quote}"</p>
+                <div className="flex items-center gap-4 pt-4">
+                    <Avatar>
+                        <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
+                        <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                    </Avatar>
+                    <div className="text-left">
+                        <p className="font-semibold">{testimonial.name}</p>
+                        <p className="text-sm text-muted-foreground">{testimonial.company}</p>
+                    </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
