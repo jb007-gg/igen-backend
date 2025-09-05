@@ -25,10 +25,10 @@ export function HeroSection() {
           <p className="mx-auto max-w-[700px] text-gray-300 md:text-lg">
             iGen Technology biến marketing phức tạp thành hệ thống vận hành tự động, hiệu quả và đáng tin cậy, giúp bạn thảnh thơi tập trung vào chuyên môn kinh doanh.
           </p>
-          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 group">
             <Link href="#services">
                 Tìm Hiểu Giải Pháp
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </Button>
         </div>

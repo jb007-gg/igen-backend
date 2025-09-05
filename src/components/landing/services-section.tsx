@@ -28,7 +28,7 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-primary/10">
+    <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-[#00FFFF]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -50,10 +50,10 @@ export function ServicesSection() {
                 <p className="text-muted-foreground">{service.description}</p>
               </CardContent>
               <CardFooter>
-                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent" asChild>
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent group" asChild>
                     <Link href={service.href}>
                         Xem thêm
-                        <ArrowRight className="ml-2 h-4 w-4" />
+                        <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </Link>
                 </Button>
               </CardFooter>
