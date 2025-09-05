@@ -28,7 +28,7 @@ export function SolutionsSection() {
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="space-y-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-foreground">
-              Ứng dụng công nghệ AI
+              Giải pháp Marketing toàn diện ứng dụng công nghệ AI
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
               Chúng tôi tích hợp các công cụ mạnh mẽ nhất thành một hệ thống marketing hoàn chỉnh, vận hành tự động và thông minh, giúp bạn đạt được kết quả vượt trội.
