@@ -50,7 +50,7 @@ export function ServicesSection() {
                 <p className="text-muted-foreground">{service.description}</p>
               </CardContent>
               <CardFooter>
-                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent group" asChild>
+                <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 group" asChild>
                     <Link href={service.href}>
                         Xem thêm
                         <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
