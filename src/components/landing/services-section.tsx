@@ -4,22 +4,22 @@ import { PenTool, Globe, Megaphone, Bot } from 'lucide-react';
 
 const services = [
     {
-        icon: <Megaphone className="h-8 w-8 text-[#69C9B4]" />,
+        icon: <Megaphone className="h-8 w-8 text-primary" />,
         title: 'Tư vấn, lên chiến lược Marketing ứng dụng công nghệ AI',
         description: 'Xây dựng chiến lược marketing toàn diện, tận dụng sức mạnh của AI để tối ưu hóa hiệu quả.',
     },
     {
-        icon: <PenTool className="h-8 w-8 text-[#69C9B4]" />,
+        icon: <PenTool className="h-8 w-8 text-primary" />,
         title: 'Sáng tạo nội dung và phân phối đa kênh tự động bằng AI',
         description: 'Tự động tạo và phân phối nội dung hấp dẫn trên các nền tảng mạng xã hội, email và website.',
     },
     {
-        icon: <Bot className="h-8 w-8 text-[#69C9B4]" />,
+        icon: <Bot className="h-8 w-8 text-primary" />,
         title: 'Chatbot chăm sóc khách hàng ứng dụng công nghệ AI',
         description: 'Tự động hóa việc tương tác, tư vấn và hỗ trợ khách hàng 24/7, nâng cao trải nghiệm người dùng.',
     },
     {
-        icon: <Globe className="h-8 w-8 text-[#69C9B4]" />,
+        icon: <Globe className="h-8 w-8 text-primary" />,
         title: 'Thiết kế Website chuyên nghiệp ứng dụng AI',
         description: 'Xây dựng các trang web và trang đích được tối ưu hóa cho SEO và tỷ lệ chuyển đổi, được hỗ trợ bởi AI.',
     },

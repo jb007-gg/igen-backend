@@ -56,7 +56,7 @@ export function EmailCaptureForm() {
             </FormItem>
             )}
         />
-        <Button type="submit" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
+        <Button type="submit" className="bg-black text-primary hover:bg-black/90">
             Đăng ký nhận tin
         </Button>
         </form>

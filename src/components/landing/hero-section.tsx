@@ -5,7 +5,7 @@ import Image from 'next/image';
 export function HeroSection() {
   return (
     <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center pt-16">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1A1A1A] to-black z-0">
+        <div className="absolute inset-0 bg-black z-0">
             <Image
                 src="https://picsum.photos/1920/1080"
                 alt="Abstract technology background"
