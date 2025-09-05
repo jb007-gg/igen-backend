@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { AuthLayout } from '@/components/auth/auth-layout';
+import { GoogleIcon } from '@/components/icons';
 
 export default function SignUpPage() {
   return (
@@ -27,6 +28,18 @@ export default function SignUpPage() {
             </div>
             <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
               Tạo tài khoản
+            </Button>
+            <div className="relative my-2">
+              <div className="absolute inset-0 flex items-center">
+                <span className="w-full border-t" />
+              </div>
+              <div className="relative flex justify-center text-xs uppercase">
+                <span className="bg-background px-2 text-muted-foreground">Hoặc tiếp tục với</span>
+              </div>
+            </div>
+             <Button variant="outline" className="w-full">
+              <GoogleIcon className="mr-2 h-4 w-4" />
+              Đăng ký với Google
             </Button>
           </div>
           <div className="mt-4 text-center text-sm">
