@@ -59,11 +59,8 @@ export function Header() {
   return (
     <header className={headerClasses}>
       <Link href="/" className="flex items-center justify-center mr-auto" prefetch={false}>
-        <IGenLogo className={cn("h-6 w-6", scrolled ? "text-primary" : "text-white")} />
-        <span className={cn(
-            "ml-2 text-xl font-bold",
-            scrolled ? "text-primary" : "text-white"
-        )}>
+        <IGenLogo className="h-6 w-6 text-[#00FFFF]" />
+        <span className="ml-2 text-xl font-bold text-[#00FFFF]">
             iGen Technology
         </span>
       </Link>
