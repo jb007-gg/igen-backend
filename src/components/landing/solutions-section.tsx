@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import { Button } from '../ui/button';
 import Link from 'next/link';
@@ -47,8 +47,11 @@ export function SolutionsSection() {
               ))}
             </div>
             <div className="flex justify-center">
-              <Button asChild variant="outline" className="border-primary text-primary hover:bg-[#00FFFF] hover:text-white bg-transparent">
-                <Link href="/giai-phap">Tìm hiểu thêm</Link>
+              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
+                <Link href="/giai-phap">
+                    Tìm hiểu thêm
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
             </div>
           </div>

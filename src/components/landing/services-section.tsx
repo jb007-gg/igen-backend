@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { PenTool, MonitorSmartphone, Bot } from 'lucide-react';
+import { PenTool, MonitorSmartphone, Bot, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 const services = [
@@ -51,7 +51,10 @@ export function ServicesSection() {
               </CardContent>
               <CardFooter>
                 <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent" asChild>
-                    <Link href={service.href}>Xem thêm</Link>
+                    <Link href={service.href}>
+                        Xem thêm
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
                 </Button>
               </CardFooter>
             </Card>
