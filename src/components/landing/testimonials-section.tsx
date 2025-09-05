@@ -58,7 +58,7 @@ export function TestimonialsSection() {
                                 <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
                                 <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                             </Avatar>
-                            <div>
+                            <div className="text-left">
                                 <p className="font-semibold">{testimonial.name}</p>
                                 <p className="text-sm text-muted-foreground">{testimonial.company}</p>
                             </div>
