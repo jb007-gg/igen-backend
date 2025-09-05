@@ -66,7 +66,7 @@ export function Header() {
                 {link.label}
             </Link>
         ))}
-        <Button variant="outline" asChild className={cn("border-primary text-primary hover:bg-[#00FFFF] hover:text-white bg-transparent", scrolled ? 'text-primary border-primary' : 'text-white border-white')}>
+        <Button variant="outline" asChild className={cn("border-primary hover:bg-primary hover:text-primary-foreground bg-transparent", scrolled ? 'text-primary' : 'text-white')}>
             <Link href="/dang-nhap">Đăng nhập</Link>
         </Button>
       </nav>
@@ -98,7 +98,7 @@ export function Header() {
                     ))}
                 </nav>
                 <div className="flex flex-col gap-2">
-                    <Button variant="outline" asChild className="border-primary text-primary hover:bg-[#00FFFF] hover:text-white bg-transparent">
+                    <Button variant="outline" asChild className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent">
                         <Link href="/dang-nhap">Đăng nhập</Link>
                     </Button>
                 </div>
