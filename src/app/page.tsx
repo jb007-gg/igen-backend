@@ -1,3 +1,27 @@
+import { Header } from '@/components/landing/header';
+import { HeroSection } from '@/components/landing/hero-section';
+import { AboutSection } from '@/components/landing/about-section';
+import { ServicesSection } from '@/components/landing/services-section';
+import { CoursesSection } from '@/components/landing/courses-section';
+import { VisionSection } from '@/components/landing/vision-section';
+import { TestimonialsSection } from '@/components/landing/testimonials-section';
+import { ContactSection } from '@/components/landing/contact-section';
+import { Footer } from '@/components/landing/footer';
+
 export default function Home() {
-  return <></>;
+  return (
+    <div className="flex min-h-[100dvh] flex-col">
+      <Header />
+      <main className="flex-1">
+        <HeroSection />
+        <AboutSection />
+        <ServicesSection />
+        <CoursesSection />
+        <VisionSection />
+        <TestimonialsSection />
+        <ContactSection />
+      </main>
+      <Footer />
+    </div>
+  );
 }
