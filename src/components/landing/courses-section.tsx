@@ -10,7 +10,7 @@ export function CoursesSection() {
             alt="AI technology background"
             data-ai-hint="abstract tech"
             fill
-            className="object-cover opacity-20"
+            className="object-cover opacity-10"
         />
       </div>
       <div className="container relative z-10 mx-auto grid items-center justify-center gap-4 px-4 text-center md:px-6">
