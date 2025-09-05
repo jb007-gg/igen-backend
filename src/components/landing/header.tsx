@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { IGenLogo } from '../icons';
 import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
@@ -9,18 +10,26 @@ import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet';
 import { Menu } from 'lucide-react';
 
 const navLinks = [
-    { href: '#about', label: 'Giới thiệu' },
-    { href: '#services', label: 'Dịch vụ' },
-    { href: '#courses', label: 'Khóa học' },
-    { href: '#testimonials', label: 'Nhận xét' },
-    { href: '#contact', label: 'Liên hệ' },
+    { href: '/#about', label: 'Giới thiệu' },
+    { href: '/#services', label: 'Dịch vụ' },
+    { href: '/#courses', label: 'Khóa học' },
+    { href: '/#testimonials', label: 'Nhận xét' },
+    { href: '/#contact', label: 'Liên hệ' },
 ];
 
 export function Header() {
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
+  
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    if (!isHomePage) {
+      setScrolled(true);
+      return;
+    }
+
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
       if (isScrolled !== scrolled) {
@@ -29,10 +38,12 @@ export function Header() {
     };
 
     document.addEventListener('scroll', handleScroll);
+    handleScroll(); 
+
     return () => {
       document.removeEventListener('scroll', handleScroll);
     };
-  }, [scrolled]);
+  }, [scrolled, isHomePage]);
 
   const headerClasses = cn(
     "px-4 lg:px-6 h-16 flex items-center fixed top-0 left-0 right-0 z-50 transition-colors duration-300",
@@ -66,7 +77,14 @@ export function Header() {
                 {link.label}
             </Link>
         ))}
-        <Button variant="outline" asChild className={cn("border-primary hover:bg-primary hover:text-primary-foreground bg-transparent", scrolled ? 'text-primary' : 'text-white')}>
+        <Button 
+          variant="outline" 
+          asChild 
+          className={cn(
+            "border-primary hover:bg-primary hover:text-white bg-transparent", 
+            scrolled ? 'text-primary' : 'text-white border-cyan-400'
+          )}
+        >
             <Link href="/dang-nhap">Đăng nhập</Link>
         </Button>
       </nav>
@@ -80,7 +98,7 @@ export function Header() {
           </SheetTrigger>
           <SheetContent side="right">
             <div className="flex flex-col gap-6 p-6">
-                <Link href="#" className="flex items-center" prefetch={false} onClick={() => setMobileMenuOpen(false)}>
+                <Link href="/" className="flex items-center" prefetch={false} onClick={() => setMobileMenuOpen(false)}>
                     <IGenLogo className="h-6 w-6 text-primary" />
                     <span className="ml-2 text-xl font-bold text-primary">iGen Technology</span>
                 </Link>
