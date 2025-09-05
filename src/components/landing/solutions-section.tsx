@@ -46,9 +46,11 @@ export function SolutionsSection() {
                 </div>
               ))}
             </div>
-            <Button asChild variant="outline" className="border-primary text-primary hover:bg-[#00FFFF] hover:text-white bg-transparent">
-              <Link href="#contact">Tìm hiểu thêm</Link>
-            </Button>
+            <div className="flex justify-center">
+              <Button asChild variant="outline" className="border-primary text-primary hover:bg-[#00FFFF] hover:text-white bg-transparent">
+                <Link href="#contact">Tìm hiểu thêm</Link>
+              </Button>
+            </div>
           </div>
           <div className="flex items-center justify-center">
             <Image
