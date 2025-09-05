@@ -10,25 +10,25 @@ const services = [
         icon: <Megaphone className="h-8 w-8 text-primary" />,
         title: 'Tư vấn, lên chiến lược Marketing ứng dụng công nghệ AI',
         description: 'Xây dựng chiến lược marketing toàn diện, tận dụng sức mạnh của AI để tối ưu hóa hiệu quả.',
-        href: "/giai-phap#strategy",
+        href: "/giai-phap/chien-luoc",
     },
     {
         icon: <PenTool className="h-8 w-8 text-primary" />,
         title: 'Sáng tạo nội dung và phân phối đa kênh tự động bằng AI',
         description: 'Tự động tạo và phân phối nội dung hấp dẫn trên các nền tảng mạng xã hội, email và website.',
-        href: "/giai-phap#content-creation",
+        href: "/giai-phap/sang-tao-noi-dung",
     },
     {
         icon: <Bot className="h-8 w-8 text-primary" />,
         title: 'Chatbot chăm sóc khách hàng ứng dụng công nghệ AI',
         description: 'Tự động hóa việc tương tác, tư vấn và hỗ trợ khách hàng 24/7, nâng cao trải nghiệm người dùng.',
-        href: "/giai-phap#chatbot",
+        href: "/giai-phap/chatbot",
     },
     {
         icon: <MonitorSmartphone className="h-8 w-8 text-primary" />,
         title: 'Thiết kế Website chuyên nghiệp ứng dụng AI',
         description: 'Xây dựng nền tảng vững chắc để thu hút và chuyển đổi khách hàng tiềm năng từ Google.',
-        href: "/giai-phap#auto-posting",
+        href: "/giai-phap/dang-bai-tu-dong",
     },
 ];
 
@@ -67,3 +67,5 @@ export function ServicesSection() {
     </section>
   );
 }
+
+    
