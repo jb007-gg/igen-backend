@@ -44,8 +44,6 @@ export function Header() {
     isMobile ? "text-black text-lg" : `text-sm ${scrolled ? "text-black" : "text-white"}`
   );
 
-  const authButtonClasses = scrolled ? "text-black" : "text-white";
-
   return (
     <header className={headerClasses}>
       <Link href="/" className="flex items-center justify-center mr-auto" prefetch={false}>
@@ -68,14 +66,9 @@ export function Header() {
                 {link.label}
             </Link>
         ))}
-        <div className="flex gap-2">
-            <Button variant="ghost" asChild className={authButtonClasses}>
-                <Link href="/dang-nhap">Đăng nhập</Link>
-            </Button>
-            <Button variant="outline" asChild className={cn(authButtonClasses, scrolled ? "border-black" : "border-white")}>
-                 <Link href="/dang-ky">Đăng ký</Link>
-            </Button>
-        </div>
+        <Button variant="outline" asChild className={cn("border-primary text-primary hover:bg-[#00FFFF] hover:text-white bg-transparent", scrolled ? 'text-primary border-primary' : 'text-white border-white')}>
+            <Link href="/dang-nhap">Đăng nhập</Link>
+        </Button>
       </nav>
       <div className="lg:hidden ml-auto">
         <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
@@ -105,11 +98,8 @@ export function Header() {
                     ))}
                 </nav>
                 <div className="flex flex-col gap-2">
-                    <Button variant="outline" asChild>
+                    <Button variant="outline" asChild className="border-primary text-primary hover:bg-[#00FFFF] hover:text-white bg-transparent">
                         <Link href="/dang-nhap">Đăng nhập</Link>
-                    </Button>
-                    <Button asChild>
-                         <Link href="/dang-ky">Đăng ký</Link>
                     </Button>
                 </div>
             </div>
