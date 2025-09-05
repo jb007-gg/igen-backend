@@ -33,8 +33,8 @@ export function TestimonialsSection() {
         </h2>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="h-full">
-              <CardContent className="flex flex-col items-center justify-center p-6 text-center space-y-4">
+            <Card key={index} className="flex flex-col">
+              <CardContent className="flex flex-1 flex-col items-center justify-between p-6 text-center space-y-4">
                 <p className="text-lg italic text-muted-foreground">"{testimonial.quote}"</p>
                 <div className="flex items-center gap-4 pt-4">
                     <Avatar>
