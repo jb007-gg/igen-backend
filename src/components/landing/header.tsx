@@ -21,7 +21,7 @@ export function Header() {
             <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium hover:underline underline-offset-4"
+                className="text-sm font-bold hover:underline underline-offset-4"
                 prefetch={false}
             >
                 {link.label}
