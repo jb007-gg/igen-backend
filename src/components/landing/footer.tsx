@@ -1,8 +1,17 @@
+'use client';
+
 import Link from 'next/link';
 import { IGenLogo } from '../icons';
 import { Facebook, Linkedin } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 export function Footer() {
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="bg-[#1A1A1A] text-gray-300 py-12 px-4 md:px-6">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -34,7 +43,7 @@ export function Footer() {
         </div>
       </div>
       <div className="container mx-auto mt-8 border-t border-gray-700 pt-6 text-center text-sm">
-        <p>&copy; {new Date().getFullYear()} iGen Technology. All rights reserved.</p>
+        <p>&copy; {currentYear} iGen Technology. All rights reserved.</p>
       </div>
     </footer>
   );
