@@ -1,15 +1,30 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { PenTool, Globe } from 'lucide-react';
+import { PenTool, Globe, Megaphone } from 'lucide-react';
 
 const services = [
     {
-        icon: <PenTool className="h-6 w-6 text-[#69C9B4]" />,
+        icon: <Megaphone className="h-8 w-8 text-[#69C9B4]" />,
+        title: 'Phân phối Đa kênh Tự động',
+        description: 'Tự động hoá việc phân phối nội dung trên các nền tảng mạng xã hội, email và các kênh khác.',
+    },
+    {
+        icon: <PenTool className="h-8 w-8 text-[#69C9B4]" />,
+        title: 'Sáng tạo Nội dung bằng AI',
+        description: 'Tự động tạo ra các nội dung marketing hấp dẫn, từ bài viết blog đến các bài đăng trên mạng xã hội.',
+    },
+    {
+        icon: <Globe className="h-8 w-8 text-[#69C9B4]" />,
+        title: 'Thiết kế Website chuyên nghiệp',
+        description: 'Xây dựng các trang web và trang đích được tối ưu hóa cho SEO và tỷ lệ chuyển đổi, được hỗ trợ bởi AI.',
+    },
+    {
+        icon: <PenTool className="h-8 w-8 text-[#69C9B4]" />,
         title: 'Sáng tạo nội dung truyền thông bằng AI',
         description: 'Tự động tạo ra các nội dung marketing hấp dẫn, từ bài viết blog đến các bài đăng trên mạng xã hội.',
     },
     {
-        icon: <Globe className="h-6 w-6 text-[#69C9B4]" />,
+        icon: <Globe className="h-8 w-8 text-[#69C9B4]" />,
         title: 'Thiết kế Website chuyên nghiệp ứng dụng AI',
         description: 'Xây dựng các trang web và trang đích được tối ưu hóa cho SEO và tỷ lệ chuyển đổi, được hỗ trợ bởi AI.',
     },
@@ -26,20 +41,20 @@ export function ServicesSection() {
             </h2>
           </div>
         </div>
-        <div className="mx-auto grid max-w-4xl items-stretch gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-12">
+        <div className="mx-auto grid max-w-5xl items-stretch gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-12">
           {services.map((service, index) => (
-            <Card key={index} className="flex flex-col bg-accent border-[#C8E6C9] rounded-lg shadow-none">
+            <Card key={index} className="flex flex-col bg-card border-border rounded-lg shadow-sm">
               <CardHeader>
-                <div className="p-3 bg-[#E0F2F1] rounded-md w-fit">
+                <div className="p-3 bg-primary/10 rounded-md w-fit mx-auto">
                     {service.icon}
                 </div>
               </CardHeader>
-              <CardContent className="flex-grow space-y-2 text-left">
+              <CardContent className="flex-grow space-y-2 text-center">
                 <CardTitle className="font-bold text-xl">{service.title}</CardTitle>
                 <p className="text-muted-foreground">{service.description}</p>
               </CardContent>
               <CardFooter>
-                <Button variant="outline" className="w-full border-[#69C9B4] text-[#69C9B4] hover:bg-[#69C9B4] hover:text-white bg-transparent">
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-[#00FFFF] hover:text-white bg-transparent">
                     Xem thêm
                 </Button>
               </CardFooter>
