@@ -44,9 +44,11 @@ export function Header() {
     isMobile ? "text-black text-lg" : `text-sm ${scrolled ? "text-black" : "text-white"}`
   );
 
+  const authButtonClasses = scrolled ? "text-black" : "text-white";
+
   return (
     <header className={headerClasses}>
-      <Link href="#" className="flex items-center justify-center mr-auto" prefetch={false}>
+      <Link href="/" className="flex items-center justify-center mr-auto" prefetch={false}>
         <IGenLogo className={cn("h-6 w-6", scrolled ? "text-primary" : "text-white")} />
         <span className={cn(
             "ml-2 text-xl font-bold",
@@ -55,7 +57,7 @@ export function Header() {
             iGen Technology
         </span>
       </Link>
-      <nav className="hidden lg:flex gap-4 sm:gap-6">
+      <nav className="hidden lg:flex gap-4 sm:gap-6 items-center">
         {navLinks.map((link) => (
             <Link
                 key={link.href}
@@ -66,8 +68,16 @@ export function Header() {
                 {link.label}
             </Link>
         ))}
+        <div className="flex gap-2">
+            <Button variant="ghost" asChild className={authButtonClasses}>
+                <Link href="/dang-nhap">Đăng nhập</Link>
+            </Button>
+            <Button variant="outline" asChild className={cn(authButtonClasses, scrolled ? "border-black" : "border-white")}>
+                 <Link href="/dang-ky">Đăng ký</Link>
+            </Button>
+        </div>
       </nav>
-      <div className="lg:hidden">
+      <div className="lg:hidden ml-auto">
         <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
           <SheetTrigger asChild>
             <Button variant="ghost" size="icon" className={cn(scrolled ? "text-black" : "text-white", "hover:bg-white/20")}>
@@ -94,6 +104,14 @@ export function Header() {
                         </Link>
                     ))}
                 </nav>
+                <div className="flex flex-col gap-2">
+                    <Button variant="outline" asChild>
+                        <Link href="/dang-nhap">Đăng nhập</Link>
+                    </Button>
+                    <Button asChild>
+                         <Link href="/dang-ky">Đăng ký</Link>
+                    </Button>
+                </div>
             </div>
           </SheetContent>
         </Sheet>
