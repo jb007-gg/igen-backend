@@ -16,6 +16,8 @@ import {
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { saveContactInquiry } from '@/ai/flows/save-contact-inquiry';
+import { useState } from 'react';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Họ và tên phải có ít nhất 2 ký tự.' }),
@@ -25,6 +27,7 @@ const formSchema = z.object({
 
 export function ContactForm() {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -34,13 +37,33 @@ export function ContactForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: 'Gửi thông tin thành công!',
-      description: 'Chúng tôi đã nhận được thông tin của bạn và sẽ liên hệ sớm nhất.',
-    });
-    form.reset();
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true);
+    try {
+      const result = await saveContactInquiry(values);
+      if (result.success) {
+        toast({
+          title: 'Gửi thông tin thành công!',
+          description: 'Chúng tôi đã nhận được thông tin của bạn và sẽ liên hệ sớm nhất.',
+        });
+        form.reset();
+      } else {
+        toast({
+          variant: 'destructive',
+          title: 'Gửi thất bại!',
+          description: 'Đã có lỗi xảy ra. Vui lòng thử lại.',
+        });
+      }
+    } catch (error) {
+       toast({
+        variant: 'destructive',
+        title: 'Gửi thất bại!',
+        description: 'Đã có lỗi xảy ra. Vui lòng thử lại.',
+      });
+      console.error("Failed to save contact inquiry", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -89,8 +112,8 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-          Gửi thông tin
+        <Button type="submit" disabled={isSubmitting} className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+          {isSubmitting ? 'Đang gửi...' : 'Gửi thông tin'}
         </Button>
       </form>
     </Form>
