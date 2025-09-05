@@ -112,23 +112,6 @@ export default function SolutionsPage() {
           </div>
         </section>
 
-        <section id="summary" className="w-full py-12 md:py-24 lg:py-32">
-            <div className="container mx-auto px-4 md:px-6 text-center">
-                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
-                    Tổng kết: Hệ Sinh thái Marketing Khép kín – Sức mạnh của Sự Cộng hưởng
-                </h2>
-                <p className="mx-auto mt-4 max-w-3xl text-muted-foreground md:text-xl">
-                    Bạn không chỉ nhận được các dịch vụ riêng lẻ. Bạn nhận được một cỗ máy marketing khép kín, tự vận hành và khuếch đại lẫn nhau.
-                </p>
-                <div className="mx-auto mt-8 max-w-4xl text-left space-y-4 text-muted-foreground">
-                    <p>✅ Nền tảng Chiến lược vẽ ra con đường đi và mục tiêu cần đến.</p>
-                    <p>✅ Sáng tạo Nội dung AI cung cấp nguồn "nhiên liệu" hình ảnh, video vô hạn và chất lượng cao.</p>
-                    <p>✅ Hệ thống Đăng bài Tự động đưa "nhiên liệu" đó đến với hàng triệu khách hàng tiềm năng.</p>
-                    <p>✅ Chatbot AI Bán hàng đứng ở cuối phễu, sẵn sàng chuyển đổi mọi sự quan tâm thành cơ hội bán hàng.</p>
-                </div>
-            </div>
-        </section>
-
         <section id="cta" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
           <div className="container mx-auto px-4 md:px-6 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
@@ -151,5 +134,3 @@ export default function SolutionsPage() {
     </div>
   );
 }
-
-    
