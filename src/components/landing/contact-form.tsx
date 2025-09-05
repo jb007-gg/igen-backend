@@ -53,7 +53,7 @@ export function ContactForm() {
             <FormItem>
               <FormLabel>Họ và tên</FormLabel>
               <FormControl>
-                <Input placeholder="Nhập họ và tên của bạn" {...field} />
+                <Input placeholder="Nhập họ và tên của bạn" {...field} className="text-black" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -66,7 +66,7 @@ export function ContactForm() {
             <FormItem>
               <FormLabel>Số điện thoại</FormLabel>
               <FormControl>
-                <Input placeholder="Nhập số điện thoại (tùy chọn)" {...field} />
+                <Input placeholder="Nhập số điện thoại (tùy chọn)" {...field} className="text-black" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -81,7 +81,7 @@ export function ContactForm() {
               <FormControl>
                 <Textarea
                   placeholder="Hãy cho chúng tôi biết chúng tôi có thể giúp gì cho bạn"
-                  className="resize-none"
+                  className="resize-none text-black"
                   {...field}
                 />
               </FormControl>
