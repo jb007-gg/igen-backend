@@ -49,14 +49,14 @@ export function EmailCaptureForm() {
                     <Input
                         placeholder="Nhập email của bạn"
                         {...field}
-                        className="bg-white text-black placeholder:text-gray-500"
+                        className="bg-white/90 text-black placeholder:text-gray-600"
                     />
                 </FormControl>
-                <FormMessage className="text-red-200" />
+                <FormMessage className="text-red-300" />
             </FormItem>
             )}
         />
-        <Button type="submit" className="bg-black text-primary hover:bg-black/90">
+        <Button type="submit" className="bg-primary text-primary-foreground hover:bg-primary/90">
             Đăng ký nhận tin
         </Button>
         </form>
