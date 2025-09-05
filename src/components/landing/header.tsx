@@ -4,6 +4,9 @@ import Link from 'next/link';
 import { IGenLogo } from '../icons';
 import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
+import { Button } from '../ui/button';
+import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet';
+import { Menu } from 'lucide-react';
 
 const navLinks = [
     { href: '#about', label: 'Giới thiệu' },
@@ -15,6 +18,7 @@ const navLinks = [
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,15 +34,23 @@ export function Header() {
     };
   }, [scrolled]);
 
+  const headerClasses = cn(
+    "px-4 lg:px-6 h-16 flex items-center fixed top-0 left-0 right-0 z-50 transition-colors duration-300",
+    scrolled ? "bg-white shadow-sm" : "bg-transparent"
+  );
+
+  const linkClasses = (isMobile = false) => cn(
+    "font-bold hover:underline underline-offset-4",
+    isMobile ? "text-black text-lg" : `text-sm ${scrolled ? "text-black" : "text-white"}`
+  );
+
   return (
-    <header className={cn(
-        "px-4 lg:px-6 h-16 flex items-center fixed top-0 left-0 right-0 z-50 transition-colors duration-300",
-        scrolled ? "bg-white shadow-sm" : "bg-transparent"
-    )}>
+    <header className={headerClasses}>
       <Link href="#" className="flex items-center justify-center mr-auto" prefetch={false}>
-        <IGenLogo className={cn("h-6 w-6 text-primary")} />
+        <IGenLogo className={cn("h-6 w-6", scrolled ? "text-primary" : "text-white")} />
         <span className={cn(
-            "ml-2 text-xl font-bold text-primary"
+            "ml-2 text-xl font-bold",
+            scrolled ? "text-primary" : "text-white"
         )}>
             iGen Technology
         </span>
@@ -48,16 +60,44 @@ export function Header() {
             <Link
                 key={link.href}
                 href={link.href}
-                className={cn(
-                    "text-sm font-bold hover:underline underline-offset-4",
-                    scrolled ? "text-black" : "text-white"
-                )}
+                className={linkClasses()}
                 prefetch={false}
             >
                 {link.label}
             </Link>
         ))}
       </nav>
+      <div className="lg:hidden">
+        <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+          <SheetTrigger asChild>
+            <Button variant="ghost" size="icon" className={cn(scrolled ? "text-black" : "text-white", "hover:bg-white/20")}>
+              <Menu className="h-6 w-6" />
+              <span className="sr-only">Open menu</span>
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="right">
+            <div className="flex flex-col gap-6 p-6">
+                <Link href="#" className="flex items-center" prefetch={false} onClick={() => setMobileMenuOpen(false)}>
+                    <IGenLogo className="h-6 w-6 text-primary" />
+                    <span className="ml-2 text-xl font-bold text-primary">iGen Technology</span>
+                </Link>
+                <nav className="flex flex-col gap-4">
+                    {navLinks.map((link) => (
+                        <Link
+                            key={link.href}
+                            href={link.href}
+                            className={linkClasses(true)}
+                            prefetch={false}
+                            onClick={() => setMobileMenuOpen(false)}
+                        >
+                            {link.label}
+                        </Link>
+                    ))}
+                </nav>
+            </div>
+          </SheetContent>
+        </Sheet>
+      </div>
     </header>
   );
 }
