@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Bot, Users, Zap } from 'lucide-react';
+import { Bot, Users, Zap, PenTool, Globe } from 'lucide-react';
 
 const services = [
     {
@@ -17,6 +17,16 @@ const services = [
         icon: <Users className="h-6 w-6 text-primary" />,
         title: 'Tư vấn & Vận hành Trọn gói',
         description: 'Chúng tôi không bán công cụ, chúng tôi là đối tác vận hành hệ thống cho bạn.',
+    },
+    {
+        icon: <PenTool className="h-6 w-6 text-primary" />,
+        title: 'Sáng tạo nội dung truyền thông bằng AI',
+        description: 'Tự động tạo ra các nội dung marketing hấp dẫn, từ bài viết blog đến các bài đăng trên mạng xã hội.',
+    },
+    {
+        icon: <Globe className="h-6 w-6 text-primary" />,
+        title: 'Thiết kế Website chuyên nghiệp ứng dụng AI',
+        description: 'Xây dựng các trang web và trang đích được tối ưu hóa cho SEO và tỷ lệ chuyển đổi, được hỗ trợ bởi AI.',
     },
 ];
 
