@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import { ArrowRight } from 'lucide-react';
 
 export function HeroSection() {
   return (
@@ -16,15 +17,19 @@ export function HeroSection() {
             />
         </div>
       <div className="container relative z-10 mx-auto px-4 md:px-6 text-center text-white">
-        <div className="space-y-4">
-          <h1 className="text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl lg:text-7xl font-headline">
-            Kiến tạo Cỗ máy Marketing Hoàn chỉnh. Giải phóng Chủ Doanh nghiệp.
+        <div className="space-y-6">
+          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline">
+            Kiến tạo Cỗ máy Marketing Hoàn chỉnh. <br />
+            <span className="text-primary">Giải phóng Chủ Doanh nghiệp.</span>
           </h1>
-          <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
+          <p className="mx-auto max-w-[700px] text-gray-300 md:text-lg">
             iGen Technology biến marketing phức tạp thành hệ thống vận hành tự động, hiệu quả và đáng tin cậy, giúp bạn thảnh thơi tập trung vào chuyên môn kinh doanh.
           </p>
           <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-            <Link href="#services">Tìm Hiểu Giải Pháp</Link>
+            <Link href="#services">
+                Tìm Hiểu Giải Pháp
+                <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
           </Button>
         </div>
       </div>
