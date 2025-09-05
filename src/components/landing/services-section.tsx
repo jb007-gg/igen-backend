@@ -1,16 +1,11 @@
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { BrainCircuit, Bot, Share2, Users } from 'lucide-react';
+import { Bot, Users, Monitor } from 'lucide-react';
 
 const services = [
   {
-    icon: <BrainCircuit className="h-8 w-8 text-primary" />,
-    title: 'Sáng tạo Nội dung bằng AI',
-    description: 'Tạo ra nguồn nội dung vô hạn, chuẩn thương hiệu.',
-  },
-  {
-    icon: <Share2 className="h-8 w-8 text-primary" />,
-    title: 'Phân phối Đa kênh Tự động',
-    description: 'Đưa thông điệp của bạn đến đúng khách hàng, đúng thời điểm.',
+    icon: <Monitor className="h-8 w-8 text-primary" />,
+    title: 'Thiết kế Website chuyên nghiệp',
+    description: 'Thiết kế website chuyên nghiệp, tối ưu hóa cho trải nghiệm người dùng và công cụ tìm kiếm.',
   },
   {
     icon: <Bot className="h-8 w-8 text-primary" />,
@@ -35,7 +30,7 @@ export function ServicesSection() {
             </h2>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:grid-cols-2 xl:grid-cols-4 mt-12">
+        <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:grid-cols-3 mt-12">
           {services.map((service, index) => (
             <Card key={index} className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader className="items-center text-center">
