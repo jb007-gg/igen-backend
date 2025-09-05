@@ -1,18 +1,13 @@
-import Image from 'next/image';
 import { EmailCaptureForm } from "./email-capture-form";
 
 export function CoursesSection() {
   return (
-    <section id="courses" className="relative w-full py-12 md:py-24 lg:py-32 text-white">
-      <div className="absolute inset-0 bg-black z-0">
-        <Image
-            src="https://picsum.photos/1920/1080"
-            alt="AI technology background"
-            data-ai-hint="abstract tech"
-            fill
-            className="object-cover opacity-10"
-        />
-      </div>
+    <section 
+      id="courses" 
+      className="relative w-full py-12 md:py-24 lg:py-32 text-white bg-cover bg-center bg-fixed"
+      style={{ backgroundImage: "url('https://picsum.photos/1920/1080')" }}
+    >
+      <div className="absolute inset-0 bg-black/80 z-0"></div>
       <div className="container relative z-10 mx-auto grid items-center justify-center gap-4 px-4 text-center md:px-6">
         <div className="space-y-3">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
