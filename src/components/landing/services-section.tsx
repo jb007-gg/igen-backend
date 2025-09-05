@@ -26,7 +26,7 @@ const services = [
         icon: <Globe className="h-8 w-8 text-primary" />,
         title: 'Thiết kế Website chuyên nghiệp ứng dụng AI',
         description: 'Xây dựng các trang web và trang đích được tối ưu hóa cho SEO và tỷ lệ chuyển đổi, được hỗ trợ bởi AI.',
-        href: "/giai-phap",
+        href: "/giai-phap#auto-posting",
     },
 ];
 
