@@ -31,7 +31,7 @@ export function ServicesSection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline text-foreground">
-              Giải pháp Marketing Toàn diện với AI
+              Các dịch vụ ứng dụng công nghệ AI
             </h2>
           </div>
         </div>
