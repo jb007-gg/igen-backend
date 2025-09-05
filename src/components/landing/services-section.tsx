@@ -1,27 +1,32 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { PenTool, Globe, Megaphone, Bot } from 'lucide-react';
+import Link from 'next/link';
 
 const services = [
     {
         icon: <Megaphone className="h-8 w-8 text-primary" />,
         title: 'Tư vấn, lên chiến lược Marketing ứng dụng công nghệ AI',
         description: 'Xây dựng chiến lược marketing toàn diện, tận dụng sức mạnh của AI để tối ưu hóa hiệu quả.',
+        href: "/giai-phap#strategy",
     },
     {
         icon: <PenTool className="h-8 w-8 text-primary" />,
         title: 'Sáng tạo nội dung và phân phối đa kênh tự động bằng AI',
         description: 'Tự động tạo và phân phối nội dung hấp dẫn trên các nền tảng mạng xã hội, email và website.',
+        href: "/giai-phap#content-creation",
     },
     {
         icon: <Bot className="h-8 w-8 text-primary" />,
         title: 'Chatbot chăm sóc khách hàng ứng dụng công nghệ AI',
         description: 'Tự động hóa việc tương tác, tư vấn và hỗ trợ khách hàng 24/7, nâng cao trải nghiệm người dùng.',
+        href: "/giai-phap#chatbot",
     },
     {
         icon: <Globe className="h-8 w-8 text-primary" />,
         title: 'Thiết kế Website chuyên nghiệp ứng dụng AI',
         description: 'Xây dựng các trang web và trang đích được tối ưu hóa cho SEO và tỷ lệ chuyển đổi, được hỗ trợ bởi AI.',
+        href: "/giai-phap",
     },
 ];
 
@@ -49,8 +54,8 @@ export function ServicesSection() {
                 <p className="text-muted-foreground">{service.description}</p>
               </CardContent>
               <CardFooter>
-                <Button variant="outline" className="w-full border-primary text-primary hover:bg-[#00FFFF] hover:text-white bg-transparent">
-                    Xem thêm
+                <Button variant="outline" className="w-full border-primary text-primary hover:bg-[#00FFFF] hover:text-white bg-transparent" asChild>
+                    <Link href={service.href}>Xem thêm</Link>
                 </Button>
               </CardFooter>
             </Card>
