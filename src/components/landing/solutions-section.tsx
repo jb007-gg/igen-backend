@@ -1,6 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { CheckCircle } from 'lucide-react';
 import Image from 'next/image';
+import { Button } from '../ui/button';
+import Link from 'next/link';
 
 const solutions = [
   {
@@ -44,6 +46,9 @@ export function SolutionsSection() {
                 </div>
               ))}
             </div>
+            <Button asChild variant="outline" className="border-primary text-primary hover:bg-[#00FFFF] hover:text-white bg-transparent">
+              <Link href="#contact">Tìm hiểu thêm</Link>
+            </Button>
           </div>
           <div className="flex items-center justify-center">
             <Image
