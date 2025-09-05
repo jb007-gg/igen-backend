@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { CheckCircle } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const websitePoints = [
   {
@@ -95,5 +94,3 @@ export default function AutoPostingPage() {
     </div>
   );
 }
-
-    
