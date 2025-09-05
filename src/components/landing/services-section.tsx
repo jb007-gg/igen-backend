@@ -1,27 +1,22 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { PenTool, Globe, Megaphone } from 'lucide-react';
+import { PenTool, Globe, Megaphone, Bot } from 'lucide-react';
 
 const services = [
     {
         icon: <Megaphone className="h-8 w-8 text-[#69C9B4]" />,
-        title: 'Phân phối Đa kênh Tự động',
-        description: 'Tự động hoá việc phân phối nội dung trên các nền tảng mạng xã hội, email và các kênh khác.',
+        title: 'Tư vấn, lên chiến lược Marketing ứng dụng công nghệ AI',
+        description: 'Xây dựng chiến lược marketing toàn diện, tận dụng sức mạnh của AI để tối ưu hóa hiệu quả.',
     },
     {
         icon: <PenTool className="h-8 w-8 text-[#69C9B4]" />,
-        title: 'Sáng tạo Nội dung bằng AI',
-        description: 'Tự động tạo ra các nội dung marketing hấp dẫn, từ bài viết blog đến các bài đăng trên mạng xã hội.',
+        title: 'Sáng tạo nội dung và phân phối đa kênh tự động bằng AI',
+        description: 'Tự động tạo và phân phối nội dung hấp dẫn trên các nền tảng mạng xã hội, email và website.',
     },
     {
-        icon: <Globe className="h-8 w-8 text-[#69C9B4]" />,
-        title: 'Thiết kế Website chuyên nghiệp',
-        description: 'Xây dựng các trang web và trang đích được tối ưu hóa cho SEO và tỷ lệ chuyển đổi, được hỗ trợ bởi AI.',
-    },
-    {
-        icon: <PenTool className="h-8 w-8 text-[#69C9B4]" />,
-        title: 'Sáng tạo nội dung truyền thông bằng AI',
-        description: 'Tự động tạo ra các nội dung marketing hấp dẫn, từ bài viết blog đến các bài đăng trên mạng xã hội.',
+        icon: <Bot className="h-8 w-8 text-[#69C9B4]" />,
+        title: 'Chatbot chăm sóc khách hàng ứng dụng công nghệ AI',
+        description: 'Tự động hóa việc tương tác, tư vấn và hỗ trợ khách hàng 24/7, nâng cao trải nghiệm người dùng.',
     },
     {
         icon: <Globe className="h-8 w-8 text-[#69C9B4]" />,
@@ -41,7 +36,7 @@ export function ServicesSection() {
             </h2>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-stretch gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-12">
+        <div className="mx-auto grid max-w-5xl items-stretch gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 mt-12">
           {services.map((service, index) => (
             <Card key={index} className="flex flex-col bg-card border-border rounded-lg shadow-sm">
               <CardHeader>
