@@ -49,7 +49,7 @@ export function Footer() {
         </div>
       </div>
       <div className="container mx-auto mt-8 border-t border-border pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
-        <p>&copy; {currentYear} iGen Technology. Bảo lưu mọi quyền.</p>
+        <p>&copy; {currentYear ?? '...'} iGen Technology. Bảo lưu mọi quyền.</p>
         <div className="flex gap-4 mt-4 md:mt-0">
             <Link href="#" className="hover:text-primary transition-colors" prefetch={false}>Chính sách bảo mật</Link>
             <Link href="#" className="hover:text-primary transition-colors" prefetch={false}>Điều khoản dịch vụ</Link>
