@@ -47,7 +47,7 @@ export function SolutionsSection() {
               ))}
             </div>
             <div className="flex justify-center">
-              <Button asChild className="bg-[#00FFFF] text-primary-foreground hover:bg-[#00FFFF]/90 group">
+              <Button asChild className="bg-[#00d3f3] text-primary-foreground group">
                 <Link href="/giai-phap">
                     Tìm hiểu thêm
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />

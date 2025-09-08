@@ -59,7 +59,7 @@ export function Header() {
   );
 
   const buttonClasses = cn(
-    "border-[#00FFFF] hover:bg-[#00FFFF] hover:text-white bg-transparent",
+    "border-[#00d3f3] hover:bg-[#00d3f3] hover:text-white bg-transparent",
     isTransparent ? 'text-white' : 'text-primary'
   );
   
@@ -77,8 +77,8 @@ export function Header() {
   return (
     <header className={headerClasses}>
       <Link href="/" className="flex items-center justify-center mr-auto" prefetch={false}>
-        <IGenLogo className="h-6 w-6 text-[#00FFFF]" />
-        <span className="ml-2 text-xl font-bold text-[#00FFFF]">
+        <IGenLogo className="h-6 w-6 text-[#00d3f3]" />
+        <span className="ml-2 text-xl font-bold text-[#00d3f3]">
             iGen Technology
         </span>
       </Link>
