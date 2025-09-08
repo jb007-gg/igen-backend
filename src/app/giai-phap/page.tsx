@@ -98,7 +98,7 @@ export default function SolutionsPage() {
                   
                   <div className={cn(
                     "absolute z-30 flex items-center justify-center transform p-4",
-                    index % 2 === 0 ? 'right-1/2 translate-x-[100%]' : 'left-1/2 -translate-x-[100%]'
+                    index % 2 === 0 ? 'right-1/2 translate-x-[calc(100%)]' : 'left-1/2 -translate-x-[calc(100%)]'
                   )}>
                     <div className={cn("absolute h-0 w-0 border-y-[60px] border-y-transparent",
                       index % 2 === 0 ? "border-r-[40px]" : "border-l-[40px]",
@@ -107,13 +107,13 @@ export default function SolutionsPage() {
                      <div className={cn(
                       "relative flex h-[120px] w-64 items-center justify-between p-4",
                       step.color, step.textColor,
-                      index % 2 === 0 ? 'flex-row-reverse pr-12' : 'pl-12'
+                      index % 2 === 0 ? 'flex-row-reverse' : ''
                     )}>
                       <div className={cn("absolute h-0 w-0 border-y-[60px] border-y-transparent", 
                         index % 2 === 0 ? "right-0 border-r-[40px] border-r-background" : "left-0 border-l-[40px] border-l-background"
                       )}></div>
-                      <div className="flex-shrink-0">{step.icon}</div>
-                      <h2 className={cn("text-lg font-bold", index % 2 === 0 ? 'text-right' : 'text-left')}>{step.title}</h2>
+                      <div className={cn("flex-shrink-0", index % 2 === 0 ? 'ml-auto mr-4' : 'mr-auto ml-4' )}>{step.icon}</div>
+                      <h2 className={cn("text-lg font-bold w-full", index % 2 === 0 ? 'text-right mr-10' : 'text-left ml-10')}>{step.title}</h2>
                     </div>
                   </div>
                 </div>
