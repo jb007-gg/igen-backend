@@ -22,10 +22,12 @@ export function Header() {
   const pathname = usePathname();
   const isHomePage = pathname === '/';
   
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(!isHomePage);
+  const [mounted, setMounted] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     if (!isHomePage) {
       setScrolled(true);
       return;
@@ -33,9 +35,7 @@ export function Header() {
 
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
-      if (isScrolled !== scrolled) {
-        setScrolled(isScrolled);
-      }
+      setScrolled(isScrolled);
     };
 
     document.addEventListener('scroll', handleScroll);
@@ -44,16 +44,28 @@ export function Header() {
     return () => {
       document.removeEventListener('scroll', handleScroll);
     };
-  }, [scrolled, isHomePage]);
+  }, [isHomePage]);
+  
+  const isTransparent = mounted && isHomePage && !scrolled;
 
   const headerClasses = cn(
     "px-4 lg:px-6 h-16 flex items-center fixed top-0 left-0 right-0 z-50 transition-colors duration-300",
-    scrolled ? "bg-white shadow-sm" : "bg-transparent"
+    isTransparent ? "bg-transparent" : "bg-white shadow-sm"
   );
 
   const linkClasses = (isMobile = false) => cn(
     "font-bold hover:underline underline-offset-4",
-    isMobile ? "text-black text-lg" : `text-sm ${scrolled ? "text-black" : "text-white"}`
+    isMobile ? "text-black text-lg" : `text-sm ${isTransparent ? "text-white" : "text-black"}`
+  );
+
+  const buttonClasses = cn(
+    "border-[#00FFFF] hover:bg-[#00FFFF] hover:text-white bg-transparent",
+    isTransparent ? 'text-white' : 'text-primary'
+  );
+  
+  const mobileMenuButtonClasses = cn(
+    isTransparent ? "text-white" : "text-black",
+    "hover:bg-white/20"
   );
 
   return (
@@ -78,10 +90,7 @@ export function Header() {
         <Button 
           variant="outline" 
           asChild 
-          className={cn(
-            "border-[#00FFFF] hover:bg-[#00FFFF] hover:text-white bg-transparent",
-            scrolled ? 'text-primary' : 'text-white'
-          )}
+          className={buttonClasses}
         >
             <Link href="/dang-nhap">Đăng nhập</Link>
         </Button>
@@ -89,7 +98,7 @@ export function Header() {
       <div className="lg:hidden ml-auto">
         <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className={cn(scrolled ? "text-black" : "text-white", "hover:bg-white/20")}>
+            <Button variant="ghost" size="icon" className={mobileMenuButtonClasses}>
               <Menu className="h-6 w-6" />
               <span className="sr-only">Open menu</span>
             </Button>
