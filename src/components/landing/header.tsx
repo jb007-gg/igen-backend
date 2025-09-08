@@ -19,20 +19,13 @@ const navLinks = [
 ];
 
 export function Header() {
-  const pathname = usePathname();
-  const isHomePage = pathname === '/';
-  
   const [scrolled, setScrolled] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-    if (!isHomePage) {
-      setScrolled(true);
-      return;
-    }
-
+    
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
       setScrolled(isScrolled);
@@ -44,7 +37,7 @@ export function Header() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [isHomePage]);
+  }, []);
   
   if (!mounted) {
     return (
@@ -52,7 +45,7 @@ export function Header() {
     );
   }
 
-  const isTransparent = isHomePage && !scrolled;
+  const isTransparent = !scrolled;
 
   const headerClasses = cn(
     "px-4 lg:px-6 h-16 flex items-center fixed top-0 left-0 right-0 z-50 transition-colors duration-300",
