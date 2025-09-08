@@ -7,19 +7,19 @@ import { Star } from 'lucide-react';
 const testimonials = [
   {
     quote: "iGen Technology đã thay đổi hoàn toàn cách chúng tôi tiếp cận marketing. Hệ thống tự động của họ giúp chúng tôi tiết kiệm hàng chục giờ mỗi tuần.",
-    name: 'Nguyễn Văn A',
+    name: 'Nguyễn Minh Tuấn',
     company: 'CEO, ABC Corp',
     avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026704d',
   },
   {
     quote: "Các giải pháp AI rất thông minh và hiệu quả. Đội ngũ hỗ trợ thì chuyên nghiệp và thấu hiểu. Rất khuyến khích!",
-    name: 'Trần Thị B',
+    name: 'Trần Ngọc Lan',
     company: 'Marketing Manager, XYZ Ltd.',
     avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026705d',
   },
   {
     quote: "Nhờ có iGen, chúng tôi đã có thể tập trung hoàn toàn vào sản phẩm cốt lõi của mình mà không phải lo lắng về việc tìm kiếm khách hàng mới.",
-    name: 'Lê Văn C',
+    name: 'Lê Quốc Hùng',
     company: 'Founder, Startup FastGo',
     avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026706d',
   },
