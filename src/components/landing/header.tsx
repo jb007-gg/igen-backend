@@ -11,8 +11,8 @@ import { Menu } from 'lucide-react';
 
 const navLinks = [
     { href: '/#about', label: 'Giới thiệu' },
-    { href: '/giai-phap', label: 'Giải pháp' },
     { href: '/#services', label: 'Dịch vụ' },
+    { href: '/giai-phap', label: 'Giải pháp' },
     { href: '/#courses', label: 'Khóa học' },
     { href: '/#testimonials', label: 'Nhận xét' },
     { href: '/#contact', label: 'Liên hệ' },
@@ -46,7 +46,13 @@ export function Header() {
     };
   }, [isHomePage]);
   
-  const isTransparent = mounted && isHomePage && !scrolled;
+  if (!mounted) {
+    return (
+      <header className="px-4 lg:px-6 h-16 flex items-center fixed top-0 left-0 right-0 z-50 bg-transparent lg:bg-white lg:shadow-sm" />
+    );
+  }
+
+  const isTransparent = isHomePage && !scrolled;
 
   const headerClasses = cn(
     "px-4 lg:px-6 h-16 flex items-center fixed top-0 left-0 right-0 z-50 transition-colors duration-300",
@@ -59,8 +65,8 @@ export function Header() {
   );
 
   const buttonClasses = cn(
-    "bg-primary text-primary-foreground hover:bg-primary/90",
-    isTransparent ? 'border-primary text-white' : 'border-primary text-primary-foreground'
+    "bg-primary hover:bg-primary/90",
+    isTransparent ? 'border border-white text-white' : 'border border-primary text-primary-foreground'
   );
   
   const mobileMenuButtonClasses = cn(
@@ -68,11 +74,6 @@ export function Header() {
     "hover:bg-white/20"
   );
   
-  if (!mounted) {
-    return (
-      <header className="px-4 lg:px-6 h-16 flex items-center fixed top-0 left-0 right-0 z-50 bg-transparent lg:bg-white lg:shadow-sm" />
-    );
-  }
 
   return (
     <header className={headerClasses}>
@@ -94,7 +95,6 @@ export function Header() {
             </Link>
         ))}
         <Button 
-          variant="outline" 
           asChild 
           className={buttonClasses}
         >
