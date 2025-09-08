@@ -8,7 +8,7 @@ export function HeroSection() {
     <section className="relative w-full min-h-[100vh] flex flex-col items-center justify-center pt-24 pb-12 text-white">
       <div className="absolute inset-0 bg-black z-0">
         <Image
-          src="https://images.unsplash.com/photo-1666597107756-ef489e9f1f09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxM3x8YWl8ZW58MHx8fHwxNzU3MzAzMzU1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+          src="https://images.unsplash.com/photo-1597733336794-12d05021d510?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyMHx8dGVjaG5vbG9neXxlbnwwfHx8fDE3NTczMDM1MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
           alt="Abstract technology background"
           data-ai-hint="abstract technology"
           fill
