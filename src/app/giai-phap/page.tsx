@@ -122,12 +122,12 @@ export default function SolutionsPage() {
           </div>
         </section>
 
-        <section id="cta" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
+        <section id="cta" className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
           <div className="container mx-auto px-4 md:px-6 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
                 Sẵn sàng Kiến tạo Cỗ máy Tăng trưởng?
             </h2>
-            <p className="mx-auto mt-4 max-w-3xl text-muted-foreground md:text-xl">
+            <p className="mx-auto mt-4 max-w-3xl text-gray-300 md:text-xl">
               Đã đến lúc ngừng làm marketing rời rạc. Hãy bắt đầu kiến tạo cỗ máy tăng trưởng của riêng bạn ngay hôm nay.
             </p>
              <div className="mt-8">
