@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { CheckCircle } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const contentCreationPoints = [
   {
@@ -34,12 +35,21 @@ export default function ContentCreationPage() {
     <div className="flex min-h-[100dvh] flex-col bg-background">
       <Header />
       <main className="flex-1">
-        <section className="w-full py-20 md:py-32 lg:py-40 bg-primary/10">
-          <div className="container mx-auto px-4 md:px-6 text-center">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl font-headline text-foreground">
+        <section className="relative w-full py-20 md:py-32 lg:py-40 text-white">
+          <div className="absolute inset-0 bg-black z-0">
+            <Image
+              src="https://picsum.photos/1920/1080"
+              alt="Content creation background"
+              data-ai-hint="content creation"
+              fill
+              className="object-cover opacity-20"
+            />
+          </div>
+          <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl font-headline">
               Sáng tạo Nội dung bằng AI: Giải pháp "Studio Ảo"
             </h1>
-            <p className="mx-auto mt-4 max-w-[800px] text-muted-foreground md:text-xl">
+            <p className="mx-auto mt-4 max-w-[800px] text-gray-300 md:text-xl">
               Nguồn "Nhiên liệu" Vô hạn cho Cỗ máy Marketing. Sau khi có chiến lược, chúng ta cần nguồn nguyên liệu để triển khai.
             </p>
           </div>
