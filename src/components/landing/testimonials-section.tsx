@@ -21,7 +21,7 @@ const testimonials = [
     quote: "Nhờ có iGen, chúng tôi đã có thể tập trung hoàn toàn vào sản phẩm cốt lõi của mình mà không phải lo lắng về việc tìm kiếm khách hàng mới.",
     name: 'Lê Quốc Hùng',
     company: 'Founder, Startup FastGo',
-    avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026706d',
+    avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026706f',
   },
 ];
 
