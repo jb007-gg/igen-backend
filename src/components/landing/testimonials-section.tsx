@@ -9,19 +9,19 @@ const testimonials = [
     quote: "iGen Technology đã thay đổi hoàn toàn cách chúng tôi tiếp cận marketing. Hệ thống tự động của họ giúp chúng tôi tiết kiệm hàng chục giờ mỗi tuần.",
     name: 'Nguyễn Minh Tuấn',
     company: 'CEO, ABC Corp',
-    avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb3J0cmFpdCUyMG1hbGV8ZW58MHx8fHwxNzU3MzE0MzA1fDA&ixlib=rb-4.1.0&q=80&w=400',
+    avatar: 'https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwb3J0cmFpdCUyMG1hbGV8ZW58MHx8fHwxNzU3MzE0MzA1fDA&ixlib=rb-4.1.0&q=80&w=400',
   },
   {
     quote: "Các giải pháp AI rất thông minh và hiệu quả. Đội ngũ hỗ trợ thì chuyên nghiệp và thấu hiểu. Rất khuyến khích!",
     name: 'Trần Ngọc Lan',
     company: 'Marketing Manager, XYZ Ltd.',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMGZlbWFsZXxlbnwwfHx8fDE3NTczMTQzMzR8MA&ixlib=rb-4.1.0&q=80&w=400',
+    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdCUyMGZlbWFsZXxlbnwwfHx8fDE3NTczMTQzMzR8MA&ixlib=rb-4.1.0&q=80&w=400',
   },
   {
     quote: "Nhờ có iGen, chúng tôi đã có thể tập trung hoàn toàn vào sản phẩm cốt lõi của mình mà không phải lo lắng về việc tìm kiếm khách hàng mới.",
     name: 'Lê Quốc Hùng',
     company: 'Founder, Startup FastGo',
-    avatar: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdCUyMG1hbGV8ZW58MHx8fHwxNzU3MzE0MzA1fDA&ixlib=rb-4.1.0&q=80&w=400',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwb3J0cmFpdCUyMG1hbGV8ZW58MHx8fHwxNzU3MzE0MzA1fDA&ixlib=rb-4.1.0&q=80&w=400',
   },
 ];
 
