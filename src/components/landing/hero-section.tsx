@@ -19,8 +19,8 @@ export function HeroSection() {
       <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
         <div className="space-y-6">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-5xl lg:text-6xl font-headline">
-            Kiến tạo Cỗ máy Marketing Hoàn chỉnh. <br />
-            <span className="text-[#00d3f3]">Giải phóng Chủ Doanh nghiệp.</span>
+            Kiến tạo Cỗ máy Marketing Hoàn chỉnh <br />
+            <span className="text-[#00d3f3]">Giải phóng Chủ Doanh nghiệp</span>
           </h1>
           <p className="mx-auto max-w-[900px] text-gray-300 md:text-lg">
             iGen Technology biến marketing phức tạp thành hệ thống vận hành tự động, hiệu quả và đáng tin cậy, giúp bạn thảnh thơi tập trung vào chuyên môn kinh doanh.
