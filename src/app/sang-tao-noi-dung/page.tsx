@@ -38,7 +38,7 @@ export default function ContentCreationPage() {
         <section className="relative w-full min-h-screen flex items-center justify-center text-white">
           <div className="absolute inset-0 bg-black z-0">
             <Image
-              src="https://images.unsplash.com/photo-1598476793884-0e7afd57b92e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxDUkVBVFRJVkV8ZW58MHx8fHwxNzU3MzA0MTQxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+              src="https://images.unsplash.com/photo-1531379410502-63bfe8cdaf6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjcmVhdGl2ZXxlbnwwfHx8fDE3NTczMDQyMDR8MA&ixlib=rb-4.1.0&q=80&w=1080"
               alt="Content creation background"
               data-ai-hint="content creation"
               fill
