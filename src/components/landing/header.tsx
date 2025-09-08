@@ -22,7 +22,7 @@ export function Header() {
   const pathname = usePathname();
   const isHomePage = pathname === '/';
   
-  const [scrolled, setScrolled] = useState(!isHomePage);
+  const [scrolled, setScrolled] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -38,11 +38,11 @@ export function Header() {
       setScrolled(isScrolled);
     };
 
-    document.addEventListener('scroll', handleScroll);
-    handleScroll(); 
+    handleScroll();
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      document.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [isHomePage]);
   
@@ -67,6 +67,12 @@ export function Header() {
     isTransparent ? "text-white" : "text-black",
     "hover:bg-white/20"
   );
+  
+  if (!mounted) {
+    return (
+      <header className="px-4 lg:px-6 h-16 flex items-center fixed top-0 left-0 right-0 z-50 bg-transparent lg:bg-white lg:shadow-sm" />
+    );
+  }
 
   return (
     <header className={headerClasses}>
