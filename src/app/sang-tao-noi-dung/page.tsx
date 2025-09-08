@@ -35,7 +35,7 @@ export default function ContentCreationPage() {
     <div className="flex min-h-[100dvh] flex-col bg-background">
       <Header />
       <main className="flex-1">
-        <section className="relative w-full py-20 md:py-32 lg:py-40 text-white">
+        <section className="relative w-full min-h-screen flex items-center justify-center text-white">
           <div className="absolute inset-0 bg-black z-0">
             <Image
               src="https://picsum.photos/1920/1080"
