@@ -61,7 +61,7 @@ export function SolutionsSection() {
               width="600"
               height="500"
               alt="Marketing Solution Diagram"
-              data-ai-hint="marketing system"
+              data-ai-hint="Artificial intelligence"
               className="overflow-hidden rounded-xl object-cover"
             />
           </div>
