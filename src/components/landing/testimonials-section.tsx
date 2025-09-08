@@ -15,7 +15,7 @@ const testimonials = [
     quote: "Các giải pháp AI rất thông minh và hiệu quả. Đội ngũ hỗ trợ thì chuyên nghiệp và thấu hiểu. Rất khuyến khích!",
     name: 'Trần Ngọc Lan',
     company: 'Marketing Manager, XYZ Ltd.',
-    avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026705d',
+    avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026707e',
   },
   {
     quote: "Nhờ có iGen, chúng tôi đã có thể tập trung hoàn toàn vào sản phẩm cốt lõi của mình mà không phải lo lắng về việc tìm kiếm khách hàng mới.",
