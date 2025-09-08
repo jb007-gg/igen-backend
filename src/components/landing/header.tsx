@@ -60,7 +60,7 @@ export function Header() {
 
   const buttonClasses = cn(
     "bg-primary text-primary-foreground hover:bg-primary/90",
-    isTransparent ? 'border border-white text-white' : 'border-primary text-primary-foreground'
+    isTransparent ? 'border-primary text-white' : 'border-primary text-primary-foreground'
   );
   
   const mobileMenuButtonClasses = cn(
