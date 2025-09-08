@@ -112,8 +112,8 @@ export default function SolutionsPage() {
                       <div className={cn("absolute h-0 w-0 border-y-[60px] border-y-transparent", 
                         index % 2 === 0 ? "right-0 border-r-[40px] border-r-background" : "left-0 border-l-[40px] border-l-background"
                       )}></div>
-                      <div className={cn("flex-shrink-0", index % 2 === 0 ? 'ml-auto mr-4' : 'mr-auto ml-4' )}>{step.icon}</div>
-                      <h2 className={cn("text-lg font-bold w-full", index % 2 === 0 ? 'text-right mr-10' : 'text-left ml-10')}>{step.title}</h2>
+                      <div className={cn("flex-shrink-0", index % 2 === 0 ? 'ml-auto mr-2' : 'mr-auto ml-2' )}>{step.icon}</div>
+                      <h2 className={cn("text-lg font-bold w-full", index % 2 === 0 ? 'text-right mr-6' : 'text-left ml-6')}>{step.title}</h2>
                     </div>
                   </div>
                 </div>
