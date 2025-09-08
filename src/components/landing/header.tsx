@@ -11,8 +11,8 @@ import { Menu } from 'lucide-react';
 
 const navLinks = [
     { href: '/#about', label: 'Giới thiệu' },
-    { href: '/#solutions', label: 'Giải pháp' },
     { href: '/#services', label: 'Dịch vụ' },
+    { href: '/#solutions', label: 'Giải pháp' },
     { href: '/#courses', label: 'Khóa học' },
     { href: '/#testimonials', label: 'Nhận xét' },
     { href: '/#contact', label: 'Liên hệ' },
