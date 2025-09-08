@@ -45,7 +45,7 @@ export default function WebsiteDesignPage() {
         <section className="relative w-full min-h-screen flex items-center justify-center text-white">
           <div className="absolute inset-0 bg-black z-0">
             <Image
-              src="https://images.unsplash.com/photo-1561070791-36c11767b26a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyMHx8ZGVzaWdufGVufDB8fHx8MTc1NzMwNDM4Nnww&ixlib=rb-4.1.0&q=80&w=1080"
+              src="https://images.unsplash.com/photo-1542744094-3a31f272c490?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3ZWIlMjBkZXNpZ258ZW58MHx8fHwxNzU3MzA0NTgxfDA&ixlib=rb-4.1.0&q=80&w=1080"
               alt="Website design background"
               data-ai-hint="website design"
               fill
