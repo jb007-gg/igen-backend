@@ -2,6 +2,7 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Star } from 'lucide-react';
 
 const testimonials = [
   {
@@ -35,7 +36,12 @@ export function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="flex flex-col">
               <CardContent className="flex flex-1 flex-col items-center justify-between p-6 text-center space-y-4">
-                <p className="text-lg italic text-muted-foreground">"{testimonial.quote}"</p>
+                <div className="flex space-x-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-lg italic text-muted-foreground flex-grow">"{testimonial.quote}"</p>
                 <div className="flex items-center gap-4 pt-4">
                     <Avatar>
                         <AvatarImage src={testimonial.avatar} alt={testimonial.name} />

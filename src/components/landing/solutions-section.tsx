@@ -29,7 +29,7 @@ export function SolutionsSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-foreground">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-4xl font-headline text-foreground">
               Giải pháp Marketing toàn diện ứng dụng công nghệ AI
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
@@ -47,7 +47,7 @@ export function SolutionsSection() {
               ))}
             </div>
             <div className="flex justify-center">
-              <Button asChild className="bg-[#00d3f3] text-primary-foreground group">
+              <Button asChild className="bg-[#00d3f3] text-black hover:bg-[#00d3f3]/90 group">
                 <Link href="/giai-phap">
                     Tìm hiểu thêm
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />

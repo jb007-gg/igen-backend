@@ -18,14 +18,14 @@ export function HeroSection() {
       </div>
       <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
         <div className="space-y-6">
-          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline">
+          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-5xl lg:text-6xl font-headline">
             Kiến tạo Cỗ máy Marketing Hoàn chỉnh. <br />
-            <span className="text-primary">Giải phóng Chủ Doanh nghiệp.</span>
+            <span className="text-[#00d3f3]">Giải phóng Chủ Doanh nghiệp.</span>
           </h1>
-          <p className="mx-auto max-w-[700px] text-gray-300 md:text-lg">
+          <p className="mx-auto max-w-[900px] text-gray-300 md:text-lg">
             iGen Technology biến marketing phức tạp thành hệ thống vận hành tự động, hiệu quả và đáng tin cậy, giúp bạn thảnh thơi tập trung vào chuyên môn kinh doanh.
           </p>
-          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 group">
+          <Button asChild size="lg" className="bg-[#00d3f3] text-primary-foreground hover:bg-[#00d3f3]/90 group">
             <Link href="#services">
                 Tìm Hiểu Giải Pháp
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
