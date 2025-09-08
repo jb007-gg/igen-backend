@@ -46,7 +46,7 @@ export default function ChatbotPage() {
         <section className="relative w-full py-20 md:py-32 lg:py-40 text-white">
           <div className="absolute inset-0 bg-black z-0">
             <Image
-              src="https://picsum.photos/1920/1080"
+              src="https://images.unsplash.com/photo-1684369175809-f9642140a1bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxDaGF0Ym90fGVufDB8fHx8MTc1NzMwMzczNHww&ixlib=rb-4.1.0&q=80&w=1080"
               alt="Chatbot technology background"
               data-ai-hint="chatbot technology"
               fill
