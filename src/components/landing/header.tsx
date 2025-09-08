@@ -11,8 +11,8 @@ import { Menu } from 'lucide-react';
 
 const navLinks = [
     { href: '/#about', label: 'Giới thiệu' },
-    { href: '/#solutions', label: 'Giải pháp' },
     { href: '/#services', label: 'Dịch vụ' },
+    { href: '/#solutions', label: 'Giải pháp' },
     { href: '/#courses', label: 'Khóa học' },
     { href: '/#testimonials', label: 'Nhận xét' },
     { href: '/#contact', label: 'Liên hệ' },
@@ -22,6 +22,7 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     setMounted(true);
@@ -45,7 +46,8 @@ export function Header() {
     );
   }
 
-  const isTransparent = !scrolled;
+  const isHomePage = pathname === '/';
+  const isTransparent = isHomePage && !scrolled;
 
   const headerClasses = cn(
     "px-4 lg:px-6 h-16 flex items-center fixed top-0 left-0 right-0 z-50 transition-colors duration-300",
