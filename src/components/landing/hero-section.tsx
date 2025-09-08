@@ -33,15 +33,6 @@ export function HeroSection() {
           </Button>
         </div>
       </div>
-      <div className="container relative z-10 mx-auto px-4 md:px-6 mt-20 text-center">
-        <div className="w-full max-w-4xl mx-auto bg-cyan-900/40 rounded-lg p-8 flex flex-col items-center justify-center space-y-4">
-          <div className="relative flex items-center justify-center w-24 h-24">
-            <div className="absolute w-full h-full bg-cyan-500 rounded-full opacity-30 animate-ping"></div>
-            <div className="relative w-12 h-12 bg-cyan-500 rounded-full"></div>
-          </div>
-          <p className="text-sm text-gray-300">Hình ảnh minh họa hệ thống AI Marketing</p>
-        </div>
-      </div>
     </section>
   );
 }
