@@ -52,7 +52,7 @@ export default function SolutionsPage() {
         <section className="relative w-full min-h-screen flex items-center justify-center text-white">
             <div className="absolute inset-0 bg-black z-0">
                 <Image
-                src="https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxBSXxlbnwwfHx8fDE3NTcyNTQzODF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxUZWNobm9sb2d5fGVufDB8fHx8MTc1NzMxMDY4NXww&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Marketing ecosystem background"
                 data-ai-hint="marketing system"
                 fill
