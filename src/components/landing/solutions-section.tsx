@@ -57,7 +57,7 @@ export function SolutionsSection() {
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxBSXxlbnwwfHx8fDE3NTcyNTQzODF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+              src="https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlfGVufDB8fHx8MTc1NzMxMDI2OXww&ixlib=rb-4.1.0&q=80&w=1080"
               width="600"
               height="500"
               alt="Marketing Solution Diagram"
