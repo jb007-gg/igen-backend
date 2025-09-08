@@ -15,7 +15,7 @@ export function AboutSection() {
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="https://picsum.photos/600/400"
+              src="https://images.unsplash.com/photo-1680783954745-3249be59e527?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxBSXxlbnwwfHx8fDE3NTcyNTQzODF8MA&ixlib=rb-4.1.0&q=80&w=1080"
               width="600"
               height="400"
               alt="Abstract graphic"
