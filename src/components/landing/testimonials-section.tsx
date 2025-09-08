@@ -9,7 +9,7 @@ const testimonials = [
     quote: "iGen Technology đã thay đổi hoàn toàn cách chúng tôi tiếp cận marketing. Hệ thống tự động của họ giúp chúng tôi tiết kiệm hàng chục giờ mỗi tuần.",
     name: 'Nguyễn Minh Tuấn',
     company: 'CEO, ABC Corp',
-    avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026704d',
+    avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026704e',
   },
   {
     quote: "Các giải pháp AI rất thông minh và hiệu quả. Đội ngũ hỗ trợ thì chuyên nghiệp và thấu hiểu. Rất khuyến khích!",
