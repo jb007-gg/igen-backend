@@ -11,8 +11,8 @@ import { Menu } from 'lucide-react';
 
 const navLinks = [
     { href: '/#about', label: 'Giới thiệu' },
-    { href: '/#services', label: 'Dịch vụ' },
     { href: '/giai-phap', label: 'Giải pháp' },
+    { href: '/#services', label: 'Dịch vụ' },
     { href: '/#courses', label: 'Khóa học' },
     { href: '/#testimonials', label: 'Nhận xét' },
     { href: '/#contact', label: 'Liên hệ' },
@@ -66,7 +66,7 @@ export function Header() {
 
   const buttonClasses = cn(
     "bg-primary hover:bg-primary/90",
-    isTransparent ? 'border border-white text-white' : 'border border-primary text-primary-foreground'
+    isTransparent ? 'border border-primary text-white' : 'border border-primary text-primary-foreground'
   );
   
   const mobileMenuButtonClasses = cn(
