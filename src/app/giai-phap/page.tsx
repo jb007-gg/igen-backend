@@ -105,15 +105,15 @@ export default function SolutionsPage() {
                       step.color, "opacity-20 transform scale-110"
                     )}></div>
                      <div className={cn(
-                      "relative flex h-[120px] w-64 items-center justify-between p-4",
+                      "relative flex h-[120px] w-64 items-center p-4",
                       step.color, step.textColor,
                       index % 2 === 0 ? 'flex-row-reverse' : ''
                     )}>
                       <div className={cn("absolute h-0 w-0 border-y-[60px] border-y-transparent", 
                         index % 2 === 0 ? "right-0 border-r-[40px] border-r-background" : "left-0 border-l-[40px] border-l-background"
                       )}></div>
-                      <div className={cn("flex-shrink-0", index % 2 === 0 ? 'ml-auto mr-2' : 'mr-auto ml-2' )}>{step.icon}</div>
-                      <h2 className={cn("text-lg font-bold w-full", index % 2 === 0 ? 'text-right mr-6' : 'text-left ml-6')}>{step.title}</h2>
+                      <div className={cn("flex-shrink-0", index % 2 === 0 ? 'ml-2' : 'mr-2')}>{step.icon}</div>
+                      <h2 className={cn("text-lg font-bold w-full text-center")}>{step.title}</h2>
                     </div>
                   </div>
                 </div>
