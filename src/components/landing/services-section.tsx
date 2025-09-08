@@ -22,7 +22,7 @@ const services = [
         icon: <MonitorSmartphone className="h-8 w-8 text-primary" />,
         title: 'Thiết kế Website chuyên nghiệp ứng dụng AI',
         description: 'Xây dựng nền tảng vững chắc để thu hút và chuyển đổi khách hàng tiềm năng từ Google.',
-        href: "/dang-bai-tu-dong",
+        href: "/thiet-ke-website",
     },
 ];
 
