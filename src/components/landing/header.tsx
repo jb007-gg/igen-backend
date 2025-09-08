@@ -50,17 +50,17 @@ export function Header() {
 
   const headerClasses = cn(
     "px-4 lg:px-6 h-16 flex items-center fixed top-0 left-0 right-0 z-50 transition-colors duration-300",
-    isTransparent ? "bg-transparent" : "bg-primary shadow-sm"
+    isTransparent ? "bg-transparent" : "bg-white shadow-sm"
   );
 
   const linkClasses = (isMobile = false) => cn(
     "font-bold hover:underline underline-offset-4",
-    isMobile ? "text-black text-lg" : `text-sm ${isTransparent ? "text-white" : "text-primary-foreground"}`
+    isMobile ? "text-black text-lg" : `text-sm ${isTransparent ? "text-white" : "text-black"}`
   );
 
   const buttonClasses = cn(
     "bg-primary text-primary-foreground hover:bg-primary/90",
-    isTransparent ? 'border border-primary text-white' : 'border-primary text-primary-foreground'
+    isTransparent ? 'border border-white text-white' : 'border-primary text-primary-foreground'
   );
   
   const mobileMenuButtonClasses = cn(
