@@ -52,7 +52,7 @@ export default function SolutionsPage() {
         <section className="relative w-full py-20 md:py-32 lg:py-40 text-white">
             <div className="absolute inset-0 bg-black z-0">
                 <Image
-                src="https://picsum.photos/1920/1080"
+                src="https://images.unsplash.com/photo-1583321500900-82807e458f3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8c29sdXRpb258ZW58MHx8fHwxNzU3MzA2MTA4fDA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Marketing ecosystem background"
                 data-ai-hint="marketing ecosystem"
                 fill
