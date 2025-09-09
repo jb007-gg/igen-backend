@@ -17,7 +17,7 @@ export function AboutSection() {
                 Chúng tôi nhận thấy các chủ doanh nghiệp tâm huyết đang phải làm marketing một cách rời rạc và lãng phí nguồn lực. iGen Technology được sinh ra để thay đổi điều đó, với triết lý công nghệ phải đơn giản, tin cậy và hiệu quả.
               </p>
             </div>
-             <div className="flex">
+             <div className="flex justify-center">
               <Button asChild className="bg-[#00d3f3] text-black hover:bg-[#00d3f3]/90 group">
                 <Link href="/#solutions">
                     Tìm hiểu thêm
