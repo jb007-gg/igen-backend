@@ -19,7 +19,7 @@ export function AboutSection() {
             </div>
              <div className="flex justify-center">
               <Button asChild className="bg-[#00d3f3] text-black hover:bg-[#00d3f3]/90 group">
-                <Link href="/#solutions">
+                <Link href="/cau-chuyen-thuong-hieu-igen">
                     Tìm hiểu thêm
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
