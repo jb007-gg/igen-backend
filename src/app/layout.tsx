@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { BackToTop } from '@/components/ui/back-to-top';
+import { ChatPopup } from '@/components/chat/chat-popup';
 
 export const metadata: Metadata = {
   title: 'iGen Technology',
@@ -23,6 +24,7 @@ export default function RootLayout({
         {children}
         <Toaster />
         <BackToTop />
+        <ChatPopup />
       </body>
     </html>
   );
