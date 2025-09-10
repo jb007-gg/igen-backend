@@ -93,7 +93,7 @@ export default function SolutionsPage() {
             </div>
             <div className="mt-12 mx-auto max-w-3xl text-center">
                 <Quote className="mx-auto h-12 w-12 text-primary" />
-                <p className="mt-6 text-lg text-muted-foreground md:text-xl">
+                <p className="mt-6 text-lg font-bold text-muted-foreground md:text-xl">
                     Khi cỗ máy này vận hành, nó không chỉ giải quyết từng vấn đề riêng lẻ. Nó giải quyết triệt để 3 "nỗi đau" lớn nhất của mọi chủ doanh nghiệp SME:
                 </p>
             </div>
