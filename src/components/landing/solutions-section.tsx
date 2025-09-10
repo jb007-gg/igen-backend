@@ -15,7 +15,7 @@ const solutions = [
   },
   {
     title: 'Sáng tạo nội dung chuyên nghiệp với Studio AI',
-    description: 'Nuôi dưỡng và chăm sóc khách hàng một cách cá nhân hóa, tối ưu hoá vòng đời khách hàng.',
+    description: 'Cung cấp "nhiên liệu" marketing (hình ảnh, video, bài viết) vô hạn, chất lượng cao.',
   },
   {
     title: 'Kênh Mạng xã hội Tự động',
