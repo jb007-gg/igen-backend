@@ -2,10 +2,11 @@
 import { Header } from '@/components/landing/header';
 import { Footer } from '@/components/landing/footer';
 import { Button } from '@/components/ui/button';
-import { Megaphone, PenTool, Send, Bot, Quote } from 'lucide-react';
+import { Megaphone, PenTool, Send, Bot, Quote, Zap, Clock, Users } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 const timelineSteps = [
   {
@@ -31,6 +32,24 @@ const timelineSteps = [
     title: 'IV. Chatbot AI Bán hàng',
     description: 'Đội quân chốt sale tinh nhuệ 24/7, sẵn sàng chuyển đổi mọi sự quan tâm thành cơ hội bán hàng.',
     color: 'bg-cyan-500',
+  },
+];
+
+const painPoints = [
+  {
+    icon: <Zap className="h-8 w-8 text-destructive" />,
+    title: 'Lãng phí Nguồn lực',
+    description: 'Ngân sách marketing bị "đốt" vào những kênh rời rạc, không có sự liên kết, dẫn đến hiệu quả thấp và khó đo lường.',
+  },
+  {
+    icon: <Clock className="h-8 w-8 text-yellow-500" />,
+    title: 'Lãng phí Thời gian',
+    description: 'Chủ doanh nghiệp bị cuốn vào những công việc vận hành marketing vụn vặt, mất thời gian quý báu đáng lẽ phải dành cho chiến lược và phát triển.',
+  },
+  {
+    icon: <Users className="h-8 w-8 text-blue-500" />,
+    title: 'Lãng phí Cơ hội',
+    description: 'Bỏ lỡ khách hàng tiềm năng do quy trình chăm sóc và chốt đơn thủ công, chậm trễ, không thể hoạt động 24/7.',
   },
 ];
 
@@ -71,11 +90,11 @@ export default function SolutionsPage() {
               {timelineSteps.map((step, index) => {
                 const isOdd = index % 2 !== 0;
                 return (
-                  <div key={index} className={cn("relative mb-12 flex w-full items-center", isOdd ? "justify-end" : "justify-start")}>
-                    <div className={cn("w-1/2", isOdd ? "pr-8" : "pl-8")}>
+                  <div key={index} className={cn("relative mb-12 flex w-full items-center", isOdd ? "justify-start flex-row-reverse" : "justify-start")}>
+                    <div className={cn("w-1/2", isOdd ? "pl-8 text-left" : "pl-8")}>
                         <div className={cn(
                             "p-6 rounded-lg shadow-md bg-card border",
-                             isOdd ? "text-right" : "text-left"
+                             isOdd ? "text-left" : "text-left ml-auto"
                         )}>
                             <h3 className={cn("font-bold text-xl mb-2", step.color.replace('bg-', 'text-'))}>{step.title}</h3>
                             <p className="text-muted-foreground">{step.description}</p>
@@ -91,11 +110,26 @@ export default function SolutionsPage() {
                 );
               })}
             </div>
-            <div className="mt-12 mx-auto max-w-3xl text-center">
+            <div className="mx-auto max-w-3xl text-center">
                 <Quote className="mx-auto h-12 w-12 text-primary" />
-                <p className="mt-6 text-lg font-bold text-muted-foreground md:text-xl">
+                <h2 className="mt-4 text-3xl font-bold tracking-tighter text-foreground sm:text-4xl md:text-5xl font-headline">
                     Khi cỗ máy này vận hành, nó không chỉ giải quyết từng vấn đề riêng lẻ. Nó giải quyết triệt để 3 "nỗi đau" lớn nhất của mọi chủ doanh nghiệp SME:
-                </p>
+                </h2>
+            </div>
+             <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                {painPoints.map((point, index) => (
+                    <Card key={index} className="text-center">
+                    <CardHeader>
+                        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                            {point.icon}
+                        </div>
+                    </CardHeader>
+                    <CardContent className="space-y-2">
+                        <CardTitle className="text-xl font-bold">{point.title}</CardTitle>
+                        <p className="text-muted-foreground">{point.description}</p>
+                    </CardContent>
+                    </Card>
+                ))}
             </div>
           </div>
         </section>
