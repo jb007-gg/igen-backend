@@ -112,7 +112,7 @@ export function ChatPopup() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
                 <IGenLogo className="h-6 w-6 text-primary" />
-                <SheetTitle className="text-lg font-semibold">Chat với iGen Technology</SheetTitle>
+                <SheetTitle className="text-lg font-semibold">Chat với <span className="text-primary">iGen Technology</span></SheetTitle>
             </div>
           </div>
         </SheetHeader>
