@@ -7,6 +7,12 @@ export default {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: [
+    'text-red-500',
+    'text-orange-500',
+    'text-green-500',
+    'text-cyan-500',
+  ],
   theme: {
     extend: {
       fontFamily: {
