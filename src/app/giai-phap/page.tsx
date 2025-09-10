@@ -2,7 +2,7 @@
 import { Header } from '@/components/landing/header';
 import { Footer } from '@/components/landing/footer';
 import { Button } from '@/components/ui/button';
-import { Megaphone, PenTool, Send, Bot, Quote, Zap, Clock, Users } from 'lucide-react';
+import { Megaphone, PenTool, Send, Bot, Quote, Zap, Clock, Users, DollarSign, BarChart, Coffee } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
@@ -37,19 +37,19 @@ const timelineSteps = [
 
 const painPoints = [
   {
-    icon: <Zap className="h-8 w-8 text-destructive" />,
-    title: 'Lãng phí Nguồn lực',
-    description: 'Ngân sách marketing bị "đốt" vào những kênh rời rạc, không có sự liên kết, dẫn đến hiệu quả thấp và khó đo lường.',
+    icon: <DollarSign className="h-8 w-8 text-destructive" />,
+    title: 'Giải phóng Chi phí',
+    description: 'Workflow toàn diện, thông minh này thay thế hoàn toàn gánh nặng vận hành và chi phí cho 2-3 vị trí nhân sự marketing, giúp bạn đầu tư ngân sách vào nơi tạo ra lợi nhuận.',
   },
   {
-    icon: <Clock className="h-8 w-8 text-yellow-500" />,
-    title: 'Lãng phí Thời gian',
-    description: 'Chủ doanh nghiệp bị cuốn vào những công việc vận hành marketing vụn vặt, mất thời gian quý báu đáng lẽ phải dành cho chiến lược và phát triển.',
+    icon: <BarChart className="h-8 w-8 text-yellow-500" />,
+    title: 'Khuếch đại Hiệu quả',
+    description: 'Tự động hóa và Trí tuệ AI đảm bảo mọi khâu được vận hành với tốc độ, sự chính xác và hiệu suất cao nhất, mang lại kết quả vượt trội so với cách làm thủ công truyền thống.',
   },
   {
-    icon: <Users className="h-8 w-8 text-blue-500" />,
-    title: 'Lãng phí Cơ hội',
-    description: 'Bỏ lỡ khách hàng tiềm năng do quy trình chăm sóc và chốt đơn thủ công, chậm trễ, không thể hoạt động 24/7.',
+    icon: <Coffee className="h-8 w-8 text-blue-500" />,
+    title: 'Trao trả Lại Thời gian',
+    description: 'Giải phóng bạn khỏi ma trận quản lý và các thao tác vụn vặt. Trả lại cho bạn thời gian và sự tập trung để làm những việc của một người chủ: xây dựng tầm nhìn, phát triển đối tác, và tận hưởng thành quả của mình.',
   },
 ];
 
@@ -91,10 +91,10 @@ export default function SolutionsPage() {
                 const isOdd = index % 2 !== 0;
                 return (
                   <div key={index} className={cn("relative mb-12 flex w-full items-center", isOdd ? "justify-start flex-row-reverse" : "justify-start")}>
-                    <div className={cn("w-1/2", isOdd ? "pl-8 text-left" : "pl-8")}>
+                    <div className={cn("w-1/2", isOdd ? "pl-8 text-left" : "pr-8 text-right")}>
                         <div className={cn(
                             "p-6 rounded-lg shadow-md bg-card border",
-                             isOdd ? "text-left" : "text-left ml-auto"
+                             isOdd ? "text-left" : "text-right"
                         )}>
                             <h3 className={cn("font-bold text-xl mb-2", step.color.replace('bg-', 'text-'))}>{step.title}</h3>
                             <p className="text-muted-foreground">{step.description}</p>
