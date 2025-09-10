@@ -11,25 +11,25 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 const timelineSteps = [
   {
     icon: <Megaphone className="h-8 w-8 text-white" />,
-    title: 'I. Nền tảng Chiến lược',
+    title: 'Bước 1: Nền tảng Chiến lược',
     description: 'Vẽ ra con đường đi và mục tiêu cần đến, đảm bảo mọi nguồn lực được đầu tư đúng hướng.',
     color: 'bg-red-500',
   },
   {
     icon: <PenTool className="h-8 w-8 text-white" />,
-    title: 'II. Website & Studio AI',
+    title: 'Bước 2: Website & Studio AI',
     description: 'Cung cấp "nguyên liệu" cốt lõi: một "đại bản doanh" chuẩn chuyển đổi và nguồn "nhiên liệu" hình ảnh/video vô hạn, chất lượng cao.',
     color: 'bg-orange-500',
   },
   {
     icon: <Send className="h-8 w-8 text-white" />,
-    title: 'III. Hệ thống Phân phối Tự động',
+    title: 'Bước 3. Hệ thống Phân phối Tự động',
     description: 'Đưa "nhiên liệu" đến với hàng triệu khách hàng tiềm năng một cách thông minh và tối ưu nhất.',
     color: 'bg-green-500',
   },
   {
     icon: <Bot className="h-8 w-8 text-white" />,
-    title: 'IV. Chatbot AI Bán hàng',
+    title: 'Bước 4. Chatbot AI Bán hàng',
     description: 'Đội quân chốt sale tinh nhuệ 24/7, sẵn sàng chuyển đổi mọi sự quan tâm thành cơ hội bán hàng.',
     color: 'bg-cyan-500',
   },
@@ -110,7 +110,8 @@ export default function SolutionsPage() {
                 );
               })}
             </div>
-            <div className="mx-auto max-w-3xl text-center">
+            </div>
+            <div className="w-full text-center">
                 <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 shadow-inner">
                     <Lightbulb className="h-12 w-12 text-primary drop-shadow-[0_0_10px_hsl(var(--primary))]" />
                 </div>
@@ -133,7 +134,6 @@ export default function SolutionsPage() {
                     </Card>
                 ))}
             </div>
-          </div>
         </section>
 
 
