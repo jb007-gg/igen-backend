@@ -111,7 +111,9 @@ export default function SolutionsPage() {
               })}
             </div>
             <div className="mx-auto max-w-3xl text-center">
-                <Lightbulb className="mx-auto h-12 w-12 text-primary" />
+                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 shadow-inner">
+                    <Lightbulb className="h-12 w-12 text-primary drop-shadow-[0_0_10px_hsl(var(--primary))]" />
+                </div>
                 <h2 className="mt-4 text-3xl font-bold tracking-tighter text-foreground sm:text-4xl md:text-5xl font-headline">
                     Khi cỗ máy này vận hành, nó không chỉ giải quyết từng vấn đề riêng lẻ. Nó giải quyết triệt để 3 "nỗi đau" lớn nhất của mọi chủ doanh nghiệp SME:
                 </h2>
