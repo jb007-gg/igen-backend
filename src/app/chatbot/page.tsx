@@ -10,32 +10,37 @@ const chatbotPoints = [
     {
         title: "Khai mở Doanh thu & Làm chủ Mọi Cơ hội",
         points: [
-            "Kiến tạo Cỗ máy Bán hàng Tự vận hành 24/7: Một quy trình hoàn hảo từ tư vấn, chốt đơn đến tạo đơn hàng, được vận hành bởi trí tuệ AI.",
-            "Làm chủ Mọi Điểm chạm Khách hàng: Phản hồi tức thì ngay trong giây lát, chấm dứt vĩnh viễn tình trạng 'bỏ lỡ khách hàng'."
+            "Kiến tạo Cỗ máy Bán hàng Tự vận hành 24/7: Một quy trình hoàn hảo từ tư vấn, giải đáp thắc mắc, chốt đơn đến tạo đơn hàng, được vận hành bởi trí tuệ AI, giải phóng hoàn toàn sự can thiệp thủ công.",
+            'Chấm dứt "Nỗi đau" Mất khách: Phản hồi tức thì ngay trong giây lát. Chấm dứt vĩnh viễn tình trạng "bỏ lỡ khách hàng" hay “để mất khách hàng vào tay đối thủ cạnh tranh”, biến mọi sự chú ý, dù là nửa đêm hay rạng sáng, thành cơ hội doanh thu mà bạn không thể bỏ qua.'
         ]
     },
     {
-        title: "Trợ lý AI với Trí tuệ của Chuyên gia",
+        title: "Trợ lý AI với Trí tuệ của Chuyên gia: Xây dựng Lòng trung thành Tuyệt đối",
         points: [
-            "Tư vấn như một chuyên gia thực thụ: Công nghệ AI thấu hiểu sâu sắc nhu cầu khách hàng, kiến tạo những cuộc trò chuyện giá trị.",
-            "Phá vỡ Mọi Rào cản Mua hàng: AI được huấn luyện để trở thành chuyên gia về sản phẩm của bạn, giải đáp mọi thắc mắc.",
-            "Kiến tạo Cơ hội Upsell thông minh: AI phân tích hành vi để gợi ý các sản phẩm 'đo ni đóng giày', khéo léo đề xuất để gia tăng giá trị đơn hàng."
+            "Tư vấn như một chuyên gia thực thụ: Công nghệ AI giúp thấu hiểu sâu sắc nhu cầu khách hàng, kiến tạo những cuộc trò chuyện giá trị, tự nhiên và chi tiết, xây dựng một niềm tin không thể lay chuyển.",
+            "Phá vỡ Mọi Rào cản Mua hàng: AI được huấn luyện để trở thành chuyên gia về sản phẩm của bạn, giải đáp mọi thắc mắc từ kỹ thuật đến ứng dụng, giúp khách hàng ra quyết định mua hàng một cách tự tin và dứt khoát.",
+            'Kiến tạo Cơ hội Upsell thông minh: AI phân tích hành vi để gợi ý các sản phẩm "đo ni đóng giày", khéo léo đề xuất để gia tăng giá trị trên mỗi đơn hàng.'
         ]
     },
     {
-        title: "Công nghệ AI Đáng tin cậy",
+        title: "Công nghệ AI Đáng tin cậy: Tấm khiên Vững chắc Bảo vệ Di sản Thương hiệu",
         points: [
-            "Cam kết tuyệt đối không bịa thông tin: Chatbot chỉ trả lời dựa trên dữ liệu được cung cấp, bảo vệ 100% uy tín thương hiệu.",
-            "Chuyển giao liền mạch: Tự động nhận diện tình huống phức tạp và chuyển giao cho chuyên viên."
+            "Cam kết VÀNG - Tuyệt đối không bịa thông tin: Chatbot chỉ trả lời dựa trên dữ liệu được cung cấp, bảo vệ 100% uy tín và hình ảnh thương hiệu mà bạn đã dày công xây dựng.",
+            "Chuyển giao liền mạch, không gián đoạn: Tự động nhận diện những tình huống phức tạp và ngay lập tức thông báo cho chuyên viên vào hỗ trợ, đảm bảo trải nghiệm khách hàng luôn hoàn hảo và chuyên nghiệp."
         ]
     },
     {
-        title: "Dấu ấn Thương hiệu & Vận hành Tinh gọn",
+        title: "Dấu ấn Thương hiệu: Thổi hồn Doanh nghiệp vào từng Tin nhắn",
         points: [
-            "Tùy chỉnh giọng văn của chatbot – từ thân thiện, chuyên nghiệp đến hài hước – để mỗi cuộc trò chuyện đều là một tuyên ngôn nhất quán về cá tính thương hiệu.",
-            "Toàn bộ thông tin đơn hàng được tự động đồng bộ vào Google Sheet, loại bỏ hoàn toàn sai sót và công việc thủ công."
+            "Linh hồn của thương hiệu: Tùy chỉnh giọng văn của chatbot – từ thân thiện, chuyên nghiệp đến hài hước – để mỗi cuộc trò chuyện đều là một tuyên ngôn nhất quán về cá tính và đẳng cấp thương hiệu."
         ]
     },
+    {
+        title: "Vận hành Tinh gọn: Giải phóng Nguồn lực, Tập trung vào Chiến lược",
+        points: [
+            "Quản lý đơn hàng chỉ bằng một cú nhấp chuột: Toàn bộ thông tin đơn hàng được tự động đồng bộ vào Google Sheet, loại bỏ hoàn toàn sai sót, lãng phí và các công việc thủ công nhàm chán."
+        ]
+    }
 ];
 
 export default function ChatbotPage() {

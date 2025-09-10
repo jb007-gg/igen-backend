@@ -46,10 +46,13 @@ export default function WebsiteDesignPage() {
           </div>
           <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl font-headline">
-              Thiết kế Website chuyên nghiệp ứng dụng AI
+            Website AI Thông Minh: Thu Hút Khách Hàng Tiềm
+            Năng Tự Động 24/7
             </h1>
             <p className="mx-auto mt-4 max-w-[800px] text-gray-300 md:text-xl">
-              Nền tảng vững chắc để thu hút và chuyển đổi khách hàng tiềm năng từ Google.
+            Chúng tôi không xây dựng website. Chúng tôi kiến tạo một nhân viên kinh
+            doanh mẫn cán nhất, không bao giờ ngủ và được trang bị trí tuệ AI để chốt đơn
+            liên tục
             </p>
           </div>
         </section>
