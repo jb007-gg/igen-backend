@@ -16,11 +16,16 @@ export function IGenLogo(props: SVGProps<SVGSVGElement>) {
       className={cn("h-6 w-6", props.className)}
       {...props}
     >
-        <path d="M10.4 3.9a1 1 0 0 1 1.2 0l8 8a1 1 0 0 1 0 1.2l-8 8a1 1 0 0 1-1.2 0l-8-8a1 1 0 0 1 0-1.2l8-8z" />
-        <path d="M12 12 6 6" />
-        <path d="M18 18 12 12" />
-        <path d="m11 16.5-3.5-3.5 3.5-3.5" />
-        <path d="m18 16.5-3.5-3.5 3.5-3.5" />
+      <rect width="16" height="16" x="4" y="4" rx="2" />
+      <rect width="6" height="6" x="9" y="9" rx="1" />
+      <path d="M15 2v2" />
+      <path d="M15 20v2" />
+      <path d="M2 15h2" />
+      <path d="M2 9h2" />
+      <path d="M20 15h2" />
+      <path d="M20 9h2" />
+      <path d="M9 2v2" />
+      <path d="M9 20v2" />
     </svg>
   );
 }
