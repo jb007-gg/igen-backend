@@ -29,6 +29,27 @@ const contentCreationPoints = [
       'Lợi thế tốc độ không thể sao chép & Kho vũ khí Nội dung Vô hạn: Một khi AI đã "học" về sản phẩm của bạn, việc sản xuất hàng loạt ảnh, video quảng cáo chất lượng cao cho các chiến dịch sau này diễn ra với tốc độ đáng kinh ngạc, tạo ra lợi thế cạnh tranh khác biệt và giúp bạn luôn đi trước đối thủ nhiều bước.',
     ],
   },
+  {
+    title: 'Bộ não Sáng tạo AI: Biến Ý tưởng thành Tầm ảnh hưởng',
+    points: [
+      'Biến mọi hình ảnh/video thành vũ khí truyền thông: AI tự động phân tích và biên soạn caption cuốn hút, đồng thời tích hợp bộ hashtag chiến lược đã được kiểm chứng để tối ưu hóa với thuật toán của nền tảng nhằm thu hút tương tác tự nhiên một cách mạnh mẽ nhất.',
+      'Chấm dứt hoàn toàn áp lực sáng tạo: Chỉ cần cung cấp media, AI sẽ lo phần còn lại. Giải phóng hàng giờ làm việc mỗi ngày để bạn tập trung vào những quyết định chiến lược cấp cao.',
+    ],
+  },
+  {
+    title: 'Triển khai Chiến lược Nội dung: Kiến tạo Dòng chảy Thông minh & Linh hoạt',
+    points: [
+      'Lịch trình đăng bài được cá nhân hóa: Chúng tôi thiết lập một lịch trình được tối ưu hóa và linh hoạt, hoàn toàn phù hợp với mục tiêu và các chiến dịch marketing của bạn, không bị bó buộc vào một khuôn mẫu cố định.',
+      'Thống lĩnh không gian số vào "giờ vàng": Mục tiêu của chúng tôi là đảm bảo thương hiệu của bạn luôn xuất hiện vào đúng thời điểm, tiếp cận tối đa khách hàng tiềm năng. Chúng tôi sẽ liên tục cập nhật và tối ưu hóa hệ thống để phù hợp với thuật toán của từng nền tảng, hướng đến hiệu quả tương tác tối ưu.',
+    ],
+  },
+  {
+    title: 'Giải pháp Quản lý Trọn gói: Giải phóng Bạn khỏi Thao tác Kỹ thuật',
+    points: [
+      'Năng lực quản lý đa kênh mạnh mẽ và linh hoạt: Chúng tôi thiết lập và vận hành hệ thống để quản lý đồng bộ các Trang và Nhóm của bạn. Giải pháp được thiết kế để dễ dàng mở rộng quy mô khi doanh nghiệp của bạn phát triển. Bạn không cần thao tác kỹ thuật, chỉ cần tập trung vào chiến lược kinh doanh cốt lõi.',
+      'Quy trình làm việc tinh gọn chưa từng có: Chúng tôi chịu trách nhiệm toàn bộ khâu hậu cần kỹ thuật, và AI sẽ tự động biến nội dung của bạn thành những bài đăng chiến lược trên các kênh social. Đối với bạn, quy trình chỉ đơn giản là thấy kết quả.',
+    ],
+  },
 ];
 
 export default function ContentCreationPage() {
@@ -48,7 +69,7 @@ export default function ContentCreationPage() {
           </div>
           <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl font-headline">
-              Sáng tạo Nội dung bằng AI: Giải pháp "Studio AI"
+              Sáng tạo Nội dung: Giải pháp "Studio AI"
             </h1>
             <p className="mx-auto mt-4 max-w-[800px] text-gray-300 md:text-xl">
               Nguồn "Nhiên liệu" Vô hạn cho Cỗ máy Marketing.

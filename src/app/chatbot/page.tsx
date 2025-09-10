@@ -60,7 +60,7 @@ export default function ChatbotPage() {
           </div>
           <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl font-headline">
-              Chatbot AI Bán hàng: Cỗ máy Chuyển đổi
+              Chatbot AI Bán hàng: Cỗ máy Bán hàng Tự vận hành 24/7
             </h1>
             <p className="mx-auto mt-4 max-w-[800px] text-gray-300 md:text-xl">
               Biến Mọi Tương tác thành Cơ hội Doanh thu. Khi đã thu hút được sự chú ý, đây là lúc chuyển đổi.
