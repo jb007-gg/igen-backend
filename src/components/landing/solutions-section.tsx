@@ -6,11 +6,15 @@ import Link from 'next/link';
 
 const solutions = [
   {
+    title: 'Tư vấn chiến lược marketing ',
+    description: 'Vẽ ra con đường đi và mục tiêu cần đến, đảm bảo mọi nguồn lực được đầu tư đúng hướng.',
+  },
+  {
     title: 'Website & Landing Page chuẩn SEO',
     description: 'Nền tảng vững chắc để thu hút và chuyển đổi khách hàng tiềm năng từ Google.',
   },
   {
-    title: 'Hệ thống Email Marketing Tự động',
+    title: 'Sáng tạo nội dung chuyên nghiệp với Studio AI',
     description: 'Nuôi dưỡng và chăm sóc khách hàng một cách cá nhân hóa, tối ưu hoá vòng đời khách hàng.',
   },
   {
@@ -33,7 +37,7 @@ export function SolutionsSection() {
             Giải pháp Marketing Toàn diện iGen: Một Bản thiết kế. Một Đối tác. Một Kết quả Toàn diện
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-            Mỗi chiến dịch marketing thành công đều bắt đầu từ một bản thiết kế chiến lược xuất sắc. Chúng tôi đóng vai trò là Kiến trúc sư Trưởng cho cỗ máy tăng trưởng của bạn, chịu trách nhiệm từ khâu hoạch định nền móng đến việc tích hợp những công nghệ tiên tiến nhất. Chúng tôi mang đến một hệ sinh thái marketing khép kín, nơi mọi chi tiết đều được tính toán để phục vụ một mục tiêu duy nhất: Giải phóng hoàn toàn thời gian và tâm trí của bạn để tập trung vào việc lãnh đạo doanh nghiệp tiến về phía trước.
+            Chúng tôi mang đến một hệ sinh thái marketing khép kín, nơi mọi chi tiết đều được tính toán để phục vụ một mục tiêu duy nhất: Giải phóng hoàn toàn thời gian và tâm trí của bạn để tập trung vào việc lãnh đạo doanh nghiệp tiến về phía trước.
             </p>
             <div className="grid gap-4">
               {solutions.map((solution, index) => (
