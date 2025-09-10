@@ -10,22 +10,23 @@ const contentCreationPoints = [
   {
     title: 'Công nghệ “Bản sao Số”: Lợi thế Cạnh tranh Không thể Sao chép',
     points: [
-      'Từ ảnh gốc, chúng tôi tạo ra một “Bản sao số” (Digital Twin) hoàn hảo, cho phép AI tái tạo sản phẩm trong mọi bối cảnh với độ chân thực đáng kinh ngạc.',
-      'Tiết kiệm đến 90% chi phí sản xuất, giải phóng hoàn toàn gánh nặng chi phí thuê người mẫu, studio, ekip.',
-      'Sản xuất hàng loạt ảnh, video quảng cáo chất lượng cao, tạo ra lợi thế cạnh tranh khác biệt và đẩy nhanh tốc độ ra mắt chiến dịch.',
+      'Sản phẩm của bạn, siêu mẫu độc quyền: Từ ảnh gốc, chúng tôi tạo ra một “Bản sao số” (Digital Twin) hoàn hảo, cho phép AI tái tạo sản phẩm trong mọi bối cảnh với độ chân thực đáng kinh ngạc.',
+      'Đầu tư Thông minh, Hiệu quả Tối đa: Tiết kiệm đến 90% chi phí sản xuất, giải phóng hoàn toàn gánh nặng chi phí thuê người mẫu, studio, ekip. Dồn ngân sách vào nơi tạo ra hiệu quả thực sự.',
+      'Biến sản phẩm vật lý thành tài sản số sinh lời vô hạn: Một giải pháp chiến lược cho mọi ngành hàng, từ thời trang, F&B, mỹ phẩm đến trang sức.',
     ],
   },
   {
     title: 'Dịch vụ Sáng tạo Kịch bản & Sản xuất Trọn gói',
     points: [
-        'Đội ngũ chuyên gia của chúng tôi sẽ lên ý tưởng chiến lược, sau đó sử dụng trí tuệ AI để kiến tạo các kịch bản quảng cáo được tối ưu hóa sâu sắc theo thuật toán của từng nền tảng, đảm bảo thông điệp của bạn không chỉ sáng tạo mà còn có khả năng lan tỏa mạnh mẽ nhất.'
+      'Bạn cung cấp sản phẩm – Chúng tôi kiến tạo câu chuyện: Đội ngũ chuyên gia của chúng tôi sẽ lên ý tưởng chiến lược, sau đó sử dụng trí tuệ AI để kiến tạo các kịch bản quảng cáo được tối ưu hóa sâu sắc theo thuật toán của từng nền tảng, đảm bảo thông điệp của bạn không chỉ sáng tạo mà còn có khả năng lan tỏa mạnh mẽ nhất.',
+      'Biến sản phẩm thành nhân vật chính: Chúng tôi không chỉ tạo ra hình ảnh, mà còn thổi hồn vào sản phẩm, biến nó thành nhân vật chính trong những câu chuyện marketing hấp dẫn và hiệu quả.',
     ],
   },
   {
     title: 'Chất lượng Đỉnh cao & Quy trình Vượt trội',
     points: [
-        'Mọi sản phẩm đều đạt chất lượng 4K chuyên nghiệp, khẳng định sự sắc nét và đẳng cấp thương hiệu.',
-        'Một khi AI đã "học" về sản phẩm của bạn, việc tạo ra nội dung cho các chiến dịch sau này diễn ra với tốc độ đáng kinh ngạc.'
+      'Độ phân giải 4K chuyên nghiệp: Mọi hình ảnh, video đều đạt chất lượng studio chuyên nghiệp (4K), đảm bảo sự nhất quán và nâng tầm đẳng cấp thương hiệu trên mọi điểm chạm, điều mà việc tự chụp hay thuê ngoài không thể đảm bảo.',
+      'Lợi thế tốc độ không thể sao chép & Kho vũ khí Nội dung Vô hạn: Một khi AI đã "học" về sản phẩm của bạn, việc sản xuất hàng loạt ảnh, video quảng cáo chất lượng cao cho các chiến dịch sau này diễn ra với tốc độ đáng kinh ngạc, tạo ra lợi thế cạnh tranh khác biệt và giúp bạn luôn đi trước đối thủ nhiều bước.',
     ],
   },
 ];
@@ -47,7 +48,7 @@ export default function ContentCreationPage() {
           </div>
           <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl font-headline">
-              Sáng tạo Nội dung bằng AI: Giải pháp "Studio Ảo"
+              Sáng tạo Nội dung bằng AI: Giải pháp "Studio AI"
             </h1>
             <p className="mx-auto mt-4 max-w-[800px] text-gray-300 md:text-xl">
               Nguồn "Nhiên liệu" Vô hạn cho Cỗ máy Marketing. Sau khi có chiến lược, chúng ta cần nguồn nguyên liệu để triển khai.
