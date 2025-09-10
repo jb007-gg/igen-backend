@@ -2,7 +2,7 @@
 import { Header } from '@/components/landing/header';
 import { Footer } from '@/components/landing/footer';
 import { Button } from '@/components/ui/button';
-import { Megaphone, PenTool, Send, Bot, Quote, Zap, Clock, Users, DollarSign, BarChart, Coffee } from 'lucide-react';
+import { Megaphone, PenTool, Send, Bot, Lightbulb, DollarSign, BarChart, Coffee } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
@@ -111,7 +111,7 @@ export default function SolutionsPage() {
               })}
             </div>
             <div className="mx-auto max-w-3xl text-center">
-                <Quote className="mx-auto h-12 w-12 text-primary" />
+                <Lightbulb className="mx-auto h-12 w-12 text-primary" />
                 <h2 className="mt-4 text-3xl font-bold tracking-tighter text-foreground sm:text-4xl md:text-5xl font-headline">
                     Khi cỗ máy này vận hành, nó không chỉ giải quyết từng vấn đề riêng lẻ. Nó giải quyết triệt để 3 "nỗi đau" lớn nhất của mọi chủ doanh nghiệp SME:
                 </h2>
