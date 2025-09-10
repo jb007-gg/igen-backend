@@ -8,13 +8,12 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-  SheetClose,
 } from '@/components/ui/sheet';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { smartChatbotAnswers, SmartChatbotAnswersOutput } from '@/ai/flows/smart-chatbot-answers';
-import { Send, Bot, User, X, MessageSquare, Loader2 } from 'lucide-react';
+import { Send, Bot, User, MessageSquare, Loader2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { IGenLogo } from '../icons';
 
@@ -115,12 +114,6 @@ export function ChatPopup() {
                 <IGenLogo className="h-6 w-6 text-primary" />
                 <SheetTitle className="text-lg font-semibold">Chat với iGen Technology</SheetTitle>
             </div>
-            <SheetClose asChild>
-              <Button variant="ghost" size="icon" className="h-8 w-8">
-                <X className="h-4 w-4" />
-                <span className="sr-only">Đóng</span>
-              </Button>
-            </SheetClose>
           </div>
         </SheetHeader>
         <div className="flex-grow overflow-hidden">
