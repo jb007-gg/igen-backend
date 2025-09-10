@@ -9,7 +9,7 @@ export function ContactSection() {
             Sẵn sàng để Thảnh thơi hơn?
           </h2>
           <p className="mx-auto max-w-[600px] text-gray-300 md:text-xl/relaxed lg:mx-0">
-            Hãy để iGen Technology lo việc vận hành công nghệ. Việc của bạn là tập trung vào kinh doanh. Điền thông tin bên dưới, chúng tôi sẽ liên hệ để tư vấn giải pháp phù hợp nhất.
+            Hãy để <span className="text-[#00d3f3] font-semibold">iGen Technology</span> lo việc vận hành công nghệ. Việc của bạn là tập trung vào kinh doanh. Điền thông tin bên dưới, chúng tôi sẽ liên hệ để tư vấn giải pháp phù hợp nhất.
           </p>
         </div>
         <div className="w-full max-w-md mx-auto">
