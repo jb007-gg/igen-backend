@@ -2,7 +2,7 @@
 import { Header } from '@/components/landing/header';
 import { Footer } from '@/components/landing/footer';
 import { Button } from '@/components/ui/button';
-import { Megaphone, PenTool, Send, Bot } from 'lucide-react';
+import { Megaphone, PenTool, Send, Bot, Quote } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
@@ -91,9 +91,12 @@ export default function SolutionsPage() {
                 );
               })}
             </div>
-             <p className="mt-12 text-center text-lg text-foreground max-w-3xl mx-auto">
-              Khi cỗ máy này vận hành, nó không chỉ giải quyết từng vấn đề riêng lẻ. Nó kiến tạo một hệ sinh thái tăng trưởng bền vững, giải phóng bạn khỏi những công việc phức tạp để tập trung vào điều quan trọng nhất: lãnh đạo doanh nghiệp.
-            </p>
+            <div className="mt-12 mx-auto max-w-3xl text-center">
+                <Quote className="mx-auto h-12 w-12 text-primary" />
+                <p className="mt-6 text-lg text-muted-foreground md:text-xl">
+                    Khi cỗ máy này vận hành, nó không chỉ giải quyết từng vấn đề riêng lẻ. Nó giải quyết triệt để 3 "nỗi đau" lớn nhất của mọi chủ doanh nghiệp SME:
+                </p>
+            </div>
           </div>
         </section>
 
