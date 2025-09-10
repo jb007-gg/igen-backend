@@ -8,32 +8,24 @@ import Image from 'next/image';
 
 const websitePoints = [
   {
-    title: 'Thiết kế Giao diện Hiện đại & Tối ưu Trải nghiệm',
+    title: 'Giải quyết Nỗi đau "Vô hình": Tối ưu SEO bằng Trí tuệ AI (AI-SEO)',
     points: [
-        'Chúng tôi không chỉ tạo ra một website đẹp, mà còn là một công cụ bán hàng hiệu quả. Giao diện được thiết kế tập trung vào trải nghiệm người dùng (UX/UI), giúp khách hàng dễ dàng tìm kiếm thông tin và thực hiện hành động mua hàng.',
-        'Tương thích hoàn hảo trên mọi thiết bị, từ máy tính đến điện thoại di động, đảm bảo khách hàng của bạn có trải nghiệm tốt nhất dù ở bất kỳ đâu.',
-    ]
-  },
-  {
-    title: 'Nền tảng Chuẩn SEO - Chinh phục Vị trí Top Google',
-    points: [
-      'Website được xây dựng trên nền tảng kỹ thuật vững chắc, tối ưu hóa cho các công cụ tìm kiếm ngay từ đầu. Điều này giúp website của bạn dễ dàng được Google "yêu thích" và xếp hạng cao trên kết quả tìm kiếm.',
-      'Tốc độ tải trang nhanh là một yếu tố quan trọng. Chúng tôi đảm bảo website của bạn vận hành mượt mà, giữ chân khách hàng và cải thiện thứ hạng SEO.',
+      'Chuẩn SEO Nền tảng với Trí tuệ AI: Chúng tôi không chỉ làm SEO sau khi web hoàn thành. Cấu trúc website được xây dựng chuẩn SEO ngay từ viên gạch đầu tiên, và được AI của chúng tôi tự động phân tích và tích hợp các từ khóa vàng vào cấu trúc website để đảm bảo Google "thấu hiểu" và ưu tiên hiển thị website của bạn lên top đầu tìm kiếm, giúp bạn thống lĩnh các vị trí cao nhất trên Google một cách bền vững.',
+      'Tốc độ Ánh sáng, Trải nghiệm Mượt mà: AI tự động tối ưu hóa từng dòng code, từng hình ảnh để đảm bảo website có tốc độ tải trang nhanh nhất, một yếu tố cực kỳ quan trọng để Google xếp hạng và giữ chân khách hàng ngay từ cú nhấp chuột đầu tiên. Hiển thị hoàn hảo trên mọi thiết bị từ điện thoại, máy tính bảng đến laptop, mang lại trải nghiệm chuyên nghiệp và đẳng cấp.',
     ],
   },
   {
-    title: 'Tích hợp AI - Trợ lý Ảo cho Website của Bạn',
+    title: 'Giải quyết Nỗi đau "Không chuyển đổi": Thiết kế Thôi miên & Tối ưu Trải nghiệm bằng AI',
     points: [
-        'Tích hợp Chatbot AI thông minh để tư vấn và trả lời các câu hỏi thường gặp của khách hàng 24/7, giúp bạn không bỏ lỡ bất kỳ cơ hội kinh doanh nào.',
-        'Sử dụng AI để gợi ý sản phẩm phù hợp dựa trên hành vi của người dùng, cá nhân hóa trải nghiệm mua sắm và gia tăng tỷ lệ chuyển đổi.',
-    ]
+      'Giao diện Tự động Cá nhân hóa: AI phân tích hành vi người dùng để tự động điều chỉnh và hiển thị những lời kêu gọi hành động (Call-to-Action), những sản phẩm gợi ý phù hợp nhất với từng khách truy cập, tối đa hóa tỷ lệ chuyển đổi từ người xem thành người mua.',
+      'Thiết kế Hiện đại & Chuyên nghiệp: Mọi yếu tố, từ bố cục, màu sắc, câu chữ đến nút kêu gọi hành động (CTA) đều được thiết kế dựa trên tâm lý học hành vi, có chủ đích dẫn dắt người truy cập từ tò mò đến khao khát và ra quyết định mua hàng.',
+    ],
   },
   {
-    title: 'Quản trị Dễ dàng & Mở rộng Vô hạn',
+    title: 'Giải phóng bạn khỏi Ma trận Kỹ thuật (Dịch vụ Quản lý Trọn gói)',
     points: [
-        'Hệ thống quản trị nội dung (CMS) thân thiện, giúp bạn dễ dàng cập nhật thông tin sản phẩm, bài viết blog mà không cần kiến thức kỹ thuật.',
-        'Nền tảng được thiết kế để dễ dàng mở rộng, tích hợp thêm các tính năng mới khi doanh nghiệp của bạn phát triển.',
-    ]
+      'Chúng tôi xây dựng, chúng tôi tối ưu và chúng tôi đồng hành. Bạn chỉ cần tập trung vào chuyên môn kinh doanh cốt lõi. Mọi vấn đề kỹ thuật, bảo trì, cập nhật nội dung theo chiến dịch... hãy để đội ngũ chuyên gia và hệ thống của chúng tôi lo.',
+    ],
   },
 ];
 

@@ -51,7 +51,7 @@ export default function ContentCreationPage() {
               Sáng tạo Nội dung bằng AI: Giải pháp "Studio AI"
             </h1>
             <p className="mx-auto mt-4 max-w-[800px] text-gray-300 md:text-xl">
-              Nguồn "Nhiên liệu" Vô hạn cho Cỗ máy Marketing. Sau khi có chiến lược, chúng ta cần nguồn nguyên liệu để triển khai.
+              Nguồn "Nhiên liệu" Vô hạn cho Cỗ máy Marketing.
             </p>
           </div>
         </section>
