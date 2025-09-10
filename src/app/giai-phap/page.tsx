@@ -3,7 +3,7 @@ import { Header } from '@/components/landing/header';
 import { Footer } from '@/components/landing/footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { CheckCircle, Megaphone, PenTool, Send, Bot } from 'lucide-react';
+import { CheckCircle, Megaphone, PenTool, Send, Bot, MonitorSmartphone } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
@@ -12,32 +12,28 @@ const timelineSteps = [
   {
     icon: <Megaphone className="h-8 w-8" />,
     title: 'I. Nền tảng Chiến lược',
-    subtitle: 'Dịch vụ Tư vấn & Định hướng Kinh doanh',
-    description: 'Bước đầu tiên và quan trọng nhất: Vẽ ra con đường đi đến thành công.',
+    description: 'Vẽ ra con đường đi và mục tiêu cần đến, đảm bảo mọi nguồn lực được đầu tư đúng hướng.',
     color: 'bg-red-500',
     textColor: 'text-white',
   },
   {
     icon: <PenTool className="h-8 w-8" />,
-    title: 'II. Sáng tạo Nội dung bằng AI',
-    subtitle: 'Giải pháp "Studio Ảo"',
-    description: 'Nguồn "Nhiên liệu" Vô hạn cho Cỗ máy Marketing. Sau khi có chiến lược, chúng ta cần nguồn nguyên liệu để triển khai.',
+    title: 'II. Website & Studio AI',
+    description: 'Cung cấp "nguyên liệu" cốt lõi: một "đại bản doanh" chuẩn chuyển đổi và nguồn "nhiên liệu" hình ảnh/video vô hạn, chất lượng cao.',
     color: 'bg-orange-500',
     textColor: 'text-white',
   },
   {
     icon: <Send className="h-8 w-8" />,
-    title: 'III. Hệ thống Đăng bài Tự động',
-    subtitle: 'Cỗ máy Phân phối',
-    description: 'Có nguyên liệu tốt, cần một hệ thống phân phối hiệu quả để đưa thông điệp chạm đến hàng triệu khách hàng.',
+    title: 'III. Hệ thống Phân phối Tự động',
+    description: 'Đưa "nhiên liệu" đến với hàng triệu khách hàng tiềm năng một cách thông minh và tối ưu nhất.',
     color: 'bg-cyan-500',
     textColor: 'text-white',
   },
   {
     icon: <Bot className="h-8 w-8" />,
     title: 'IV. Chatbot AI Bán hàng',
-    subtitle: 'Cỗ máy Chuyển đổi',
-    description: 'Biến Mọi Tương tác thành Cơ hội Doanh thu. Khi đã thu hút được sự chú ý, đây là lúc chuyển đổi.',
+    description: 'Đội quân chốt sale tinh nhuệ 24/7, sẵn sàng chuyển đổi mọi sự quan tâm thành cơ hội bán hàng.',
     color: 'bg-indigo-500',
     textColor: 'text-white',
   },
@@ -64,41 +60,35 @@ export default function SolutionsPage() {
               Hệ Sinh thái Marketing Khép kín – Sức mạnh của Sự Cộng hưởng
             </h1>
             <p className="mx-auto mt-4 max-w-[800px] text-gray-300 md:text-xl">
-              Chúng tôi không chỉ bán công cụ. Chúng tôi kiến tạo một cỗ máy tăng trưởng được dẫn dắt bởi chiến lược và vận hành bằng công nghệ.
+              Bạn không chỉ nhận được các dịch vụ riêng lẻ. Bạn nhận được một cỗ máy
+              marketing hoàn chỉnh, tự vận hành và khuếch đại lẫn nhau. Đây là cách dòng
+              chảy sức mạnh này vận hành
             </p>
           </div>
         </section>
         
         <section id="workflow" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="relative flex flex-col items-center gap-0">
+            <div className="relative flex flex-col items-center">
               {timelineSteps.map((step, index) => (
-                <div key={index} className="relative flex w-full max-w-4xl items-center justify-center">
-                  <div className={cn("relative z-10 flex w-[calc(50%-2rem)] flex-col items-end justify-center pr-8 text-right", index % 2 !== 0 && "opacity-0")}>
-                    {index % 2 === 0 && (
-                      <div className="space-y-2">
-                        <h3 className="text-lg font-bold">{step.subtitle}</h3>
-                        <p className="text-muted-foreground">{step.description}</p>
-                      </div>
-                    )}
+                <div key={index} className="relative flex w-full max-w-4xl">
+                  <div className={cn("relative z-10 flex w-[calc(50%-4rem)] items-center", index % 2 === 0 ? "justify-end pr-8 text-right" : "pl-8 text-left")}>
+                    { (index !== 0 || index % 2 === 0) &&
+                      <p className="text-muted-foreground md:text-lg">{step.description}</p>
+                    }
                   </div>
-
-                  <div className="relative z-20 flex h-32 w-16 flex-shrink-0 flex-col items-center">
+                  <div className="relative z-20 flex h-48 w-32 flex-shrink-0 flex-col items-center">
                     <div className="h-full w-1 bg-border"></div>
                   </div>
-
-                  <div className={cn("relative z-10 flex w-[calc(50%-2rem)] flex-col items-start justify-center pl-8 text-left", index % 2 === 0 && "opacity-0")}>
-                     {index % 2 !== 0 && (
-                      <div className="space-y-2">
-                         <h3 className="text-lg font-bold">{step.subtitle}</h3>
-                        <p className="text-muted-foreground">{step.description}</p>
-                      </div>
-                    )}
+                  <div className={cn("relative z-10 flex w-[calc(50%-4rem)] items-center", index % 2 !== 0 ? "justify-start pl-8 text-left" : "pr-8 text-right")}>
+                    { (index % 2 !== 0) &&
+                        <p className="text-muted-foreground md:text-lg">{step.description}</p>
+                    }
                   </div>
                   
                   <div className={cn(
-                    "absolute z-30 flex items-center justify-center transform p-4",
-                    index % 2 === 0 ? 'right-1/2 translate-x-[calc(100%)]' : 'left-1/2 -translate-x-[calc(100%)]'
+                    "absolute top-1/2 -translate-y-1/2 z-30 flex items-center justify-center transform p-4",
+                    index % 2 === 0 ? 'right-1/2 translate-x-[calc(100%-1rem)]' : 'left-1/2 -translate-x-[calc(100%-1rem)]'
                   )}>
                     <div className={cn("absolute h-0 w-0 border-y-[60px] border-y-transparent",
                       index % 2 === 0 ? "border-r-[40px]" : "border-l-[40px]",
@@ -119,6 +109,9 @@ export default function SolutionsPage() {
                 </div>
               ))}
             </div>
+            <p className="mt-8 text-center text-lg text-foreground max-w-3xl mx-auto">
+              Khi cỗ máy này vận hành, nó không chỉ giải quyết từng vấn đề riêng lẻ. Nó kiến tạo một hệ sinh thái tăng trưởng bền vững, giải phóng bạn khỏi những công việc phức tạp để tập trung vào điều quan trọng nhất: lãnh đạo doanh nghiệp.
+            </p>
           </div>
         </section>
 
