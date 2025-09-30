@@ -5,8 +5,6 @@ import { Footer } from '@/components/landing/footer';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Lightbulb } from 'lucide-react';
-
 
 const content = [
   {
@@ -137,7 +135,7 @@ export default function IgenOfficePage() {
                 <div key={index}>
                   {item.type === 'heading' ? (
                     <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-headline text-center mb-8 mt-12 flex items-center justify-center gap-4">
-                      {item.text === 'Ngọn hải đăng ý tưởng' && <Lightbulb className="h-8 w-8 text-yellow-500" />}
+                      {item.text === 'Ngọn hải đăng ý tưởng' && '💡'}
                       {item.text}
                     </h2>
                   ) : (
