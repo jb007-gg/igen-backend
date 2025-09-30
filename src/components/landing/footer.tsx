@@ -16,7 +16,7 @@ export function Footer() {
     <footer className="bg-secondary text-foreground py-12 px-4 md:px-6">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="flex flex-col items-start space-y-4">
-          <h3 className="text-xl font-bold text-[#00d3f3]">iGen Technology</h3>
+          <h3 className="text-2xl font-bold text-[#00d3f3]">iGen Technology</h3>
           <p className="text-sm text-muted-foreground max-w-md">
             Trao quyền cho các doanh nghiệp Việt Nam với giải pháp Marketing AI tiên tiến, giúp tối ưu hóa quy trình và đạt được kết quả vượt trội.
           </p>
