@@ -14,6 +14,7 @@ const navLinks = [
     { href: '/#services', label: 'Dịch vụ' },
     { href: '/#solutions', label: 'Giải pháp' },
     { href: '/#courses', label: 'Khóa học' },
+    { href: '/#igen-office', label: 'iGen Office' },
     { href: '/#testimonials', label: 'Nhận xét' },
     { href: '/#contact', label: 'Liên hệ' },
 ];

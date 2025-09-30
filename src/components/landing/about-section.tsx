@@ -5,6 +5,7 @@ import { ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 type AboutSectionProps = {
+  id?: string;
   className?: string;
   title?: string;
   description?: string;
@@ -16,6 +17,7 @@ type AboutSectionProps = {
 };
 
 export function AboutSection({ 
+  id,
   className, 
   title, 
   description, 
@@ -32,7 +34,7 @@ export function AboutSection({
   const defaultButtonText = "Tìm hiểu thêm";
 
   return (
-    <section id="about" className={cn("w-full py-12 md:py-24 lg:py-32 bg-white", className)}>
+    <section id={id || 'about'} className={cn("w-full py-12 md:py-24 lg:py-32 bg-white", className)}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div className={cn(
