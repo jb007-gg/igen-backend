@@ -5,8 +5,8 @@ import { BackToTop } from '@/components/ui/back-to-top';
 import { ChatPopup } from '@/components/chat/chat-popup';
 
 export const metadata: Metadata = {
-  title: 'iGen Technology',
-  description: 'Kiến tạo Cỗ máy Marketing Hoàn chỉnh. Giải phóng Chủ Doanh nghiệp.',
+  title: 'Hệ sinh thái Làm việc – Học tập – Khởi nghiệp iGen Office',
+  description: 'iGen Office - không gian khởi nguồn ý tưởng và nuôi dưỡng thành công. Dành cho cá nhân, sinh viên, học sinh, freelancer và start-up, iGen mang đến môi trường hiện đại – linh hoạt – đầy cảm hứng để bạn học tập, làm việc và phát triển.',
 };
 
 export default function RootLayout({
