@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-export function AboutSection({ className, innerContainerClassName }: { className?: string, innerContainerClassName?: string }) {
+export function AboutSection({ className }: { className?: string }) {
   return (
     <section id="about" className={cn("w-full py-12 md:py-24 lg:py-32 bg-background", className)}>
-      <div className={cn("container mx-auto px-4 md:px-6", innerContainerClassName)}>
+      <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="space-y-6">
             <div className="space-y-4">
