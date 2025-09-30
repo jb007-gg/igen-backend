@@ -36,7 +36,7 @@ const content = [
   },
   {
     type: 'heading',
-    text: 'Ngọn hải đăng ý tưởng',
+    text: '💡 Ngọn hải đăng ý tưởng',
   },
   {
     type: 'paragraph',
@@ -130,14 +130,16 @@ export default function IgenOfficePage() {
 
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container mx-auto px-4 md:px-6">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-center mb-12">
+                Khám Phá Không Gian iGen Office
+            </h2>
             <div className="mx-auto max-w-3xl space-y-12">
               {content.map((item, index) => (
                 <div key={index}>
                   {item.type === 'heading' ? (
-                    <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-headline text-center mb-8 mt-12 flex items-center justify-center gap-4">
-                      {item.text === 'Ngọn hải đăng ý tưởng' && '💡'}
+                    <h3 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-headline text-center mb-8 mt-12 flex items-center justify-center gap-4">
                       {item.text}
-                    </h2>
+                    </h3>
                   ) : (
                     <>
                       <p className="text-lg text-muted-foreground leading-relaxed text-justify">
