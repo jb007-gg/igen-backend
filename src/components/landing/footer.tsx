@@ -14,14 +14,14 @@ export function Footer() {
 
   return (
     <footer className="bg-secondary text-foreground py-12 px-4 md:px-6">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div className="flex flex-col items-start space-y-4">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="flex flex-col items-start space-y-4 lg:col-span-2">
           <h3 className="text-2xl font-bold text-[#00d3f3]">iGen Technology</h3>
           <p className="text-sm text-muted-foreground max-w-md">
             Trao quyền cho các doanh nghiệp Việt Nam với giải pháp Marketing AI tiên tiến, giúp tối ưu hóa quy trình và đạt được kết quả vượt trội.
           </p>
            <div className="space-y-2 text-sm text-muted-foreground">
-            <p><span className="font-semibold text-foreground">Địa chỉ:</span> Lô LK3 - LK4, đường Lạc Long Quân, phường Kinh Bắc, tỉnh Bắc Ninh</p>
+            <p><span className="font-semibold text-foreground">Địa chỉ:</span> Tầng 4, Lô LK3 - LK4, đường Lạc Long Quân, phường Kinh Bắc, tỉnh Bắc Ninh</p>
             <p><span className="font-semibold text-foreground">Số điện thoại:</span> 0353710189</p>
             <p>
                 <span className="font-semibold text-foreground">Email:</span>{' '}
@@ -31,7 +31,7 @@ export function Footer() {
             </p>
           </div>
         </div>
-        <div className="space-y-4">
+        <div className="space-y-3">
           <h4 className="font-semibold text-foreground">Dịch vụ</h4>
           <ul className="space-y-2 text-sm">
             <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors" prefetch={false}>Marketing AI</Link></li>
@@ -40,7 +40,7 @@ export function Footer() {
             <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors" prefetch={false}>Hỗ trợ kỹ thuật</Link></li>
           </ul>
         </div>
-        <div className="space-y-4">
+        <div className="space-y-3">
           <h4 className="font-semibold text-foreground">Công ty</h4>
           <ul className="space-y-2 text-sm">
             <li><Link href="#about" className="text-muted-foreground hover:text-primary transition-colors" prefetch={false}>Giới thiệu</Link></li>
@@ -49,7 +49,7 @@ export function Footer() {
             <li><Link href="#contact" className="text-muted-foreground hover:text-primary transition-colors" prefetch={false}>Liên hệ</Link></li>
           </ul>
         </div>
-        <div className="space-y-4">
+        <div className="space-y-3">
           <h4 className="font-semibold text-foreground">Kết nối</h4>
           <div className="flex space-x-4">
             <Link href="#" aria-label="Facebook" prefetch={false}>
