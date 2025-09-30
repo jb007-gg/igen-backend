@@ -19,7 +19,7 @@ export default function Home() {
         <ServicesSection />
         <SolutionsSection />
         <CoursesSection />
-        <AboutSection />
+        <AboutSection className="bg-primary text-primary-foreground" />
         <VisionSection />
         <TestimonialsSection />
         <ContactSection />
