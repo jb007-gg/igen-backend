@@ -19,6 +19,7 @@ export default function Home() {
         <ServicesSection />
         <SolutionsSection />
         <CoursesSection />
+        <AboutSection />
         <VisionSection />
         <TestimonialsSection />
         <ContactSection />
