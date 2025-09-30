@@ -118,10 +118,10 @@ export default function IgenOfficePage() {
           </div>
           <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl font-headline">
-              iGen Office
+              Hệ sinh thái Làm việc – Học tập – Khởi nghiệp iGen Office
             </h1>
             <p className="mx-auto mt-4 max-w-[800px] text-gray-300 md:text-xl">
-              Nơi ý tưởng hóa thành giá trị, nơi cộng đồng kiến tạo nên tương lai.
+              iGen Office - không gian khởi nguồn ý tưởng và nuôi dưỡng thành công. Dành cho cá nhân, sinh viên, học sinh, freelancer và start-up, iGen mang đến môi trường hiện đại – linh hoạt – đầy cảm hứng để bạn học tập, làm việc và phát triển.
             </p>
           </div>
         </section>
