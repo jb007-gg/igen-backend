@@ -19,7 +19,7 @@ export default function Home() {
         <ServicesSection />
         <SolutionsSection />
         <CoursesSection />
-        <AboutSection className="bg-primary text-primary-foreground border-y border-primary-foreground" />
+        <AboutSection className="bg-primary text-primary-foreground" innerContainerClassName="border-2 border-primary-foreground" />
         <VisionSection />
         <TestimonialsSection />
         <ContactSection />
