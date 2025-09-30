@@ -24,6 +24,7 @@ export default function Home() {
           title="Hệ sinh thái Làm việc – Học tập – Khởi nghiệp iGen Office"
           description="iGen Office - không gian khởi nguồn ý tưởng và nuôi dưỡng thành công. Dành cho cá nhân, sinh viên, học sinh, freelancer và start-up, iGen mang đến môi trường hiện đại – linh hoạt – đầy cảm hứng để bạn học tập, làm việc và phát triển."
           buttonText="Tìm hiểu thêm"
+          buttonLink="/igen-office"
         />
         <VisionSection />
         <TestimonialsSection />
