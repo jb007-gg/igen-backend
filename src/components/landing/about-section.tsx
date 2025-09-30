@@ -5,20 +5,24 @@ import { ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export function AboutSection({ className }: { className?: string }) {
+  const isPrimaryBg = className?.includes('bg-primary');
   return (
     <section id="about" className={cn("w-full py-12 md:py-24 lg:py-32 bg-white", className)}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-          <div className="space-y-6">
+          <div className={cn(
+            "space-y-6",
+            isPrimaryBg && "bg-white rounded-lg shadow-lg p-8"
+          )}>
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-black">
                 Ra đời từ Thực chiến, Dành cho Chủ Doanh nghiệp.
               </h2>
-              <p className={cn("max-w-[600px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed", className ? "text-primary-foreground/80" : "text-muted-foreground")}>
+              <p className={cn("max-w-[600px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed", isPrimaryBg ? "text-muted-foreground" : "text-muted-foreground")}>
                 Chúng tôi nhận thấy các chủ doanh nghiệp tâm huyết đang phải làm marketing một cách rời rạc và lãng phí nguồn lực. iGen Technology được sinh ra để thay đổi điều đó, với triết lý công nghệ phải đơn giản, tin cậy và hiệu quả.
               </p>
             </div>
-             <div className="flex justify-center">
+             <div className="flex justify-start">
               <Button asChild className="bg-[#00d3f3] text-black hover:bg-[#00d3f3]/90 group">
                 <Link href="/cau-chuyen-thuong-hieu-igen">
                     Tìm hiểu thêm
