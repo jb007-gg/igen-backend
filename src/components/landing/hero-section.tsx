@@ -8,9 +8,9 @@ export function HeroSection() {
     <section className="relative w-full min-h-[100vh] flex flex-col items-center justify-center pt-24 pb-12 text-white">
       <div className="absolute inset-0 bg-black z-0">
         <Image
-          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNHx8bWFya2V0aW5nfGVufDB8fHx8MTc1NzI0MTI5NHww&ixlib=rb-4.1.0&q=80&w=1080"
+          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNnx8b2ZmaWNlfGVufDB8fHx8MTc1OTIzOTk2M3ww&ixlib=rb-4.1.0&q=80&w=1080"
           alt="Abstract technology background"
-          data-ai-hint="technology"
+          data-ai-hint="office meeting"
           fill
           className="object-cover opacity-20"
           priority
