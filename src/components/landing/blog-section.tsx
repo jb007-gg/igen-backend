@@ -33,14 +33,14 @@ const samplePosts = [
 
 export function BlogSection() {
   return (
-    <section id="blog" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
+    <section id="blog" className="w-full py-12 md:py-24 lg:py-32 bg-[#00bdd6]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline text-foreground">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline text-white">
               Bài viết mới nhất
             </h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="max-w-[900px] text-gray-200 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Cập nhật những kiến thức, xu hướng và phân tích chuyên sâu về marketing, công nghệ và kinh doanh.
             </p>
           </div>
