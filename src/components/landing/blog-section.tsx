@@ -77,7 +77,7 @@ export function BlogSection() {
           ))}
         </div>
          <div className="text-center mt-12">
-            <Button asChild>
+            <Button asChild className="bg-white text-[#00bdd6] hover:bg-white/90">
                 <Link href="/tin-tuc">
                     Xem tất cả bài viết
                     <ArrowRight className="ml-2 h-4 w-4" />
