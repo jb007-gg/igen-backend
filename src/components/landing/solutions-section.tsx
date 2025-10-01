@@ -34,7 +34,7 @@ export function SolutionsSection() {
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="space-y-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-4xl font-headline text-foreground">
-            Giải pháp Marketing Toàn diện iGen: Một Bản thiết kế. Một Đối tác. Một Kết quả Toàn diện
+            Giải pháp Marketing Toàn diện <span className="text-[#00d3f3]">iGen</span>: Một Bản thiết kế. Một Đối tác. Một Kết quả Toàn diện
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
             Chúng tôi mang đến một hệ sinh thái marketing khép kín, nơi mọi chi tiết đều được tính toán để phục vụ một mục tiêu duy nhất: Giải phóng hoàn toàn thời gian và tâm trí của bạn để tập trung vào việc lãnh đạo doanh nghiệp tiến về phía trước.
