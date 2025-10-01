@@ -44,7 +44,7 @@ export function BlogSection() {
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-1 md:grid-cols-3 mt-12">
           {samplePosts.map((post, index) => (
-            <Card key={index} className="flex flex-col bg-card border-border rounded-lg shadow-sm h-full overflow-hidden">
+            <Card key={index} className="flex flex-col bg-card rounded-lg shadow-sm h-full overflow-hidden">
                 <Link href={`/tin-tuc/${post.slug}`} className="block">
                     <Image
                         src={post.imageUrl}
