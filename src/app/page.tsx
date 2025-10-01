@@ -8,6 +8,7 @@ import { VisionSection } from '@/components/landing/vision-section';
 import { TestimonialsSection } from '@/components/landing/testimonials-section';
 import { ContactSection } from '@/components/landing/contact-section';
 import { Footer } from '@/components/landing/footer';
+import { BlogSection } from '@/components/landing/blog-section';
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
           buttonLink="/igen-office"
         />
         <VisionSection />
+        <BlogSection />
         <TestimonialsSection />
         <ContactSection />
       </main>
