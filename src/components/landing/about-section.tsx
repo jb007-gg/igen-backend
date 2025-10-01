@@ -32,10 +32,11 @@ export function AboutSection({
   const defaultTitle =
     'Ra đời từ Thực chiến, Dành cho Chủ Doanh nghiệp.';
   const defaultDescription =
-    'Chúng tôi nhận thấy các chủ doanh nghiệp tâm huyết đang phải làm marketing một cách rời rạc và lãng phí nguồn lực. iGen Technology được sinh ra để thay đổi điều đó, với triết lý công nghệ phải đơn giản, tin cậy và hiệu quả.';
+    'Chúng tôi nhận thấy các chủ doanh nghiệp tâm huyết đang phải làm marketing một cách rời rạc và lãng phí nguồn lực. <span class="text-[#00d3f3] font-semibold">iGen Technology</span> được sinh ra để thay đổi điều đó, với triết lý công nghệ phải đơn giản, tin cậy và hiệu quả.';
   const defaultButtonText = 'Tìm hiểu thêm';
 
   const finalTitle = title || defaultTitle;
+  const finalDescription = description || defaultDescription;
 
   return (
     <section
@@ -54,25 +55,18 @@ export function AboutSection({
             )}
           >
             <div className="space-y-4">
-              {finalTitle.includes('<br />') ? (
-                <h2
-                  className="text-3xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-headline text-black"
-                  dangerouslySetInnerHTML={{ __html: finalTitle }}
-                />
-              ) : (
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-headline text-black">
-                  {finalTitle}
-                </h2>
-              )}
+              <h2
+                className="text-3xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-headline text-black"
+                dangerouslySetInnerHTML={{ __html: finalTitle }}
+              />
 
               <p
                 className={cn(
                   'max-w-[600px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed',
                   isPrimaryBg ? 'text-muted-foreground' : 'text-muted-foreground'
                 )}
-              >
-                {description || defaultDescription}
-              </p>
+                 dangerouslySetInnerHTML={{ __html: finalDescription }}
+              />
             </div>
             <div
               className={cn('flex', isPrimaryBg ? 'justify-center' : 'justify-start')}

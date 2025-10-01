@@ -108,7 +108,7 @@ export function Header() {
             <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center" prefetch={false} onClick={() => setMobileMenuOpen(false)}>
                     <IGenLogo className="h-6 w-6 text-primary" />
-                    <span className="ml-2 text-xl font-bold text-primary">iGen Technology</span>
+                    <span className="ml-2 text-xl font-bold text-[#00d3f3]">iGen Technology</span>
                 </Link>
                 <nav className="flex flex-col gap-4">
                     {navLinks.map((link) => (

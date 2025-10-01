@@ -10,7 +10,7 @@ export function VisionSection() {
             Không chỉ là Dịch vụ, Chúng tôi là Đối tác Thực chiến
           </h2>
           <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-            "Mục tiêu của iGen Technology là phá vỡ rào cản công nghệ, trang bị cho doanh nghiệp Việt những lợi thế cạnh tranh sắc bén. Khi làm việc với chúng tôi, bạn đang tìm thấy một đối tác chiến lược, thấu hiểu và cam kết đồng hành trên con đường phát triển bền vững."
+            "Mục tiêu của <span className="text-[#00d3f3] font-semibold">iGen Technology</span> là phá vỡ rào cản công nghệ, trang bị cho doanh nghiệp Việt những lợi thế cạnh tranh sắc bén. Khi làm việc với chúng tôi, bạn đang tìm thấy một đối tác chiến lược, thấu hiểu và cam kết đồng hành trên con đường phát triển bền vững."
           </p>
         </div>
       </div>

@@ -23,8 +23,8 @@ export default function Home() {
         <AboutSection
           id="igen-office"
           className="bg-primary text-primary-foreground"
-          title={'Hệ sinh thái iGen Office<br />Học tập - Làm việc - Khởi nghiệp'}
-          description="iGen Office - không gian khởi nguồn ý tưởng và nuôi dưỡng thành công. Dành cho cá nhân, sinh viên, học sinh, freelancer và start-up, iGen mang đến môi trường hiện đại – linh hoạt – đầy cảm hứng để bạn học tập, làm việc và phát triển."
+          title={'Hệ sinh thái <span class="text-[#00d3f3]">iGen Office</span><br />Học tập - Làm việc - Khởi nghiệp'}
+          description='<span class="text-[#00d3f3]">iGen Office</span> - không gian khởi nguồn ý tưởng và nuôi dưỡng thành công. Dành cho cá nhân, sinh viên, học sinh, freelancer và start-up, iGen mang đến môi trường hiện đại – linh hoạt – đầy cảm hứng để bạn học tập, làm việc và phát triển.'
           buttonText="Tìm hiểu thêm"
           buttonLink="/igen-office"
         />
@@ -37,5 +37,3 @@ export default function Home() {
     </div>
   );
 }
-
-    

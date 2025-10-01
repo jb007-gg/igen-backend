@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState, useMemo } from 'react';
@@ -238,7 +237,7 @@ export default function BlogPage() {
               Tin Tức & Cập Nhật
             </h1>
             <p className="mx-auto mt-4 max-w-[700px] text-gray-300 md:text-xl">
-              Nơi chia sẻ kiến thức, kinh nghiệm và những cập nhật mới nhất từ iGen Technology.
+              Nơi chia sẻ kiến thức, kinh nghiệm và những cập nhật mới nhất từ <span className="text-[#00d3f3] font-semibold">iGen Technology</span>.
             </p>
           </div>
         </section>

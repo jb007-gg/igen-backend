@@ -18,7 +18,7 @@ const content = [
   },
   {
     type: 'paragraph',
-    text: 'iGen Office ra đời như một bến đỗ của sáng tạo và khởi nghiệp, nơi mỗi cá nhân – từ học sinh, sinh viên, freelancer cho đến doanh nghiệp – đều tìm thấy cho mình không gian để tập trung, cộng đồng để đồng hành và cơ hội để bứt phá. Tại đây, công việc không chỉ là làm việc, mà còn là hành trình khai mở tiềm năng và hiện thực hóa giấc mơ.',
+    text: '<span class="text-[#00d3f3] font-semibold">iGen Office</span> ra đời như một bến đỗ của sáng tạo và khởi nghiệp, nơi mỗi cá nhân – từ học sinh, sinh viên, freelancer cho đến doanh nghiệp – đều tìm thấy cho mình không gian để tập trung, cộng đồng để đồng hành và cơ hội để bứt phá. Tại đây, công việc không chỉ là làm việc, mà còn là hành trình khai mở tiềm năng và hiện thực hóa giấc mơ.',
     image: {
       src: 'https://picsum.photos/seed/102/800/500',
       alt: 'Creative and startup hub',
@@ -27,7 +27,7 @@ const content = [
   },
   {
     type: 'paragraph',
-    text: 'iGen Office – nơi ý tưởng hóa thành giá trị, nơi cộng đồng kiến tạo nên tương lai.',
+    text: '<span class="text-[#00d3f3] font-semibold">iGen Office</span> – nơi ý tưởng hóa thành giá trị, nơi cộng đồng kiến tạo nên tương lai.',
     image: {
       src: 'https://picsum.photos/seed/103/800/500',
       alt: 'Community creating the future',
@@ -40,7 +40,7 @@ const content = [
   },
   {
     type: 'paragraph',
-    text: 'Có những nơi chỉ đơn thuần để làm việc, và cũng có những nơi thắp sáng hành trình. iGen Office không phải chỉ là văn phòng cho thuê, mà là ngọn hải đăng ý tưởng – nơi dẫn lối, soi sáng và tiếp thêm năng lượng cho những ai đang tìm kiếm điểm tựa để khởi đầu hoặc bứt phá.',
+    text: 'Có những nơi chỉ đơn thuần để làm việc, và cũng có những nơi thắp sáng hành trình. <span class="text-[#00d3f3] font-semibold">iGen Office</span> không phải chỉ là văn phòng cho thuê, mà là ngọn hải đăng ý tưởng – nơi dẫn lối, soi sáng và tiếp thêm năng lượng cho những ai đang tìm kiếm điểm tựa để khởi đầu hoặc bứt phá.',
     image: {
       src: 'https://picsum.photos/seed/104/800/500',
       alt: 'Lighthouse of ideas',
@@ -49,7 +49,7 @@ const content = [
   },
   {
     type: 'paragraph',
-    text: 'Tại iGen Office, cá nhân, sinh viên, học sinh, freelancer và doanh nghiệp không chỉ tìm thấy bàn làm việc, mà còn tìm thấy một cộng đồng biết lắng nghe, chia sẻ và nâng đỡ. Ở đây, mỗi ngày làm việc là một lần khởi động niềm tin; mỗi cuộc gặp gỡ là một cánh cửa mở ra cơ hội; và mỗi ước mơ đều có cơ hội trở thành hiện thực.',
+    text: 'Tại <span class="text-[#00d3f3] font-semibold">iGen Office</span>, cá nhân, sinh viên, học sinh, freelancer và doanh nghiệp không chỉ tìm thấy bàn làm việc, mà còn tìm thấy một cộng đồng biết lắng nghe, chia sẻ và nâng đỡ. Ở đây, mỗi ngày làm việc là một lần khởi động niềm tin; mỗi cuộc gặp gỡ là một cánh cửa mở ra cơ hội; và mỗi ước mơ đều có cơ hội trở thành hiện thực.',
     image: {
       src: 'https://picsum.photos/seed/105/800/500',
       alt: 'Supportive community',
@@ -58,7 +58,7 @@ const content = [
   },
   {
     type: 'paragraph',
-    text: 'iGen Office – nơi hội tụ con người, kết nối giá trị, và khởi tạo những chuyến hải trình thành công.',
+    text: '<span class="text-[#00d3f3] font-semibold">iGen Office</span> – nơi hội tụ con người, kết nối giá trị, và khởi tạo những chuyến hải trình thành công.',
     image: {
       src: 'https://picsum.photos/seed/106/800/500',
       alt: 'Successful journeys starting',
@@ -71,7 +71,7 @@ const content = [
   },
   {
     type: 'paragraph',
-    text: 'Ở iGen Office, bạn không chỉ tìm thấy một chỗ ngồi, mà còn bước vào một cộng đồng rộng mở – nơi tri thức, cảm hứng và cơ hội giao thoa. Tại đây, mỗi cuộc trò chuyện có thể trở thành nguồn động lực mới, mỗi kết nối có thể mở ra một chặng đường khác biệt. Bạn sẽ có cơ hội gặp gỡ những doanh nghiệp từ nhiều lĩnh vực, lắng nghe những câu chuyện khởi nghiệp đầy cảm hứng, và quan trọng hơn cả – tìm thấy cho mình người bạn đồng hành, người thầy định hướng, hay chính đối tác và khách hàng tri kỷ.',
+    text: 'Ở <span class="text-[#00d3f3] font-semibold">iGen Office</span>, bạn không chỉ tìm thấy một chỗ ngồi, mà còn bước vào một cộng đồng rộng mở – nơi tri thức, cảm hứng và cơ hội giao thoa. Tại đây, mỗi cuộc trò chuyện có thể trở thành nguồn động lực mới, mỗi kết nối có thể mở ra một chặng đường khác biệt. Bạn sẽ có cơ hội gặp gỡ những doanh nghiệp từ nhiều lĩnh vực, lắng nghe những câu chuyện khởi nghiệp đầy cảm hứng, và quan trọng hơn cả – tìm thấy cho mình người bạn đồng hành, người thầy định hướng, hay chính đối tác và khách hàng tri kỷ.',
     image: {
       src: 'https://picsum.photos/seed/107/800/500',
       alt: 'Open community with knowledge and inspiration',
@@ -84,7 +84,7 @@ const content = [
   },
   {
     type: 'paragraph',
-    text: 'Chúng tôi tin rằng, thành công của doanh nghiệp bắt đầu từ con người. iGen Office tự hào kết nối bạn với một mạng lưới nhân tài trẻ trung, sáng tạo và nhiệt huyết, sẵn sàng đồng hành cùng doanh nghiệp từ những bước đầu tiên đến khi vươn xa. Không chỉ là những ứng viên, đó là những đồng đội biết chia sẻ ước mơ, cùng bạn viết tiếp câu chuyện thành công.',
+    text: 'Chúng tôi tin rằng, thành công của doanh nghiệp bắt đầu từ con người. <span class="text-[#00d3f3] font-semibold">iGen Office</span> tự hào kết nối bạn với một mạng lưới nhân tài trẻ trung, sáng tạo và nhiệt huyết, sẵn sàng đồng hành cùng doanh nghiệp từ những bước đầu tiên đến khi vươn xa. Không chỉ là những ứng viên, đó là những đồng đội biết chia sẻ ước mơ, cùng bạn viết tiếp câu chuyện thành công.',
     image: {
       src: 'https://picsum.photos/seed/108/800/500',
       alt: 'Network of young and creative talent',
@@ -93,7 +93,7 @@ const content = [
   },
   {
     type: 'paragraph',
-    text: 'iGen Office – nơi không gian làm việc gắn kết với cộng đồng, nơi nhân tài và doanh nghiệp tìm thấy nhau, nơi tương lai được cùng nhau kiến tạo.',
+    text: '<span class="text-[#00d3f3] font-semibold">iGen Office</span> – nơi không gian làm việc gắn kết với cộng đồng, nơi nhân tài và doanh nghiệp tìm thấy nhau, nơi tương lai được cùng nhau kiến tạo.',
     image: {
       src: 'https://picsum.photos/seed/109/800/500',
       alt: 'Future being built together',
@@ -120,10 +120,10 @@ export default function IgenOfficePage() {
           </div>
           <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl font-headline">
-              Hệ sinh thái Làm việc – Học tập – Khởi nghiệp iGen Office
+              Hệ sinh thái Làm việc – Học tập – Khởi nghiệp <span className="text-[#00d3f3]">iGen Office</span>
             </h1>
             <p className="mx-auto mt-4 max-w-[800px] text-gray-300 md:text-xl">
-              iGen Office - không gian khởi nguồn ý tưởng và nuôi dưỡng thành công. Dành cho cá nhân, sinh viên, học sinh, freelancer và start-up, iGen mang đến môi trường hiện đại – linh hoạt – đầy cảm hứng để bạn học tập, làm việc và phát triển.
+              <span className="text-[#00d3f3] font-semibold">iGen Office</span> - không gian khởi nguồn ý tưởng và nuôi dưỡng thành công. Dành cho cá nhân, sinh viên, học sinh, freelancer và start-up, iGen mang đến môi trường hiện đại – linh hoạt – đầy cảm hứng để bạn học tập, làm việc và phát triển.
             </p>
           </div>
         </section>
@@ -131,7 +131,7 @@ export default function IgenOfficePage() {
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-center mb-12">
-                Khám Phá Không Gian iGen Office
+                Khám Phá Không Gian <span className="text-[#00d3f3]">iGen Office</span>
             </h2>
             <div className="mx-auto max-w-3xl space-y-12">
               {content.map((item, index) => (
@@ -142,9 +142,10 @@ export default function IgenOfficePage() {
                     </h3>
                   ) : (
                     <>
-                      <p className="text-lg text-muted-foreground leading-relaxed text-justify">
-                        {item.text}
-                      </p>
+                      <p
+                        className="text-lg text-muted-foreground leading-relaxed text-justify"
+                        dangerouslySetInnerHTML={{ __html: item.text }}
+                      />
                       {item.image && (
                         <div className="mt-8 mb-12">
                             <Image
@@ -168,7 +169,7 @@ export default function IgenOfficePage() {
         <section id="cta" className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
           <div className="container mx-auto px-4 md:px-6 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
-              Sẵn sàng để tham gia Cộng đồng iGen?
+              Sẵn sàng để tham gia Cộng đồng <span className="text-[#00d3f3]">iGen</span>?
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-gray-300 md:text-xl">
               Ghé thăm không gian của chúng tôi hoặc liên hệ để biết thêm chi tiết về các gói thành viên.

@@ -82,7 +82,7 @@ export default function BrandStoryPage() {
           </div>
           <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl font-headline">
-              Câu Chuyện Thương Hiệu iGen
+              Câu Chuyện Thương Hiệu <span className="text-[#00d3f3]">iGen</span>
             </h1>
             <p className="mx-auto mt-4 max-w-[800px] text-gray-300 md:text-xl">
               Sinh Ra Từ Thất Bại, Lớn Lên Bằng Sứ Mệnh.
@@ -102,7 +102,7 @@ export default function BrandStoryPage() {
                   <CardContent className="space-y-4 text-center">
                      {section.content.map((paragraph, pIndex) => (
                       <p key={pIndex} className="text-muted-foreground md:text-lg">
-                        {paragraph}
+                        {paragraph.replace('iGen Technology', '<span class="text-[#00d3f3] font-semibold">iGen Technology</span>')}
                       </p>
                     ))}
                   </CardContent>
@@ -118,7 +118,7 @@ export default function BrandStoryPage() {
               Sẵn sàng Đồng hành cùng chúng tôi?
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-gray-300 md:text-xl">
-              Chào mừng anh/chị đến với cuộc cách mạng. Hãy để iGen Technology trở thành đối tác chiến lược, giúp bạn kiến tạo cỗ máy tăng trưởng bền vững.
+              Chào mừng anh/chị đến với cuộc cách mạng. Hãy để <span className="text-[#00d3f3] font-semibold">iGen Technology</span> trở thành đối tác chiến lược, giúp bạn kiến tạo cỗ máy tăng trưởng bền vững.
             </p>
             <div className="mt-8">
               <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">

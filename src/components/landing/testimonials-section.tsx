@@ -41,7 +41,7 @@ export function TestimonialsSection() {
                     <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
                   ))}
                 </div>
-                <p className="text-lg italic text-muted-foreground flex-grow">"{testimonial.quote}"</p>
+                <p className="text-lg italic text-muted-foreground flex-grow" dangerouslySetInnerHTML={{ __html: testimonial.quote.replace('iGen Technology', '<span class="text-[#00d3f3] font-semibold">iGen Technology</span>') }}></p>
                 <div className="flex items-center gap-4 pt-4">
                     <Avatar>
                         <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
