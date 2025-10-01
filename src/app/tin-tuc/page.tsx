@@ -13,6 +13,7 @@ import { Pagination, PaginationContent, PaginationItem, PaginationPrevious, Pagi
 
 
 const samplePosts = [
+  // Page 1
   {
     slug: 'ai-trong-marketing',
     title: 'Ứng dụng AI trong Marketing: Xu hướng và Thách thức',
@@ -67,9 +68,119 @@ const samplePosts = [
     author: 'iGen Team',
     date: '18/09/2025',
   },
+  // Page 2
+  {
+    slug: 'social-media-trends',
+    title: 'Xu Hướng Social Media 2026: Đâu là Kênh Chủ Đạo?',
+    description: 'Phân tích các nền tảng mạng xã hội tiềm năng và cách doanh nghiệp có thể khai thác để tiếp cận khách hàng hiệu quả.',
+    imageUrl: 'https://picsum.photos/seed/blog7/600/400',
+    imageHint: 'social media',
+    author: 'iGen Team',
+    date: '15/09/2025',
+  },
+  {
+    slug: 'email-marketing-automation',
+    title: 'Tự động hóa Email Marketing: Nuôi dưỡng khách hàng tiềm năng',
+    description: 'Cách thiết lập các chuỗi email tự động để xây dựng mối quan hệ và thúc đẩy doanh số một cách bền bỉ.',
+    imageUrl: 'https://picsum.photos/seed/blog8/600/400',
+    imageHint: 'email automation',
+    author: 'iGen Team',
+    date: '12/09/2025',
+  },
+  {
+    slug: 'influencer-marketing-roi',
+    title: 'Đo lường Hiệu quả (ROI) trong Influencer Marketing',
+    description: 'Làm thế nào để biết chiến dịch hợp tác với người ảnh hưởng có thực sự mang lại lợi nhuận cho doanh nghiệp bạn?',
+    imageUrl: 'https://picsum.photos/seed/blog9/600/400',
+    imageHint: 'influencer marketing',
+    author: 'iGen Team',
+    date: '10/09/2025',
+  },
+  {
+    slug: 'digital-twin-technology',
+    title: 'Công nghệ "Bản sao số" và Ứng dụng trong Quảng cáo Sản phẩm',
+    description: 'Khám phá cách công nghệ Digital Twin giúp tạo ra hình ảnh, video sản phẩm chân thực với chi phí tối ưu.',
+    imageUrl: 'https://picsum.photos/seed/blog10/600/400',
+    imageHint: 'digital twin',
+    author: 'iGen Team',
+    date: '08/09/2025',
+  },
+  {
+    slug: 'video-marketing-strategy',
+    title: 'Chiến lược Video Marketing: Từ YouTube đến TikTok',
+    description: 'Xây dựng một chiến lược video đa kênh để tăng nhận diện thương hiệu và thu hút sự chú ý của khách hàng trẻ.',
+    imageUrl: 'https://picsum.photos/seed/blog11/600/400',
+    imageHint: 'video strategy',
+    author: 'iGen Team',
+    date: '05/09/2025',
+  },
+  {
+    slug: 'data-privacy-marketing',
+    title: 'Bảo mật Dữ liệu trong Marketing: Thách thức và Cơ hội',
+    description: 'Trong bối cảnh người dùng ngày càng quan tâm đến quyền riêng tư, làm thế nào để marketing hiệu quả và có đạo đức?',
+    imageUrl: 'https://picsum.photos/seed/blog12/600/400',
+    imageHint: 'data privacy',
+    author: 'iGen Team',
+    date: '02/09/2025',
+  },
+  // Page 3
+  {
+    slug: 'google-analytics-4-guide',
+    title: 'Làm chủ Google Analytics 4: Phân tích Dữ liệu Người dùng',
+    description: 'Hướng dẫn chi tiết về cách sử dụng GA4 để hiểu rõ hơn về hành trình của khách hàng trên website của bạn.',
+    imageUrl: 'https://picsum.photos/seed/blog13/600/400',
+    imageHint: 'analytics data',
+    author: 'iGen Team',
+    date: '30/08/2025',
+  },
+  {
+    slug: 'metaverse-marketing',
+    title: 'Marketing trong Thế giới Metaverse: Cơ hội cho Thương hiệu',
+    description: 'Metaverse không còn là khoa học viễn tưởng. Khám phá cách các thương hiệu có thể đi đầu trong không gian mới này.',
+    imageUrl: 'https://picsum.photos/seed/blog14/600/400',
+    imageHint: 'metaverse vr',
+    author: 'iGen Team',
+    date: '28/08/2025',
+  },
+  {
+    slug: 'customer-journey-mapping',
+    title: 'Xây dựng Bản đồ Hành trình Khách hàng (Customer Journey Map)',
+    description: 'Hiểu rõ các điểm chạm và cảm xúc của khách hàng để tạo ra những trải nghiệm vượt trội và đáng nhớ.',
+    imageUrl: 'https://picsum.photos/seed/blog15/600/400',
+    imageHint: 'customer journey',
+    author: 'iGen Team',
+    date: '25/08/2025',
+  },
+  {
+    slug: 'gamification-in-marketing',
+    title: 'Gamification: Biến Marketing thành Trò chơi Hấp dẫn',
+    description: 'Tích hợp các yếu tố game vào chiến dịch marketing để tăng cường sự tương tác và lòng trung thành của khách hàng.',
+    imageUrl: 'https://picsum.photos/seed/blog16/600/400',
+    imageHint: 'gamification marketing',
+    author: 'iGen Team',
+    date: '22/08/2025',
+  },
+  {
+    slug: 'livestream-commerce',
+    title: 'Livestream Commerce: Xu hướng Bán hàng Trực tuyến Bùng nổ',
+    description: 'Cách tận dụng sức mạnh của livestream để tương tác trực tiếp với khách hàng và chốt đơn ngay lập tức.',
+    imageUrl: 'https://picsum.photos/seed/blog17/600/400',
+    imageHint: 'livestream shopping',
+    author: 'iGen Team',
+    date: '20/08/2025',
+  },
+  {
+    slug: 'agile-marketing-SMEs',
+    title: 'Áp dụng Agile Marketing cho Doanh nghiệp Vừa và Nhỏ (SME)',
+    description: 'Làm thế nào để doanh nghiệp của bạn trở nên linh hoạt và thích ứng nhanh với sự thay đổi của thị trường.',
+    imageUrl: 'https://picsum.photos/seed/blog18/600/400',
+    imageHint: 'agile process',
+    author: 'iGen Team',
+    date: '18/08/2025',
+  },
 ];
 
-const POSTS_PER_PAGE = 2;
+const POSTS_PER_PAGE = 6;
 
 export default function BlogPage() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -113,7 +224,7 @@ export default function BlogPage() {
 
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               {paginatedPosts.map((post) => (
                 <Card key={post.slug} className="flex flex-col overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <Link href={`/tin-tuc/${post.slug}`} className="block">
@@ -197,3 +308,5 @@ export default function BlogPage() {
     </div>
   );
 }
+
+    
