@@ -25,6 +25,9 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isHomePage = pathname === '/';
 
   useEffect(() => {
     setMounted(true);
@@ -42,13 +45,13 @@ export function Header() {
     };
   }, []);
   
-  if (!mounted) {
+  if (!mounted && isHomePage) {
     return (
       <header className="px-4 lg:px-6 h-16 flex items-center fixed top-0 left-0 right-0 z-50 bg-transparent" />
     );
   }
 
-  const isTransparent = !scrolled;
+  const isTransparent = isHomePage && !scrolled;
 
   const getLinkClasses = (isMobile = false, label: string) => cn(
     "font-bold hover:underline underline-offset-4",
@@ -83,7 +86,7 @@ export function Header() {
         {navLinks.map((link) => (
             <Link
                 key={link.href}
-                href={link.href}
+                href={isHomePage ? link.href : `/${link.href}`}
                 className={getLinkClasses(false, link.label)}
                 prefetch={false}
             >
@@ -115,7 +118,7 @@ export function Header() {
                     {navLinks.map((link) => (
                         <Link
                             key={link.href}
-                            href={link.href}
+                            href={isHomePage ? link.href : `/${link.href}`}
                             className={getLinkClasses(true, link.label)}
                             prefetch={false}
                             onClick={() => setMobileMenuOpen(false)}
