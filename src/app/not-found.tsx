@@ -11,7 +11,7 @@ export default function NotFound() {
     <div className="flex min-h-[100dvh] flex-col bg-secondary">
       <Header />
       <main className="flex-1 flex items-center justify-center text-center py-12">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 mb-12">
             <div className="max-w-md mx-auto">
                  <Image
                     src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaG00OWhjYmZ2OXR2b2M3dGNvYjVsd3U1bWI5aHc0eGp2dWd0enJrayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8L0Pky6C83SzkzU55a/giphy.gif"
