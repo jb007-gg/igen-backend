@@ -40,9 +40,6 @@ export function BlogSection() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline text-white">
               Bài viết mới nhất
             </h2>
-            <p className="max-w-[900px] text-gray-200 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Cập nhật những kiến thức, xu hướng và phân tích chuyên sâu về marketing, công nghệ và kinh doanh.
-            </p>
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-1 md:grid-cols-3 mt-12">
