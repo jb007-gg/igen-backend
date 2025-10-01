@@ -101,8 +101,11 @@ export default function BrandStoryPage() {
                   </CardHeader>
                   <CardContent className="space-y-4 text-center">
                      {section.content.map((paragraph, pIndex) => (
-                      <p key={pIndex} className="text-muted-foreground md:text-lg">
-                        {paragraph.replace('iGen Technology', '<span class="text-[#00d3f3] font-semibold">iGen Technology</span>')}
+                      <p 
+                        key={pIndex} 
+                        className="text-muted-foreground md:text-lg"
+                        dangerouslySetInnerHTML={{ __html: paragraph.replace(/iGen Technology/g, '<span class="text-[#00d3f3] font-semibold">iGen Technology</span>') }}
+                      >
                       </p>
                     ))}
                   </CardContent>
