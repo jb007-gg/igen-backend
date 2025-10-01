@@ -1,3 +1,4 @@
+
 import { Header } from '@/components/landing/header';
 import { Footer } from '@/components/landing/footer';
 import { Button } from '@/components/ui/button';
@@ -68,12 +69,21 @@ export default function BlogPage() {
     <div className="flex min-h-[100dvh] flex-col bg-background">
       <Header />
       <main className="flex-1">
-        <section className="w-full pt-32 pb-12 md:pt-40 md:pb-20 lg:pt-48 lg:pb-24 bg-secondary">
-          <div className="container mx-auto px-4 md:px-6 text-center">
+        <section className="relative w-full py-32 md:py-40 lg:py-48 text-white">
+            <div className="absolute inset-0 bg-black z-0">
+                <Image
+                    src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxibG9nZ2luZ3xlbnwwfHx8fDE3NTk1NDc1MDF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                    alt="Tin tức"
+                    data-ai-hint="blogging news"
+                    fill
+                    className="object-cover opacity-20"
+                />
+            </div>
+          <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl font-headline">
               Tin Tức & Cập Nhật
             </h1>
-            <p className="mx-auto mt-4 max-w-[700px] text-muted-foreground md:text-xl">
+            <p className="mx-auto mt-4 max-w-[700px] text-gray-300 md:text-xl">
               Nơi chia sẻ kiến thức, kinh nghiệm và những cập nhật mới nhất từ iGen Technology.
             </p>
           </div>
