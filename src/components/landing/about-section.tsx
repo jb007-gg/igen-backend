@@ -42,7 +42,7 @@ export function AboutSection({
             isPrimaryBg && "bg-white rounded-lg shadow-lg p-8"
           )}>
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-black">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-3xl md:text-4xl font-headline text-black">
                 {title || defaultTitle}
               </h2>
               <p className={cn("max-w-[600px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed", isPrimaryBg ? "text-muted-foreground" : "text-muted-foreground")}>
