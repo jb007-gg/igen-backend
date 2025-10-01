@@ -69,7 +69,7 @@ export default function BlogPage() {
     <div className="flex min-h-[100dvh] flex-col bg-background">
       <Header />
       <main className="flex-1">
-        <section className="relative w-full py-32 md:py-40 lg:py-48 text-white">
+        <section className="relative w-full min-h-screen flex items-center justify-center text-white">
             <div className="absolute inset-0 bg-black z-0">
                 <Image
                     src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxibG9nZ2luZ3xlbnwwfHx8fDE3NTk1NDc1MDF8MA&ixlib=rb-4.1.0&q=80&w=1080"
