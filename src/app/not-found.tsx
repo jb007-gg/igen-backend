@@ -14,8 +14,8 @@ export default function NotFound() {
         <div className="container mx-auto px-4 md:px-6 mb-12">
             <div className="max-w-md mx-auto">
                  <Image
-                    src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaG00OWhjYmZ2OXR2b2M3dGNvYjVsd3U1bWI5aHc0eGp2dWd0enJrayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8L0Pky6C83SzkzU55a/giphy.gif"
-                    alt="Lost robot"
+                    src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2Rtc2p1cG5jYjZlZDIxNmc2ejA2N25qZ2Z4d2tmaGtncHVqMGF4biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7aTskHEUdgCQAXde/giphy.gif"
+                    alt="Confused Robot"
                     width={300}
                     height={300}
                     className="mx-auto rounded-lg"
