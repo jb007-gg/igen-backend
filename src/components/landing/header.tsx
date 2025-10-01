@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -49,14 +50,11 @@ export function Header() {
 
   const isTransparent = !scrolled;
 
-  const headerClasses = cn(
-    "px-4 lg:px-6 h-16 flex items-center fixed top-0 left-0 right-0 z-50 transition-colors duration-300",
-    isTransparent ? "bg-transparent" : "bg-white shadow-sm"
-  );
-
-  const linkClasses = (isMobile = false) => cn(
+  const getLinkClasses = (isMobile = false, label: string) => cn(
     "font-bold hover:underline underline-offset-4",
-    isMobile ? "text-black text-lg" : `text-sm ${isTransparent ? "text-white" : "text-black"}`
+    isMobile 
+      ? `text-lg ${label === 'iGen Office' ? 'text-[#00d3f3]' : 'text-black'}`
+      : `text-sm ${label === 'iGen Office' ? 'text-[#00d3f3]' : (isTransparent ? "text-white" : "text-black")}`
   );
 
   const buttonClasses = cn(
@@ -71,7 +69,10 @@ export function Header() {
   
 
   return (
-    <header className={headerClasses}>
+    <header className={cn(
+      "px-4 lg:px-6 h-16 flex items-center fixed top-0 left-0 right-0 z-50 transition-colors duration-300",
+      isTransparent ? "bg-transparent" : "bg-white shadow-sm"
+    )}>
       <Link href="/" className="flex items-center justify-center mr-auto" prefetch={false}>
         <IGenLogo className="h-6 w-6 text-[#00d3f3]" />
         <span className={cn("ml-2 text-xl font-bold text-[#00d3f3]")}>
@@ -83,7 +84,7 @@ export function Header() {
             <Link
                 key={link.href}
                 href={link.href}
-                className={linkClasses()}
+                className={getLinkClasses(false, link.label)}
                 prefetch={false}
             >
                 {link.label}
@@ -115,7 +116,7 @@ export function Header() {
                         <Link
                             key={link.href}
                             href={link.href}
-                            className={linkClasses(true)}
+                            className={getLinkClasses(true, link.label)}
                             prefetch={false}
                             onClick={() => setMobileMenuOpen(false)}
                         >
