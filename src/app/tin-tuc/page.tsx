@@ -243,7 +243,9 @@ export default function BlogPage() {
                             {post.title}
                         </Link>
                     </CardTitle>
-                    <CardDescription>{post.date} by {post.author}</CardDescription>
+                    <CardDescription>
+                      {post.date} by <span className="text-primary">{post.author}</span>
+                    </CardDescription>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <p className="text-muted-foreground">{post.description}</p>
@@ -308,5 +310,3 @@ export default function BlogPage() {
     </div>
   );
 }
-
-    
