@@ -273,7 +273,9 @@ export default function BlogPage() {
                       }}
                       aria-disabled={currentPage === 1}
                       className={currentPage === 1 ? 'pointer-events-none opacity-50' : ''}
-                    />
+                    >
+                        Trang trước
+                    </PaginationPrevious>
                   </PaginationItem>
                   {Array.from({ length: totalPages }, (_, i) => (
                     <PaginationItem key={i}>
@@ -298,7 +300,9 @@ export default function BlogPage() {
                       }}
                       aria-disabled={currentPage === totalPages}
                       className={currentPage === totalPages ? 'pointer-events-none opacity-50' : ''}
-                    />
+                    >
+                        Trang sau
+                    </PaginationNext>
                   </PaginationItem>
                 </PaginationContent>
               </Pagination>
