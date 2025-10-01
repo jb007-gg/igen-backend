@@ -8,9 +8,9 @@ import { ArrowLeft } from 'lucide-react';
 
 export default function NotFound() {
   return (
-    <div className="flex min-h-[100dvh] flex-col bg-secondary">
+    <div className="flex min-h-[100dvh] flex-col bg-background">
       <Header />
-      <main className="flex-1 flex items-center justify-center text-center py-12">
+      <main className="flex-1 flex items-center justify-center text-center py-12 my-12">
         <div className="container mx-auto px-4 md:px-6 mb-12">
             <div className="max-w-md mx-auto">
                  <Image
