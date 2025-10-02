@@ -120,10 +120,10 @@ export default function IgenOfficePage() {
           </div>
           <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl font-headline">
-              Hệ sinh thái Làm việc – Học tập – Khởi nghiệp <span className="text-[#00d3f3]">iGen Office</span>
+              Khám Phá Không Gian <span className="text-[#00d3f3]">iGen Office</span>
             </h1>
             <p className="mx-auto mt-4 max-w-[800px] text-gray-300 md:text-xl">
-              <span className="text-[#00d3f3] font-semibold">iGen Office</span> - không gian khởi nguồn ý tưởng và nuôi dưỡng thành công. Dành cho cá nhân, sinh viên, học sinh, freelancer và start-up, iGen mang đến môi trường hiện đại – linh hoạt – đầy cảm hứng để bạn học tập, làm việc và phát triển.
+              Một ý tưởng dù nhỏ bé, nếu được nuôi dưỡng trong môi trường phù hợp, có thể trở thành ngọn lửa thắp sáng cả hành trình sự nghiệp. Thành công không chỉ đến từ tri thức, công cụ hay vốn liếng, mà còn từ sự kết nối – nơi những con người cùng chung khát vọng gặp nhau, cộng hưởng và tạo nên giá trị vượt ngoài con số lợi nhuận.
             </p>
           </div>
         </section>
