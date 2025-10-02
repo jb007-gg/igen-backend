@@ -10,11 +10,6 @@ const content = [
   {
     type: 'paragraph',
     text: '<span class="text-[#00d3f3] font-semibold">iGen Office</span> ra đời như một bến đỗ của sáng tạo và khởi nghiệp, nơi mỗi cá nhân – từ học sinh, sinh viên, freelancer cho đến doanh nghiệp – đều tìm thấy cho mình không gian để tập trung, cộng đồng để đồng hành và cơ hội để bứt phá. Tại đây, công việc không chỉ là làm việc, mà còn là hành trình khai mở tiềm năng và hiện thực hóa giấc mơ.',
-    image: {
-      src: 'https://picsum.photos/seed/102/800/500',
-      alt: 'Creative and startup hub',
-      hint: 'creative hub',
-    },
   },
   {
     type: 'paragraph',
