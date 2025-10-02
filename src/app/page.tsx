@@ -27,6 +27,8 @@ export default function Home() {
           description='<span class="text-[#00d3f3]">iGen Office</span> - không gian khởi nguồn ý tưởng và nuôi dưỡng thành công. Dành cho cá nhân, sinh viên, học sinh, freelancer và start-up, iGen mang đến môi trường hiện đại – linh hoạt – đầy cảm hứng để bạn học tập, làm việc và phát triển.'
           buttonText="Tìm hiểu thêm"
           buttonLink="/igen-office"
+          imageUrl="https://firebasestorage.googleapis.com/v0/b/igenius-marketing.firebasestorage.app/o/1.png?alt=media&token=ee10c2ad-56d7-41b6-b1fe-ee1a0e351e6c"
+          imageAlt="iGen Office Ecosystem"
         />
         <VisionSection />
         <BlogSection />
