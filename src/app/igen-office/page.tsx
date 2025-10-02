@@ -39,11 +39,6 @@ const content = [
   {
     type: 'paragraph',
     text: 'Tại <span class="text-[#00d3f3] font-semibold">iGen Office</span>, cá nhân, sinh viên, học sinh, freelancer và doanh nghiệp không chỉ tìm thấy bàn làm việc, mà còn tìm thấy một cộng đồng biết lắng nghe, chia sẻ và nâng đỡ. Ở đây, mỗi ngày làm việc là một lần khởi động niềm tin; mỗi cuộc gặp gỡ là một cánh cửa mở ra cơ hội; và mỗi ước mơ đều có cơ hội trở thành hiện thực.',
-    image: {
-      src: 'https://picsum.photos/seed/105/800/500',
-      alt: 'Supportive community',
-      hint: 'supportive community',
-    },
   },
   {
     type: 'paragraph',
