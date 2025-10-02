@@ -13,12 +13,15 @@ const content = [
   },
   {
     type: 'paragraph',
-    text: '<span class="text-[#00d3f3] font-semibold">iGen Office</span> – nơi ý tưởng hóa thành giá trị, nơi cộng đồng kiến tạo nên tương lai.',
     image: {
       src: 'https://picsum.photos/seed/103/800/500',
       alt: 'Community creating the future',
       hint: 'community future',
     },
+  },
+  {
+    type: 'paragraph',
+    text: '<span class="text-[#00d3f3] font-semibold">iGen Office</span> – nơi ý tưởng hóa thành giá trị, nơi cộng đồng kiến tạo nên tương lai.',
   },
   {
     type: 'heading',
