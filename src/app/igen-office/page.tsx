@@ -48,11 +48,6 @@ const content = [
   {
     type: 'paragraph',
     text: '<span class="text-[#00d3f3] font-semibold">iGen Office</span> – nơi hội tụ con người, kết nối giá trị, và khởi tạo những chuyến hải trình thành công.',
-    image: {
-      src: 'https://picsum.photos/seed/106/800/500',
-      alt: 'Successful journeys starting',
-      hint: 'successful journey',
-    },
   },
    {
     type: 'heading',
