@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Header } from '@/components/landing/header';
@@ -14,7 +15,7 @@ const content = [
   {
     type: 'paragraph',
     image: {
-      src: 'https://picsum.photos/seed/103/800/500',
+      src: 'https://firebasestorage.googleapis.com/v0/b/igenius-marketing.firebasestorage.app/o/5.png?alt=media&token=df14c32a-d008-4c27-8cb0-29de8cbff6e6',
       alt: 'Community creating the future',
       hint: 'community future',
     },
@@ -31,7 +32,7 @@ const content = [
     type: 'paragraph',
     text: 'Có những nơi chỉ đơn thuần để làm việc, và cũng có những nơi thắp sáng hành trình. <span class="text-[#00d3f3] font-semibold">iGen Office</span> không phải chỉ là văn phòng cho thuê, mà là ngọn hải đăng ý tưởng – nơi dẫn lối, soi sáng và tiếp thêm năng lượng cho những ai đang tìm kiếm điểm tựa để khởi đầu hoặc bứt phá.',
     image: {
-      src: 'https://picsum.photos/seed/104/800/500',
+      src: 'https://firebasestorage.googleapis.com/v0/b/igenius-marketing.firebasestorage.app/o/2.png?alt=media&token=e32c4c68-7b56-4745-ab58-9917534ea113',
       alt: 'Lighthouse of ideas',
       hint: 'idea lighthouse',
     },
@@ -52,7 +53,7 @@ const content = [
     type: 'paragraph',
     text: 'Ở <span class="text-[#00d3f3] font-semibold">iGen Office</span>, bạn không chỉ tìm thấy một chỗ ngồi, mà còn bước vào một cộng đồng rộng mở – nơi tri thức, cảm hứng và cơ hội giao thoa. Tại đây, mỗi cuộc trò chuyện có thể trở thành nguồn động lực mới, mỗi kết nối có thể mở ra một chặng đường khác biệt. Bạn sẽ có cơ hội gặp gỡ những doanh nghiệp từ nhiều lĩnh vực, lắng nghe những câu chuyện khởi nghiệp đầy cảm hứng, và quan trọng hơn cả – tìm thấy cho mình người bạn đồng hành, người thầy định hướng, hay chính đối tác và khách hàng tri kỷ.',
     image: {
-      src: 'https://picsum.photos/seed/107/800/500',
+      src: 'https://firebasestorage.googleapis.com/v0/b/igenius-marketing.firebasestorage.app/o/IMG_0988.DNG?alt=media&token=b56148bf-a198-44a2-9ca7-f280e6ac5771',
       alt: 'Open community with knowledge and inspiration',
       hint: 'knowledge inspiration',
     },
@@ -65,7 +66,7 @@ const content = [
     type: 'paragraph',
     text: 'Chúng tôi tin rằng, thành công của doanh nghiệp bắt đầu từ con người. <span class="text-[#00d3f3] font-semibold">iGen Office</span> tự hào kết nối bạn với một mạng lưới nhân tài trẻ trung, sáng tạo và nhiệt huyết, sẵn sàng đồng hành cùng doanh nghiệp từ những bước đầu tiên đến khi vươn xa. Không chỉ là những ứng viên, đó là những đồng đội biết chia sẻ ước mơ, cùng bạn viết tiếp câu chuyện thành công.',
     image: {
-      src: 'https://picsum.photos/seed/108/800/500',
+      src: 'https://firebasestorage.googleapis.com/v0/b/igenius-marketing.firebasestorage.app/o/4.png?alt=media&token=952d0087-20c9-4a9b-9646-1b42f32a290c',
       alt: 'Network of young and creative talent',
       hint: 'creative talent',
     },
@@ -74,7 +75,7 @@ const content = [
     type: 'paragraph',
     text: '<span class="text-[#00d3f3] font-semibold">iGen Office</span> – nơi không gian làm việc gắn kết với cộng đồng, nơi nhân tài và doanh nghiệp tìm thấy nhau, nơi tương lai được cùng nhau kiến tạo.',
     image: {
-      src: 'https://picsum.photos/seed/109/800/500',
+      src: 'https://firebasestorage.googleapis.com/v0/b/igenius-marketing.firebasestorage.app/o/IMG_0989.DNG?alt=media&token=523b739e-c56d-4c65-b0dd-d8ef460b762f',
       alt: 'Future being built together',
       hint: 'future together',
     },
