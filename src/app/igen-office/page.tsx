@@ -9,7 +9,7 @@ import Image from 'next/image';
 const content = [
   {
     type: 'paragraph',
-    text: 'Một ý tưởng dù nhỏ bé, nếu được nuôi dưỡng trong môi trường phù hợp, có thể trở thành ngọn lửa thắp sáng cả hành trình sự nghiệp. Thành công không chỉ đến từ tri thức, công cụ hay vốn liếng, mà còn từ sự kết nối – nơi những con người cùng chung khát vọng gặp nhau, cộng hưởng và tạo nên giá trị vượt ngoài con số lợi nhuận.',
+    text: '',
     image: {
       src: 'https://picsum.photos/seed/101/800/500',
       alt: 'Nurtured idea growing',
@@ -139,10 +139,12 @@ export default function IgenOfficePage() {
                     </h3>
                   ) : (
                     <>
-                      <p
-                        className="text-lg text-muted-foreground leading-relaxed text-justify"
-                        dangerouslySetInnerHTML={{ __html: item.text }}
-                      />
+                      {item.text && (
+                        <p
+                          className="text-lg text-muted-foreground leading-relaxed text-justify"
+                          dangerouslySetInnerHTML={{ __html: item.text }}
+                        />
+                      )}
                       {item.image && (
                         <div className="mt-8 mb-12">
                             <Image
@@ -183,3 +185,5 @@ export default function IgenOfficePage() {
     </div>
   );
 }
+
+    
