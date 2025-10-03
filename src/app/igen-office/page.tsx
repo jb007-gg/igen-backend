@@ -90,7 +90,7 @@ export default function IgenOfficePage() {
         <section id="igen-office" className="relative w-full min-h-screen flex items-center justify-center text-white">
           <div className="absolute inset-0 bg-black z-0">
             <Image
-              src="https://firebasestorage.googleapis.com/v0/b/igenius-marketing.firebasestorage.app/o/IMG_0989.DNG?alt=media&token=523b739e-c56d-4c65-b0dd-d8ef460b762f"
+              src="https://firebasestorage.googleapis.com/v0/b/igenius-marketing.firebasestorage.app/o/Thie%CC%82%CC%81t%20ke%CC%82%CC%81%20chu%CC%9Ba%20co%CC%81%20te%CC%82n.png?alt=media&token=aaaddef5-c3c4-4fab-915b-6589958a7b0f"
               alt="iGen Office co-working space"
               data-ai-hint="coworking space"
               fill
