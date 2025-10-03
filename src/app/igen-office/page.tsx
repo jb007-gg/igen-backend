@@ -53,7 +53,7 @@ const content = [
     type: 'paragraph',
     text: 'Ở <span class="text-[#00d3f3] font-semibold">iGen Office</span>, bạn không chỉ tìm thấy một chỗ ngồi, mà còn bước vào một cộng đồng rộng mở – nơi tri thức, cảm hứng và cơ hội giao thoa. Tại đây, mỗi cuộc trò chuyện có thể trở thành nguồn động lực mới, mỗi kết nối có thể mở ra một chặng đường khác biệt. Bạn sẽ có cơ hội gặp gỡ những doanh nghiệp từ nhiều lĩnh vực, lắng nghe những câu chuyện khởi nghiệp đầy cảm hứng, và quan trọng hơn cả – tìm thấy cho mình người bạn đồng hành, người thầy định hướng, hay chính đối tác và khách hàng tri kỷ.',
     image: {
-      src: 'https://firebasestorage.googleapis.com/v0/b/igenius-marketing.firebasestorage.app/o/IMG_0988.DNG?alt=media&token=b56148bf-a198-44a2-9ca7-f280e6ac5771',
+      src: 'https://firebasestorage.googleapis.com/v0/b/igenius-marketing.firebasestorage.app/o/1%20(1).png?alt=media&token=c1a69edf-ee78-4b4b-862c-eff7b5860857',
       alt: 'Open community with knowledge and inspiration',
       hint: 'knowledge inspiration',
     },
