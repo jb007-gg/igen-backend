@@ -75,7 +75,7 @@ const content = [
     type: 'paragraph',
     text: '<span class="text-[#00d3f3] font-semibold">iGen Office</span> – nơi không gian làm việc gắn kết với cộng đồng, nơi nhân tài và doanh nghiệp tìm thấy nhau, nơi tương lai được cùng nhau kiến tạo.',
     image: {
-      src: 'https://firebasestorage.googleapis.com/v0/b/igenius-marketing.firebasestorage.app/o/IMG_0989.DNG?alt=media&token=523b739e-c56d-4c65-b0dd-d8ef460b762f',
+      src: 'https://firebasestorage.googleapis.com/v0/b/igenius-marketing.firebasestorage.app/o/2%20(1).png?alt=media&token=4d71d2ef-c78a-4724-a263-3464db1e7489',
       alt: 'Future being built together',
       hint: 'future together',
     },
